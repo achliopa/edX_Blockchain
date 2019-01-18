@@ -14,3 +14,4 @@
 * same holds for money
 * Blockchain eliminates doublespending
 * it works perr to peer with no intermediaries
+* sfsaasf
