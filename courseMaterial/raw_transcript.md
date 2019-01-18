@@ -218,6 +218,8 @@ Blockchain is becoming the enabling layer for a lot of other Smart Dubai initiat
 So, projects like automated traffic signals, registration of citizens for governmental services, etc. are all being pioneered on blockchain.
 So, if you want to see some of the really exciting use cases in blockchain right now, be sure to check out Dubai and what's going on with their Smart Dubai 2021 initiative.
 
+## Section 3 - Distributed Ledgers
+
 ### Video 6 - Island of Yap
 
 The concept of distributed ledge's has been around for hundreds of years.
@@ -242,3 +244,252 @@ In this regard, the ledger was fault tolerant and could not be easily changed, c
 The tribe also decided that stones didn't have to be on the island to hold value.
 One day, a stone fell into the ocean and the Yapese decided that this stone, even though it could not be seen, still held value and could still be traded.
 This system of consensus by the majority of the adults on the island with no central administrator is one of the first examples of distributed ledger.
+
+### Video 7 - The Evolution of Distributed Ledgers
+
+We've gone through history and seen how ledgers have evolved from stone tablets to double entry ledgers.
+We even took a look at the earliest known example of distributed ledgers.
+Now, let's discuss the evolution of the ledger in the modern world.
+Over the last few decades, ledgers have moved from the written form to the digital form, also known as computers and digitalized databases.
+This has allowed us to be interconnected - a truly global economy.
+Today, this recordkeeping system is being revolutionized again,
+going from the digital realm or centralized databases keeping track of transactions to information being stored across different locations across the globe.
+This system of record, information across a global network, is what we call decentralized ledgers.
+A decentralized ledger can be described as a ledger of any transactions or contracts supported by a decentralized network from across different locations and people, eliminating the need of a central authority.
+When a recording is made, every participant is notified of that recording.
+They now own an identical copy of the record of transactions, identical to every other node on that network.
+Every piece of information on a blockchain can be traced back to the exact moment when it was created.
+So, if an audit is necessary, information can be found and deemed reliable.
+This allows blockchain to serve as a truly reliable storage of public records and transactions, and therefore eliminating the need for a centralized authority of database of records.
+Now that we understand the foundational principle of blockchains - distributed ledgers, it's important to understand another important key element that makes blockchain so revolutionary: trust.
+Trust is created through two key principles: collaboration and cryptography, both of which will be discussed shortly.
+
+### Section 4 - Cryptography
+
+### Video 8 - From Distributed Ledger to Cryptography
+
+A great way to think of blockchain is to think of blockchain as another layer of  the Internet, a layer that enables secure and trusted records and transactions to occur,
+which is why a lot of people associate the word blockchain with the  word trust.
+Blockchain creates a layer of trust between untrusted parties.
+Without blockchain to create trusted records and transactions, a third party intermediary is necessary.
+Blockchain eliminates the need for a centralized institution to act as intermediary, and instead uses cryptography and collaboration to create that trust.
+In an earlier chapter of this course we spoke about collaboration through distributed ledgers.
+Now, we will be taking a further look at how cryptography is used in blockchain to create the second element necessary for blockchain to be a source of trust.
+Information on the blockchain is stored on the ledger using cryptography.
+It can be accessed using keys and cryptographic signatures.
+Now, let's take a look into some of the key concepts of cryptography that are utilized with blockchain.
+
+### Video 9 - Rose Greenhow
+
+So, one of the reoccurring themes in blockchain is that while blockchain itself may be new and cutting-edge, it's built out of nothing more than very old tried-and-true technology.
+And one of the areas this is most true is in cryptography.
+When a lot of people first get introduced to cryptography they think it's a very new cutting-edge science.
+And while there are new developments being made everyday, cryptography itself is a very, very old science.
+One great example of this is the story of Rose Greenhow.
+Rose Greenhow lived in the Washington DC area during the Civil War, and she was actually an undercover spy for the Confederate Army.
+Rose Greenhow was a wealthy socialite, and she threw many fancy, elaborate parties, and was also invited to many, many high-end social events.
+Many of these events were attended by members of the Union Army, generals and strategists, who Rose pretended that she didn't know much about military strategy and wasn't too interested in the war in general.
+In secret, at all these events she was soaking up all the information she could.
+Rose actually developed her own method of encrypting data.
+She came up with her own encryption scheme and she used this scheme to mail letters down to the Confederate Army, revealing the plans of the Union Army, troop positions, general high-level strategy, etc.
+Rose did this for a number of years, until finally her encryption method was broken and she was actually one of the very first people who were arrested and prosecuted by the Pinkertons,
+who later went on to form the Secret Service.
+So, when you hear about blockchain and all the new cutting-edge things that it's doing, don't forget that it has its roots in very old technology,
+and we're just combining old technology in new and creative ways to create a brand new solutions development platform.
+
+### Video 10 - Cryptography Basics
+
+So, one of the technologies that plays a pivotal role in blockchain and making blockchain secure and immutable is cryptography.
+If you've never heard of cryptography before, cryptography is simply designed defined as the science of sending messages back and forth from one party to another,
+in the presence of adversaries or bad actors, participants who may wish to corrupt or change the contents of a message.
+And there's some key concepts you should understand about cryptography before we really dive in and talk about how cryptography protects the data on the blockchain.
+Most cryptographic functions are what we refer to as two-way functions,
+meaning that we can take a secret and we can encrypt it, and then we can use that same process to decrypt the secret at the other end.
+So, some of the key objects or concepts to be aware of in cryptography:
+first of all are the secret, what data are we trying to protect, what is the message we're sending back and forth that we want to do so in a safe, secure fashion,
+and try and guarantee that it hasn't been tampered with.
+We take our secret and we combine it with a key, a piece of data that is consumed by a function, our third component.
+When the function receives the key and the secret, the function uses the key to change the data in the secret,
+to create the fourth and final component, which is known as the cipher.
+And the cipher is simply the encrypted message, the thing that, if it were intercepted, if it were seen by anybody else, any non-participants or bad actors,
+they wouldn't know what the secret was, they wouldn't know what the message was, and they wouldn't know how to decrypt that cipher back into the secret.
+Now again, most cryptographic functions are two-way, meaning it doesn't do me a lot of good to encrypt data if the receiving party at the other end can't decrypt it.
+And oftentimes, all this involves is using the same key or a reverse key into the same function, with the cipher's input to get the secret back out.
+So, when we talk about cryptography, keep in mind those four basic components: the secret, the key, the function, and the cipher.
+Then, understand that cryptographic hashing is a very special class of cryptographic functions,
+which, unlike all their cousins, are only one way,
+meaning that in a cryptographic hash I can put information or a secret into it,
+the key and the function are contained as one entity, and what I get back out is encoded data.
+I get what's called a hash or a hash result, that is an encryption based on the data that I put in.
+That is mathematically impossible to reverse-engineer and this is what makes it a one-way function.
+If you put any data into a cryptographic hash and you share that hash with me,
+there's absolutely nothing I can do above and beyond random guessing to try and recreate that input to tell me what your original secret was.
+Cryptographic hashes are used in scenarios where we want to prove a piece of data without sharing that data.
+So, password management systems use this all the time.
+We don't want to store a username and password, we want to store a username and the hash output of a password.
+That way, I don't know what any of my users' passwords are, but I do know that if they put the wrong password in,
+they're going to get the wrong hash back out, and I can easily validate that a user's password is correct or incorrect, without having to know what it is.
+We're gonna dive in a lot deeper in a later module, to show you exactly through a demo how cryptographic hashing works,
+and how it provides security and immutability on the blockchain.
+But just understand these two big takeaways:
+Number one, that cryptography is normally a two-way function with four components: the secret, the key, the function, and the cipher,
+and then finally, there are a subclass of cryptographic functions called cryptographic hash functions,
+which exist as one-way functions, which can only encrypt the secret,
+and again, which are mathematically impossible to decrypt the secret in any other method other than randomly guessing input until you're able to recreate that hash output.
+These are key components which enable security and immutability on the blockchain.
+
+### Video 11 - Byzantine Fault Tolerance
+
+As you start to get more and more into blockchain, one term that you're gonna hear a lot is Byzantine Fault Tolerance.
+And if you're wondering what that means, that very strange, cryptic sounding term, that can be explained with a story.
+In 1982, a mathematical problem was formulated called the Byzantine Generals Problem,
+and without getting too detailed into the mathematics behind it,
+essentially, with the Byzantine Generals Problem was a story about two empires fighting a battle.
+One Empire exists within the confines of a walled city, the second Empire has several generals surrounding that walled city, each with their armies waiting to attack.
+And the balance of power is very, very evenly matched between these two empires.
+And it is such that if all the generals agree to attack at the same time, they will have enough power to overcome the empire in the city and win the campaign.
+If they, for whatever reason, they're not able to coordinate their attacks simultaneously, and even one general misses the message,
+well then, the Empire surrounding the walled city is going to lose the campaign and the war.
+So, the Byzantine Generals Problem explored a really key area of cryptography, in fact, the heart of what cryptography is,
+which is how do I exchange messages with someone in an environment where they may become corrupt.
+You have to understand the only way these generals had to communicate was to send a disguised messenger through the city with a message to deliver to the other generals,
+and so, this always posed the risk, if you're a general and you're getting amessage from one of these messengers,
+how do you know or how can you believe with greater than random certainty that the message you're getting is reliable and it hasn't been tampered with.
+And this, again, was a problem that was postulated back in 1982 and went unsolved until 2008,
+when the anonymous Satoshi Nakamoto proposed a solution to this problem.
+Essentially, what the solution entails is all of the generals hiring as many mathematicians as they can.
+When we talk about Byzantine Fault Tolerance, we're talking about the generals having more access, having more mathematicians, or more computing power on their side than the empire within the city.
+So, if I'm the generals and I can hire more mathematicians, then that means that I can encrypt my messages going through the city with greater and greater complexity,
+and if the balance of power becomes greatly tipped in the favor of the generals outside the city,
+they can use encryption methods which are so complex, that there really is no real chance, or a very small chance that any of the mathematicians inside the city will be able to intercept that message,
+decrypt it, change the contents, re-encrypt it, and do so in a time quick enough that the generals don't notice anything has happened.
+And so, this is Byzantine Fault Tolerance.
+This is the fault tolerance mechanism that we see used in most public blockchain solutions right now,
+including Bitcoin, including Ethereum, although Ethereum is working on transitioning to a system called Proof of Stake, which we'll talk about in a later section.
+But, when you hear Byzantine Fault Tolerance, often abbreviated as BFT,
+all we're talking about is this idea that blockchains become secure if they have more computing power, more hash power in the chain than off the chain.
+So, solutions like Ethereum, 16,000 plus nodes, or Bitcoin, the largest blockchain network that there is, with over 30,000 nodes,
+offer us a high degree of security and immutability,
+because the computing power on those networks is so great that there's really no reasonable chance that an adversary could ever control as much or more computing power to attack the data on that blockchain.
+And if someone ever were to, chances are the economics behind it would be such that they would spend more to simultaneously harness all that computing power,
+than they could possibly stand to gain.
+And so, this is Byzantine Fault Tolerance.
+It is the root of cryptography, which is simply the study of how do we send information back and forth securely in the presence of adversaries and bad actors,
+and it's what underlies all the security and immutability that we get in blockchain.
+
+### Video 12 - Private/Public Key Cryptography
+
+So, I want to talk a little bit about cryptography and some cryptography principles.
+The first is easy and hard problems, and this is really what public - private key cryptography is based off of.
+There are some problems that are very easy one way, but difficult another way.
+And a great example of this is multiplication.
+So, if I give you a pen and paper and a lot of time, I can ask you to multiply any two numbers,
+and you can probably come up with an answer fairly easily.
+What's a lot more difficult is if I give you the product of two numbers and ask you to factor that and find out all the numbers you can multiply together to get that result, that's a much harder problem.
+This is how public - private key cryptography works.
+We use an easy mathematical problem to generate a message, but we make it very, very hard for that message to be decrypted by someone who shouldn't decrypt it,
+and public and private keys play a big role in blockchain.
+I want to show you right now.
+I've got two different wallets. I've got a wallet that you're probably used to, that you keep money in,
+and then I've got a hardware wallet, a digital wallet that you'd use to trade something like bitcoin or ether.
+Now, what you're used to, in your regular wallet, is putting money in here and you keep your money in here, and if you lose this, whoever finds it gets your money and they get to spend it.
+In blockchain, with cryptocurrencies, it's a little bit different.
+The only thing that ever gets kept in here is your private key.
+And a private key - public key work together so that I can use a private key to sign, digitally sign, any message.
+You can then take the public key, which anyone can know, and use that to verify that my specific private key was the one that actually signed that message.
+And so, you can know without a doubt that I'm the one who created that message,
+that no one was pretending to be me sending this message.
+And this is how it works trading digital currencies back and forth.
+If I decide I'm going to pay you three bitcoins and I'm gonna do it out of this hardware wallet or any software wallet, any kind of digital currency,
+the only thing that's kept on this device is my private key and it never leaves,
+and so, that means if I want to send you some money, all I'm doing is accessing the private key on this device to sign a message that gets transmitted to the blockchain,
+that says I'm paying you some bitcoin or some ether or some litecoin,
+and my public key is used to verify that that message actually did come from the wallet that says it did.
+And this is how we trade cryptocurrencies back and forth,
+and that's what makes the concept of a digital wallet a little bit different.
+If I happen to lose this, I haven't lost the money that's in it, because there's no money ever in it.
+All that money is is just a record on the blockchain, and, as long as I can recover that private key somehow, I can just get a new device,
+start using my private key again and keep right on trading.
+So, that's how public and private keys fit into blockchain; a very key component just to understand that they're used to sign and verify any transactions that you make.
+
+### Video 13 - Zero-Knowledge Proof - Cave Example
+
+In this section, we're going to talk about a cybersecurity idea in blockchain known as "Zero-Knowledge Proofs".
+Zero-Knowledge Proofs are exactly what the name implies - they allow me to prove to another party that I have a certain piece of knowledge without revealing what that knowledge is.
+Zero-Knowledge Proofs are often referred to as zk-SNARKs, which stand for "Zero-Knowledge Succinct Non-Interactive Arguments of Knowledge", or zk-SNARKs for short,
+or, if you want to be simple, we can just call them Zero-Knowledge Proofs.
+A great example of a Zero-Knowledge Proof is what we call the cave door analogy.
+Pretend that there's a circular cave, with only one entrance or exit and at the back of this circular cave there's a door which can be unlocked using a secret code entered onto a keypad.
+If I want to prove to you that I know the unlock code without revealing that unlock code to you,
+all I need to show is that I can walk into one end of the cave, open the door, and come out the other end.
+If I've successfully demonstrated that, then you know without a doubt I've been able to unlock that door,
+but yet I haven't revealed that unlock code to you.
+This simple cave door analogy is a Zero-Knowledge proof, and if you can remember this cave door analogy,
+then you'll understand why Zero-Knowledge Proofs are so important in blockchain.
+For example, a user may make a request to send another user some money.
+The blockchain naturally wants to make sure, before it commits this transaction,
+that the user sending the money has enough to send.
+However, the blockchain doesn't really need to know or care who is spending the money, or how much total money they have.
+Being able to answer a question of "Does a user have enough money to send to another user" without knowing who the user is, or exactly how much they have,
+is one of the primary use cases for Zero-Knowledge Proofs in blockchain.
+So, when you hear about zk-SNARKs, don't get intimidated.
+It's not a complex idea. Just think of Zero-Knowledge Proofs and the cave door,
+think about how important it is in blockchain to be able to prove a claim without actually revealing the information behind that claim,
+and you'll understand Zero-Knowledge Proofs.
+
+### Video 14 - Cryptographic Hashing Demo
+
+In this section, we're going to talk about cryptographic hashing.
+A cryptographic hash is a special kind of cryptographic function known as a one-way function,
+whereas most cryptographic functions are two-way, meaning that data cannot only be encrypted, but can be decrypted at the other end.
+Hashes, or cryptographic hashes, are very unique in that once data is encoded, it can never be decoded.
+Let's look at a small example of this.
+If we take a simple sentence, "Let's eat, grandma!", this input sentence will generate a unique 32-character hash output.
+This hash output can be thought of as an identifier for this input data.
+In other words, I can input this data into a hash function to generate this output, and I can share this output with anybody, anywhere,
+safe in the knowledge that it is mathematically impossible for anyone to reverse-engineer the original input from this hash output.
+In fact, the only possible way that anybody could ever determine what this input was,
+was by randomly inputting data into a hash function until they were able to recreate the same output.
+Another unique function of a cryptographic hash is that any small change to a dataset, no matter how small,
+will result in an entirely different hash.
+If I remove the comma from this sentence, not only do I entirely change the meaning of the sentence,
+I also generate a new 32-character hash output.
+This 32 character hash output remains a fixed length no matter how big the input dataset is.
+To demonstrate this, let's take the entire first book of Tolstoy's War and Peace, and paste it into our hash function.
+You'll see that the most time-consuming part of this is not generating the hash,
+but simply moving all the data from the clipboard into the input text box.
+I've generated a unique 32-character output or identifier for this input text.
+You'll notice that this is the same length hash that I got when I had a short one sentence input,
+and if I change anything in this extremely large dataset, even one character, I will generate an entirely new hash output.
+Let's take a look at this by removing the period at the end of this sentence, and replacing it with a question mark.
+You'll see that by doing so, I've generated a completely different and unique 32-character hash output.
+Hash functions not only play a critical role in blockchain security by enabling blocks to be linked together in creating immutability between data on the blocks,
+they can also be used as a great way to identify and verify large sources of data.
+Let's look at some other use cases.
+If I want to build a system which authenticates users, but I don't want to store their password directly in a database where it might be stolen or corrupted,
+a hash function can be a great solution.
+Let's say I have a very simple password, password123, but I don't want to store that password inside my authentication database.
+I can simply ask the user to type in their password and store the hash output from that password.
+Any subsequent time a user tries to log on, I don't need to know their password. I just need to verify that they're able to recreate this hash output.
+If they can't do that, because they have the wrong password, then I can simply choose not to authenticate them into my system.
+Cryptographic hashes can also be used to validate source code or real large datasets in the real world.
+Let's look at self-driving cars for an example.
+Let's say we've developed a self-driving car with the intelligence to hash the source code every time it starts up.
+My self-driving car, every time I start the car, can take its source code, run it through a hash and generate a unique identifier.
+It can then share this identifier or 32-character hash output with every other self-driving car it has contact with,
+or even validate this against a database or some other centralized data store, or perhaps an immutable record on the blockchain.
+This gives me the confidence that if the source code for my self-driving car ever gets hacked and makes it unsafe to drive,
+I'll know it right away. I'll try to start my self-driving car, which will immediately hash its source code,
+share that hash output with other self-driving cars or validate it against an authoritative source,
+and instantly we can see I've got an entirely different hash output letting me know before I've gone anywhere
+that my self-driving car is not safe, and putting that self-driving car into a limp or shutdown mode,
+where it simply refuses to go anywhere until the compromised software has been updated and replaced with the right version.
+Cryptographic hashes give us a way to link all blocks on the blockchain together in an immutable fashion,
+such that if any one particular block or the data on any block is changed or altered to any degree, no matter how small,
+we will know it instantly and we will break the link between that block and every subsequent block.
+If you haven't watched the module in this course that covers the in-depth walkthrough of Proof of Work consensus,
+you might want to check it out now.
+We actually show how cryptographic hashing is used to link together all blocks on the blockchain,
+creating a data store that is immutable, secure, and extremely trustworthy.
+
+### Video 15 - 

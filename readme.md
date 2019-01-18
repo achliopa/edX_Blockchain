@@ -113,3 +113,67 @@
 	* Double-Entry+Cryptography
 	* Validated, Secure, and Private
 	* Digitally Signed Receipts.
+
+### Lecture 8 - Island of Yap
+
+* Let's review an example on Yap Island:
+
+	* Alice agrees to trade Bob her stone by the pond in exchange for all of his cattle.
+	* Alice and Bob announce their transaction to the tribe.
+	* Everyone updates their mental ledger.
+	* From this point on, they agree that the stone by the pond is owned by Bob.
+
+* Alice tries to corrupt Carol, so that Carol’s ledger shows that Alice never gave up ownership of the stone.
+
+* Centralized ledger: Only one place to cheat.
+* Decentralized ledger: Carol will be outvoted by the rest of the tribe, and her version of the ledger will not be accepted.
+* If Alice wants to cheat, she will need a way to convince 51% or more of the tribe to accept an alternative ledger.
+
+### Section 4 - Cryptography
+
+### Lecture 9 - Cryptography and Hashing in Blockchain
+
+* Blockchain provides users with data integrity in a trustless environment.
+* This is accomplished using cryptography in a way that moves the burden of trust from data processors to cryptographic algorithms.
+* In this section, we will discuss some of the ways cryptography is used in the blockchain.
+* Let's explain the key terms use in cryptography:
+	* Secret: The data which we are trying to protect
+	* Key: A piece of data used for encrypting and decrypting the secret
+	* Function: The process or function used to encrypt the secret
+	* Cipher: The encrypted secret data, the output of the function.
+* The Secret and the Key are passed into the Function to create the Cipher. F(S+K) = C
+
+### Lecture 10 - Cryptographic Basics
+
+* What is a **cryptographic function**?
+	* A function for encoding or encrypting data to protect the contents from adversaries.
+* Simple example function:
+	* Secret = "Blockchain Training Alliance"
+	* Function = Swap each letter in the secret with a new letter according to the Key
+	* Key = "+2"
+	* Cipher = "Dnqemejckp Vtckpcpi Cnnkcpeg".
+
+* Blockchain makes use of several different **types of cryptography**. Among these are:
+* Public Key Cryptography : Pair of public and private keys used for encryption and digital signatures.
+* Zero-Knowledge Proof : Prove knowledge of a secret without revealing it.
+* Hash Functions : One-way pseudo-random mathematical functions and Merkle trees.
+
+### Lecture 11 - Public Key Cryptography
+
+* Public key cryptography uses a pair of a public key and a private key to perform different tasks. Public keys are widely distributed, while private keys are kept secret. 
+* Using a person's public key, it is possible to encrypt a message so that only the person with the private key can decrypt and read it. Using a private key, a digital signature can be created so that anyone with the corresponding public key can verify that the message was created by the owner of the private key and was not modified since. 
+* Blockchain makes extensive use of public key cryptography.
+
+### Lecture 12 - Zero-Knowledge Proof
+
+* Zero-knowledge proof is the ability to prove a secret without revealing what the secret is.
+* Let's review an example: Let's say there are two toy cars, identical in shape and size, except, one is red and one is blue. Jerry, who is color-blind, holds the toy cars behind his back. Jerry then shows one of the cars to Sam. Jerry then hides that car behind his back and shows Sam the other car. Sam can consistently detect the switch because the cars are different colors, but he never has to reveal the color of the cars to Jerry in order to prove the secret.
+
+### Lecture 13 - Hash Functions
+
+* Finally, hash functions feature heavily in blockchain. A hash function is a mathematical equation with four important properties:
+
+	* Hash functions can take anything as input and create an output with a fixed size. This makes it possible to condense anything into a piece of data of a fixed size and is how messages are condensed for digital signatures.
+	* It’s easy to calculate a hash, but hard to determine a hash input from the output. The best option is to keep trying inputs until one produces the desired output.
+	* Inputs that differ by a single bit produce hashes that differ by half of their bits on average. This prevents someone from finding a desired hash input using a “hill climbing”.
+	* It is infeasible to find two inputs that produce the same output when hashed. Since a hash can take any input and produce a fixed output, it makes sense that multiple different inputs will create the same output. A good hash function will make it so that you have to try a large number of inputs before finding two that produce the same output.
