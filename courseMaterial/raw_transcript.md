@@ -602,4 +602,6 @@ So, these kind of transparency solutions are one of the biggest benefits of bloc
 because right now there are a lot of consumers who would simply like more visibility into the products and services they purchase.
 And blockchain, both public and private, can be a great solution for doing that.
 
+## Section 6 - Immutability
+
 ### Video 18 - 
