@@ -492,4 +492,114 @@ you might want to check it out now.
 We actually show how cryptographic hashing is used to link together all blocks on the blockchain,
 creating a data store that is immutable, secure, and extremely trustworthy.
 
-### Video 15 - 
+### Video 15 - Merkle Tree, Validation of Data
+
+Blockchains use Merkle trees for fast and efficient validation of data.
+Merkle trees summarize the entire set of data in a block by creating a root hash of that data.
+A root hash is created by repeatedly hashing pairs of child nodes until only one node is left.
+Let's take a look at a diagram of a Merkle tree.
+This diagram consists of four transactions represented as transaction "A", transaction "B", "C" and "D".
+The transaction data is then hashed and the resulting hashes are stored in leaf nodes represented as H of "A", "B", "C" and "D".
+Nodes are repeatedly hashed in pairs and the resulting hashes are stored in child nodes until only one node remains: the Merkle root or root hash.
+The reason you wouldn't want to hash the entire set of data as a string is because it's not efficient when validating transactions.
+In this example, if Alice needed to show Bob that this transaction was valid, let's say transaction "C", Alice would need to send the entire list of data to validate the block.
+But when using a Merkle tree, Alice only needs to send the nodes that contain the transaction that she is looking to validate.
+Let's say Alice wants to validate transaction "F".
+Alice would only need to send the data of transaction "F" and four hash values to Bob.
+Bob would then calculate the hash value based on the given information.
+And if the root matches the block, the transaction can be assumed to be valid.
+Merkle trees allow for validation of a specific transaction without requiring the entire set of data.
+
+## Section 5 - Transparency
+
+### Video 16 - Disintermediation - Trust Through Transparency
+
+Now, that we have an understanding of how collaboration and cryptography work together to create a layer of trust,
+let's discuss how blockchain has a powerful disintermediation effect.
+Nodes on the network are allowed to place data directly onto the database that is shared.
+This eliminates the need for an intermediary to do such task.
+As we discussed, developers can create a distributed ledger on a blockchain,
+and use cryptography to give people secure storage space on that ledger.
+This creates a very different world than what we have come to know today,
+because for the first time in the digital world, people are allowed to own their own data.
+You may be asking yourself: "How is this different from the current technology?".
+Today, organizations use our data, sell our data, store our data, and exchange our data.
+Data is an extremely powerful asset and to own your own data is a vast change to the current system.
+In a world powered by blockchain, having ownership of your database is truly empowering.
+You can now share the information that you choose with any organization that you desire.
+The power of blockchain and owning your own data is the ability to transact peer-to-peer.
+With the current system of intermediaries, when you go out to eat at a restaurant,
+and you pay with your credit or debit card, you're not paying the restaurant directly.
+Instead, a database record at your bank is being debited and the database record at their bank is being credited.
+In this example, the value and data in the database belong to the intermediary, and not the individual.
+You are then dependent upon them to secure and validate your transaction, which shifts the power to the intermediary.
+But in a blockchain world, the individual has their own ledger record,
+and the secure key that allows them to access it.
+You no longer need an intermediary.
+A transaction is simply debited from your record and credited directly to somebody else's record.
+Blockchain allows you to have the power to control more than financial transactions.
+Later, we'll take a deeper dive into how the healthcare industry may utilize blockchain to allow people to own their own health records.
+And with blockchain, you can determine who can access those records.
+We talked about how cryptography and collaboration create trust.
+Now, let's examine how peer-to-peer transactions with blockchain create transparency which can lead to even another layer of trust.
+This layer of trust can aid to curb corruption and even create cost savings.
+Currently, the data and records owned at centralized organizations are stored and hidden within a database.
+These databases for the most part are inaccessible and do not communicate in an effective manner with other systems.
+This also makes it easier for a corrupt individual or persons within the centralized organization to manipulate these records.
+Because of the possibility for manipulation and foul play, there are many flawed and expensive safeguards put into place.
+These safeguards are done through regulations and legal requirements creating expensive overhead and delays.
+Besides the mounting cost to safeguard these internally, there are also many necessary safeguards from external forces,
+because they are individual points of critical data storage, bad actors have to identify only one point of failure to access.
+The combination of one central point of storage and the storage of valuable data make these centralized databases a very enticing target for malicious persons.
+With blockchain, these malicious actors would have to identify and target numerous points of failure until they control more than 51% or what's known as consensus.
+In most blockchains, it could be up to hundreds of thousands of points of weakness that would have to be exposed to be corrupted.
+It's nearly an insurmountable task.
+Not only must a centralized organization worry about bad actors, but they must do so, while still allowing access and synchronizing with other centralized organizations.
+Having to constantly update and synchronize data across many centralized databases is not efficient.
+The cost is high and the vulnerability to bad actors is amplified.
+All the more reason blockchain solutions are so exciting.
+Blockchain offers efficiency. It also creates trust and financial benefit through transparency, security, immutability, and accessibility through ownership.
+
+### Video 17 - Transparency
+
+One of the big benefits we get in any blockchain solution, public or private, is the idea of transparency.
+In a public blockchain solution like Bitcoin or Ethereum, because they're anonymous and we have no concept of identity, we have no way of treating users differently.
+And so all data on a public blockchain is transparent and visible to all other participants.
+And this is really important. It adds a lot of value, when we're talking about exchanging currency or tokens of monetary value,
+because as long as we can protect the anonymity of the participants, it gives us a great way for anybody to validate the details of any transaction on a ledger
+that is immutable, permanent, can't be changed and offers a high degree of trust.
+This also has a lot of other really interesting potential use cases that we're starting to explore with public blockchain technology,
+voting and voter registration, tracking election results.
+These kind of things are really, really great use cases for having that level of public transparency.
+On public blockchains, there's another kind of transparency, which adds a lot of value as well, and that is full transparency into the smart contracts that execute on that blockchain.
+These, oftentimes, are smart contracts which have the potential of working with other people's money,
+sometimes large amounts of other people's money, and if you're going to entrust your hard-earned money into someone else's smart contract,
+it's really nice to have the ability to be able to go and review the source code of that smart contract,
+either yourself or by hiring a developer to audit that smart contract, to make sure it's written fair,
+that there are no security vulnerabilities, and that it does what it claims to do.
+On the private blockchain side, what we have [is] permissioning.
+And we can control how open or closed our data is.
+We still have a lot of benefits of being able to share data in shared infrastructure that private blockchain creates.
+There are a lot of business networks and value chain relationships where the participants would love to be able to share more data
+and more information with consumers about the business processes and the steps that go into delivering the goods and services we consume.
+What has traditionally prevented solutions like this is the lack of any kind of shared infrastructure.
+While technically conventional technology may be able to address these concerns,
+it is oftentimes human beings not being able to come to consensus on questions of who owns the platform, who builds the platform, who maintains the platform.
+And, if a participant leaves the ecosystem, do they take all or part of the platform with them.
+That have prevented us from using conventional technology in these respects.
+Using private blockchain solutions like Hyperledger, can help alleviate many of these concerns and create a truly shared technical infrastructure between organizations.
+This allows participants in a supply chain or value chain to track data and to share that data about how goods and services are produced,
+created, consumed, and distributed into the open market, that we haven't really been able to do practically before.
+It's estimated that over 1/3 of the food we produce goes to waste, because we don't have this kind of clarity into our supply chain with food or into the supply chain with other types of products.
+Think about if a meat gets recalled because it might be contaminated, how much perfectly good meat gets thrown away just to err on the side of caution.
+Where if we just had greater resolution and visibility into where that product originated from and how it went all the way from production to our plate.
+Then, we could issue more accurate recalls and reduce the amount of food waste.
+Consumers might value your product more, your offering more, if they're able to see where it comes from.
+If you're manufacturing and distributing clothing, and you can demonstrate to consumers that all of that clothing was
+sourced from parts of the world with fair labor practices consumers are going to
+have more trust and faith in the brand and ultimately willing to pay a higher price for it.
+So, these kind of transparency solutions are one of the biggest benefits of blockchain and one of the areas being most explored,
+because right now there are a lot of consumers who would simply like more visibility into the products and services they purchase.
+And blockchain, both public and private, can be a great solution for doing that.
+
+### Video 18 - 

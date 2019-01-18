@@ -177,3 +177,55 @@
 	* It’s easy to calculate a hash, but hard to determine a hash input from the output. The best option is to keep trying inputs until one produces the desired output.
 	* Inputs that differ by a single bit produce hashes that differ by half of their bits on average. This prevents someone from finding a desired hash input using a “hill climbing”.
 	* It is infeasible to find two inputs that produce the same output when hashed. Since a hash can take any input and produce a fixed output, it makes sense that multiple different inputs will create the same output. A good hash function will make it so that you have to try a large number of inputs before finding two that produce the same output.
+* [Hash Demo](https://blockchaintrainingalliance.com/pages/lab-hash)
+
+### Lecture 14 - Merkle Tree
+
+* A special type of data storage structure based on hash functions is called a Merkle tree:
+	* It is structured as a binary tree; the leaves contain the values to be stored andeach internal node is the hash of its two children.
+	* It provides efficient lookups and protection against forgery since verifying a transaction is included in the tree. Can be accomplished by sending only the transaction, the hash contained in each node between the transaction leaf node and theroot, and the hash values used to create each hash sent.
+	* Looking up a transaction in a Merkle tree with three levels includes sending two transactions (the desired one and the other child of its parent) and three hashes (the transaction’s parent, the root, and the root’s other child).
+
+### Lecture 15 - Ethereum vs. Hyperledger Fabric: Cryptography Usage
+
+* Ethereum and Hyperledger Fabric are two blockchain systems that are taking different approaches to moving business to the blockchain. On the next few pages, we will compare how Ethereum and Hyperledger Fabric make use of:
+	* Public key cryptography
+	* Zero-knowledge proofs
+	* Hash functions.
+* The use of public keys for identity management is a logical choice since knowledge of a public key is necessary for verification of digital signatures. Both Ethereum and Hyperledger Fabric use digital signatures on transactions and blocks to verify the identity of the creator and that the signed data has not been modified since signing. Public key cryptography is used in the blockchain as a method for managing users’ identities without revealing real world identities.  
+	* In Ethereum, users are identified by an address that is directly related to the user's public key. This provides identity verification while preserving anonymity.  
+	* In Hyperledger Fabric, users are identified via X.509 certificates. These certificates provide several pieces of information about the user, but one of these is also the user's public key.
+* Zero-knowledge proofs are a cryptographic principle used in some blockchains to increase the privacy of users. Currently, Ethereum does not have support for zero-knowledge proofs, but adding the necessary functionality for zkSNARKS, a type of zero-knowledge proof, is currently included in the Ethereum development roadmap. Hyperledger Fabric does not currently support zero-knowledge proofs as a privacy feature.
+
+### Lecture 16 - Ethereum vs. Hyperledger Fabric: Hashing Usage
+
+* Hash functions are at the core of all blockchain technology. One of the primary uses for hash functions is chaining blocks together. In both Ethereum and Hyperledger Fabric, blocks include the hash of the previous block to tie the blockchain into a cohesive whole.
+* Merkle trees are a data structure that allows authenticated storage with efficient data retrieval. Both Ethereum and Hyperledger Fabric are smart contract platforms that use a particular type of Merkle tree called the Patricia tree to store the current state of their virtual machine.
+* Hash functions are used as the cryptographic puzzle at the center of the Proof of Work consensus algorithm. Ethereum currently uses Proof of Work for consensus, though a switch to Proof of Stake has been built into the road map from the beginning. There are only two consensus alogrithms implemented in Hyperledger Fabric - Solo and Kafka. SOLO is for development and Kafka is for production. 
+
+## Section 5 - Transparency
+
+### Lecture 17 - Transparency of Traditional Databases
+
+* Traditional databases using the CRUD update model have four main operations: (Create, Read, Update, Delete)
+* Traditional databases do not retain historical information:
+	* Only the most recent versions of each value is visible.
+	* Deleted values are not visible in the database.
+* This limits the transparency of data contained in the database:
+	* Values can be modified or deleted after creation.
+* The CRUD update model of databases allows data to be changed or removed from the database. This means that the visible data in a database is not an accurate historical record of the database. The existence of an Update operation means that each value in the database is only the most recent version of that value and could have had different values in the past. The Delete operation means that values can be removed from the database.
+* This limits the transparency of data in the database since values can be modified or deleted after creation.
+
+### Lecture 18 - Transparency of a Blockchain
+
+* The blockchain is designed to be a data structure that only allows appending:
+	* The past history of the blockchain is visible and immutable.
+	* Updates to the blockchain can be performed by including them in new blocks added to the blockchain.
+* The blockchain is designed as a data structure where each block in the chain locks in the value of the previous block and so on, back to the first or genesis block. This means that the blockchain is an append-only data structure without support for modification or deletion.
+* The entire history of the blockchain is publicly visible and stored in a distributed and decentralized fashion. Values in the blockchain can be “updated” by appending a new version of that value in a later block, but the complete history of the value is preserved.
+* The blockchain is designed so that its entire history is visible and unchangeable. Transactions in the blockchain cannot be modified after creation, and their complete history is publicly visible. This means that the blockchain is a completely transparent data structure with the useful property that the integrity of the blockchain is easily verifiable by any user.
+
+### Lecture 19 - Transparency: Databases vs. Blockchain
+
+* Traditional databases and the blockchain were created for different purposes and have different levels of transparency. Traditional databases have low transparency since values can be modified or deleted; however, this changeability allows them to store data in an efficient manner, with only the most relevant versions of each value retained in storage.
+* The blockchain is publicly visible and immutable, meaning that it has very high transparency. Its append-only structure and decentralized storage sacrifice storage efficiency for trustworthiness of the stored data.
