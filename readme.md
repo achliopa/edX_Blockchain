@@ -358,3 +358,71 @@
 * [Public Blockchain vs Private Blockchain for the Enterprise Webinar](https://blockchaintrainingalliance.com/blogs/news/ethereum-vs-hyperledger)
 * A public blockchain is really a permissionless blockchain. Anyone can effectively join the blockchain, meaning that they can read, write, or participate with a public blockchain. Public chains are decentralized, no one entity has control over the network, and they are secure in that the data can't be changed once validated on the blockchain.  
 * A private blockchain is really a permissioned blockchain. Permissioned networks place restrictions on who is allowed to participate in the network and in what transactions.
+
+### Lecture 29 - Public Blockchain Benefits
+
+* The benefits of public blockchain are:
+	* Open Read and Write : Anyone can participate by submitting transactions to the blockchain, such as Ethereum or Bitcoin; transactions can be viewed on the blockchain explorer.
+	* Ledger Is Distributed : The database is not centralized like in a client- server approach, and all nodes in the blockchain participate in the transaction validation.
+	* Immutable : When something is written to the blockchain, it can not be changed.;
+	* Secure Due to Mining (51% rule) : For example, with Bitcoin, obtaining a majority of network power could potentially enable massive double spending, and the ability to prevent transaction confirmations, among other potentially nefarious acts.
+
+### Lecture 30 - Private (Permissioned) Blockchains
+
+* Lets discuss what private blockchains are and why they are utilized by enterprises:
+	* Private blockchains are also referred to as permissioned or enterprise blockchains. Enterprises need to ensure some level of security, privacy, compliance, performance, and many of the properties that a private blockchain can provide.
+	* Can be open sourced, consortium, or privately developed. There are many options for a private blockchain, and the most common ones are R3 Corda, Hyperledger, and Quorum.
+	* Transactions are processed by select nodes in the blockchain. From a performance perspective, this is where having only a few nodes process transactions vs. 14,000 nodes in Ethereum’s case can really create a performance gain around latency and transaction speed.
+	* Transactions are not publicly viewable (transparent) in the blockchain, and only select nodes can access the ledger.
+	* Locally distributed, examples include: R3 Corda can transact between nodes, and the rest of the blockchain does not participate.
+
+* The benefits of private blockchain are:
+
+	* **Enterprise Permissioned**  : The enterprise controls the resources and access to the blockchain, hence private and/or permissioned.
+	* **Faster Transactions** : When you distribute the nodes locally, but also have much less nodes to participate in the ledger, the performance is faster. 
+	* **Better Scalability** : Being able to add nodes and services on demand can provide a great advantage to the enterprise.
+	* **Compliance Support** : As an enterprise, you likely would have compliance requirements to adhere to, and having control of your infrastructure would enable this requirement more seamlessly.
+	* **Consensus More Efficient (less nodes)** : Enterprise or private blockchains have less nodes and usually have a different consensus algorithm, such as [BFT](https://en.wikipedia.org/wiki/Byzantine_fault_tolerance) vs. POW.
+
+### Lecture 31 - Public and Private Blockchain Decisions
+
+* When it comes to decision making around what blockchain model to use, it's important to understand the considerations:
+	* Governance: How is the application oversight occuring?
+	* Integration: How does the blockchain work with you existing applications and can smart contracts be used?
+	* Smart Contract: Dows your enterprise plan on using smart contracts?
+	* Cryptocurrency Requirement: Enterprise blockchains generaly don't use cryptocurrency so that can help you decide
+	* Consensus Algorithm: The algorithm can be very different if you're going to have miners vs enterprise nodes
+	* Costing Model: Costs burdened by the enterprise or chared among a consortium
+
+## Section 10 - Blockchain Flow
+
+### Lecture 32 - Blockchain Prehistory to Early History
+
+* **Architecting** : Blockchain architect designs and builds blockchain network:
+	* Optionally, traditional databases are set up to store data off-chain.
+	* Optionally, external processors are set up to allow blockchain to offload computation if necessary.
+	* Optionally, peer relationships are set up with external systems via system integration.
+
+* **Operators** : Once blockchain software has been developed, operators create wallets to hold their credential and are on-boarder through the Management Services system to create the peer network. This network stores,maintains and updates the blockchain's distributed ledger
+
+* **Users** : Users can also join the blockchain by setting up wallets and being on-boarded by Management Services to fill their intended roles. This includes Developers and Regulators, who take a more active role in the blockchain than the standard user.
+
+* **Developers and Smart Contracts** : In order for the blockchain to have functionality that the user can use, smart contracts need to be created on the blockchain. developers desing, implement and upload these smart contracts to the blockchain for the users to interact with
+
+### Lecture 33 - Blockchain Transaction Flow
+
+* **Smart Contract Triggered** : To begin, a blockchain user performs an operation that should be stored on the blockchain. This can be accomplished by interacting with software that interfaces with a smart contract on the blockchain.
+* **Operators Spread Transaction** :  Once the smart contract is triggered, the relevant code is encapsulated in a transaction, which spreads to all blockchain operators through peer-to-peer transactions on their network.
+* **Collections of Previous and Creation of New** : Through the blockchain’s consensus mechanism, one of the blockchain operators is selected to be the creator of the next block on the blockchain. This operator collects all of the transactions created since the previous block into a new block, and finalizes the new block.
+* **Spread New Block** : This block is spread throughout the peer network through the same peer-to-peer communications as transactions.
+* **Execute Code** : When block operators receive a copy of the new block, they add it to their copy of the distributed ledger and execute the smart contract code included in each transaction in the block. This guarantees that all members of the peer network agree on the current state of the blockchain’s distributed computer.
+* **Operation Complete** : The user’s wallet monitors for the creation of new blocks that include transactions associated with the user. When a block containing the completed code from the user’s operation is received, an event is created to notify the user that the operation is complete.
+
+## Section 11 - Consensus and Fault Tolerance
+
+* The blockchain is a distributed and decentralized system, which means that it needs to have a way of tracking the official current state of the system. Since the blockchain can include financial transactions and business agreements, it is important that all parties involved are in sync regarding the terms of the agreement.  
+
+### Lecture 34 - Introduction to Consensus in the Blockchain
+
+* The blockchain is designed to be a shared, synchronized historical ledger, meaning that there needs to be a final decision at some point on what should and shouldn’t be included in the official record. Since blockchain is decentralized, there is no "higher authority" that can rubber-stamp and finalize the contents of a blockchain block.
+* The method that Satoshi Nakamoto, the creator of blockchain, invented to achieve consensus is based on **scarcity**. In one way or another, blockchain consensus algorithms boil down to some kind of vote where the number of votes that a user has is tied to the amount of a limited resource that is under the user’s control. Based on the economic Laws of Supply and Demand, collecting enough of an asset to have a controlling share will drive up the price of the asset enough to make achieving that level of control unfeasibly expensive.

@@ -796,4 +796,112 @@ And, if a user has a currency, something of value, they should be able to exchan
 We don't want to treat any class of users differently than any others in those scenarios.
 So, that's a public blockchain, and that's a very different animal from the private permission blockchain.
 
-### Video 23 - 
+### Video 23 - Private (Permissioned) Blockchains
+
+So, the counterpart to a public blockchain is naturally a private blockchain.
+These are platforms like Hyperledger or Hashgraph.
+And private blockchains are more specifically known as permissioned blockchains.
+When we talk about private blockchain or when you hear folks talking about private blockchain solutions, they tend to be talking about things on the private and closed end of the spectrum.
+We want to control who can write data to this blockchain, and we want to control who can read data from this blockchain.
+And in order to do that, the first step is identity.
+If we don't know who a user is, it becomes difficult, if not impossible, to define rules about what data they can commit to the ledger and what data they can consume from the ledger.
+So, when we talk about private blockchain, just think about permission blockchain, the blockchain which right from the beginning is an idea of who you are.
+And this is very different from a public platform like Ethereum, in which the platform tries to protect and maximize anonymity.
+And we, by design, don't know who a user is, unless we build in that kind of identity management scheme.
+Private blockchains tend to come with identity management tools or a modular architecture, where you can plug in your own identity management solution.
+This can be anything from an Active Directory deployment to an OAuth solution using Google, Facebook, LinkedIn, etc.
+Just understand the idea behind the private blockchain.
+All begins with understanding who a user is, because once we understand who a user is,
+we can determine what role they're in, and we can use that role to determine what information should they and should they not have access to.
+This also changes the incentive for good behavior a little bit in a public blockchain, because we don't know who a user is.
+We rely on economics and game theory incentives to ensure that everybody in the system behaves honestly and according to the rules.
+We set up situations through group consensus, which we discuss in other sections in this course, through which honest participants are economically rewarded,
+where dishonest ones only incur work or cost, with no possibility of ever recouping that cost.
+In a private permission blockchain, we rely on the fact that we know who a user is.
+So, in a corporate scenario, blockchain for the business, blockchain for supply value chains, because we know who an individual is, what organization they're associated with and what their role is,
+we also assume that they're going to behave fairly aboveboard, because if not, we know exactly who's misbehaving and they know that they're gonna suffer the consequences for that.
+So, public and private blockchains, two very, very different offerings.
+A lot of people make the impression, get the impression that they compete with one another, when really they don't.
+They just serve to provide different types of solutions and enable different kinds of products and offerings to be built on top of them.
+
+### Video 24 - Public and Private Comparison
+
+So now that we've talked about public and private blockchains, what those terms mean, and again, you can think of that as permission versus permissionless blockchains,
+we can talk about some of the differences and what each different type of platform aims to provide.
+So, public blockchains are really good for scenarios where protecting the anonymity of users is important or adds value to the solution,
+and they're really great platforms for solutions where all users should be treated equally.
+And we can see this, because most public blockchains right now are used to support cryptocurrencies, and this is a real great use case.
+With a cryptocurrency like Bitcoin, Litecoin, Ethereum, etc., we don't want to have any permissioning or role-based access.
+Anybody should be able to own some Bitcoin.
+Anybody should be able to trade it with anybody else, and it's not necessarily important that we know who the participants in any transaction are.
+And so that leads to an open permissionless model with full transparency.
+This is very different in the corporate world, where we see private blockchains being adopted at scale, because the concerns are the opposite.
+In a corporate scenario, in a business scenario, anonymity is a bad thing.
+I want to know exactly who all the participants are, and I need to know who they are, because I don't want full transparency.
+I don't want to share all my business data with all the participants in my business network or the general public at large.
+I want to control who sees what type of information under what circumstances, and I also want to control who is able to contribute that information onto the blockchain.
+So, I might use a private blockchain solution to manage supplier-vendor relationships, where only myself and my suppliers can see the price that I'm paying for a certain item.
+Only a particular supplier gets to see the details of the contract that I have with them, and not the details of a contract I have with any other suppliers.
+And I may wish to share some of this high-level macro data with consumers, so that they can see the origins of the products they're buying, but of course I'd want to hide the financials behind all that.
+So, when we look at how these two solution types differ, we see the public blockchains tend to focus more on B2C or business to consumer scenarios,
+whereas private blockchain offerings like Hashgraph, Hyperledger, really lend themselves well to B2B scenarios, supply chain, value chain relationships
+or creating any kind of shared infrastructure between enterprises.
+So, just understand that, well, there's a big misconception that these are competing offerings.
+They're really not and many real-world use cases use components of both.
+It's important to understand the difference between them and it really all starts with identity management.
+So, when you're thinking in your head about public versus private blockchain understand that it all begins with identity management,
+and in a private blockchain I know who all the participants are right from the beginning.
+In the public blockchain, again, I don't know who those participants are, and that's not to say that I can't build a permission solution on a public platform,
+but myself, my architects, and my developers are gonna have to develop the logic and the mechanisms behind identity management.
+So that's public and private blockchain. Two very, very different animals.
+They serve vastly different purposes and as you start to dig into a lot of real-world use cases, what you're going to find is many use cases make use of both types of blockchain integrated seamlessly.
+
+## Section 10 - Blockchain Flow
+
+### Video 25 - Blockchain Transaction Flow
+
+In this section, we'll discuss the blockchain transaction flow.
+Regardless of the blockchain technology, the flow of data through a blockchain will remain relatively the same, at least at a high level.
+It will all start with a blockchain user performing an operation that should be stored on the chain.
+The operation will trigger a smart contract, or it will trigger chaincode.
+In either case, the code will be executed on the actual blockchain itself.
+The output of this code will result in a transaction, and that transaction is what we intend to be stored on the blockchain.
+Next, the blockchain operators using protocols that will be specific to the specific blockchain that's running on will spread that transaction throughout the blockchain network.
+The block creators will collect all of the transactions and it will create a new block.
+In most blockchains, this is the job of the miner and is the output of the mining process.
+The block operators will spread the block through the peer network to update the ledger copies once consensus has been achieved.
+And this results in the block operators again executing code included in transactions within the block to update their own copy of the internal state of the blockchain.
+The users will be notified of an event from a blockchain creation via an event.
+
+### Video 26 - Consensus
+
+So, one of the most important components to blockchain is this idea of group consensus.
+As we talked about in an earlier module, blockchain is inherently a very inefficient system.
+We're asking multiple nodes, sometimes tens of thousands of computer nodes, to all repeat the same work: they're all keeping a copy of the same data.
+And the reason we agree to this tremendous inefficiency is because if we can get all or most of those nodes to agree on what the truth is.
+We can have a lot of trust that that's actually the truth, that that record hasn't been tampered or altered or changed in any way.
+So, consensus is one of the underpinnings of blockchain.
+There are several different methods we use right now to have all these nodes reach consensus.
+Essentially, when we talk about consensus, you can think of every block in a blockchain as being like a sheet of paper.
+It's got a fixed amount of space. We write a transaction on every line, and when that sheet of paper is full,
+it's important that we all, as a group, come together and compare our different sheets and select the sheet or the version of paper that the majority agree with.
+And so, there are several different methods that we use to come to consensus on a block.
+The oldest and most widespread method is what's called Proof of Work.
+And you'll see in another module, we actually dive into Proof of Work hands-on, and show you live what Proof of Work looks like and how it actually works.
+Proof of Work has served us well for the past nine, almost ten years, got its start in Bitcoin, and it's used in every major public and most private blockchain offerings.
+But we're also starting to see some of the limitations of Proof of Work.
+One of the big limitations behind Proof of Work right now is how big and how fast it can scale.
+Currently on Proof of Work blockchains, we're able to process somewhere between 50 and 20 transactions worldwide per second,
+which may sound like a lot until you realize that modern payment processing networks like Visa can scale up to over 70,000 transactions a second.
+So, in order to compete with conventional technology, blockchain really needs to add a few more orders of magnitude to that transaction rate.
+There are many proposed alternative consensus methods for how we might be able to reach that kind of scale.
+There are things in production right now like Tangle which use a blockless solution,
+and they're also new and emerging consensus methods like Proof of Stake, or Proof of Activity that we're currently examining to take the work out of Proof of Work.
+We also have another module in this course where we talk about Proof of Stake, and then another one where we compare Proof of Work versus Proof of Stake.
+So, if you're curious about any of the details of how these consensus mechanisms are actually implemented,
+be sure to check out those modules.
+But the takeaway point to understand is that, it's this consensus, it is this idea of asking all of these nodes, potentially tens of thousands of nodes,
+to all repeat the same work and then periodically come together and agree on whatever the majority select the right version of the truth to be.
+That gives blockchain that high level of trust and that makes it such a secure record store.
+
+### Video 27 - 
