@@ -1086,5 +1086,177 @@ In Hyperledger (Fabric) and Corda, identity is encoded in x.509 certificates, wh
 In Corda, specifically, certificates can either be public, which means that they are published to the blockchain,
 or confidential, meaning that they are only shared with the parties that the owner performs transactions with.
 
-### Video 30 - 
+### Video 30 - Anonymity in the Blockchain
 
+In this section, we'll discuss anonymity on the blockchain.
+Privacy and anonymity on the blockchain are a crucial part of its success in some applications.
+If individuals or organizations are performing transactions on the blockchain,
+they may not wish this to be public knowledge.
+Different blockchains have different levels of anonymity and privacy built into the protocol.
+As discussed earlier, public key cryptography is at the center of maintaining identity on the blockchain.
+It uses a pair of public and private keys to make encryption and digital signatures possible.
+At this point, we need to take a look a bit more into the relationship between a user's keys and a user's actual identity.
+The first thing to consider is that there is nothing about a public key that ties it to its corresponding private key.
+We've said that a digital signature verifies that an owner of the corresponding private key created the signature, but that is all that it says.
+Since private keys are secret, obviously it can't be possible for someone to determine a private key from a public key, at least it shouldn't.
+If you know a user's private key, you can calculate the public one, but the reverse is not true.
+The other thing to keep in mind is that private keys are just numbers, and can't be tied to a person's actual identity, their real-world identity.
+Identity on the blockchain is just possession of the relevant private key,
+and even if someone guesses or steals that private key, they can't learn its owner's actual identity from it directly.
+The original blockchains did not have much in the way of privacy and anonymity protection.
+You can't tie public keys to private keys or private keys to real-world identities,
+which means that blockchain users have a limited amount of built-in privacy.
+However, every transaction on the blockchain is public and stored there forever.
+This means that a lot of information about the users' identity could be learned through sifting through the data stored on the blockchain to obtain the metadata.
+Based on the repeated transactions to places like a coffee shop or a market, someone could get an idea of where an individual lives and their habits.
+For businesses, repeated transactions may indicate business relationships that may lead to a loss of a competitive advantage if leaked.
+On basic blockchains, anonymity only goes so far.
+The limited level of anonymity and privacy protections available on the original blockchain has inspired development of enhancements that increase privacy,
+while still allowing transactions to be verified and validated publicly on the blockchain.
+This is an incomplete list of some of the mechanisms developed and implemented in various blockchains.
+We'll start with zero knowledge proofs.
+They use cryptography and cryptographic algorithms to allow a user to prove knowledge of a secret without revealing the actual secret.
+A common example of this type of proof includes a colorblind person and two objects identical except for the color.
+The colorblind person shows one object to the prover, conceals both objects, and then shows one to the prover again.
+The prover then says whether or not they are the same object.
+Since the only way of determining this reliably is that the objects are different colors,
+the prover can prove the difference in colors without revealing the color of either object.
+Another approach is stealth addresses.
+Stealth addresses involve using one-time addresses to perform transactions on the blockchain.
+A stealth address is just a one-time address that makes it impossible to link a transaction to a known account.
+What this does is prevents the data mining attacks on privacy that we discussed earlier.
+We mentioned previously that transactions are digitally signed .
+With ring signatures, all that can be determined from a transaction is that a member of a group signed it, but not the particular member.
+The ability to see who is performing transactions with whom is dangerous to user privacy and anonymity.
+Protocols like CoinJoin mix several transactions together, so that it is difficult to pair senders with recipients.
+Confidential transactions take advantage of homomorphic encryption,
+which makes it possible to perform mathematical operations on encrypted data.
+This means that the data contained in a transaction can be hidden from the public, while still allowing the network to verify that the transaction is valid.
+Now, let's discuss how different blockchains implement the various privacy and anonymity mechanisms available.
+We start with the Ethereum.
+Ethereum does not currently implement many real advanced options for privacy or and/or anonymity.
+In the current version, user anonymity is limited to the fact that no one can tie a public key to a real-world identity.
+This is intended to change in the future though, and the Ethereum roadmap currently includes laying the groundwork for implementing zero knowledge proof.
+Hyperledger (Fabric) provides several options for privacy and anonymity.
+At the lowest levels, users can achieve increased anonymity through channels which can further encrypt the data that's stored on the channel using keys only available to members of the channel.
+At the next level, Hyperledger Fabric also allows users to perform private transactions.
+In a private transaction, data is stored on the cloud, but the hash of the data is stored on the blockchain.
+This allows users to use the blockchain to ensure data authenticity without storing the actual data publicly on the blockchain.
+Finally, Hyperledger supports zero knowledge proof, where a prover can demonstrate possession of some data without revealing the data itself.
+These different levels of privacy and anonymity protection gives users a higher degree of configurability on the Hyperledger Fabric blockchain.
+Finally, Corda allows users to perform transactions either as a party or an anonymous party on their blockchain.
+An anonymous party has the same level of anonymity protection as a basic blockchain,
+relying on the fact that public keys cannot be tied directly to real-world identities.
+A party on the Corda blockchain reveals the real-world identity of the user which intentionally sacrifices anonymity for identity validation.
+
+## Section 14 - Trust and Trustless
+
+## Chapter Summary
+
+Blockchain is a digital decentralized ledger.
+
+Blockchains are important because they provide a safe and secure way for people to make any type of transaction without having to trust anyone.
+
+Blocks in a blockchain can be thought of as a sheet of paper. Blocks, just like paper, can hold any type of data on them.
+
+When blocks fill up with data, transactions are hashed into what is known as a Merkle tree. Merkle trees provide for an easy way to find any specific transaction in a blockchain.
+
+A hash function is a one way function that takes any type of data and converts it into a unique character code. Merkle trees use hashing to convert every transaction in a block into a 20-digit character code known as the Merkle root. Hashes are also useful when comparing large amounts of data.
+
+A block header is a hash of many things determined by the blockchain, but most frequently consists of the previous block header hash, the Merkle root of the current block, and the timestamp.
+
+By including the previous block's header hash, blocks are “chained” together.
+
+Chaining is important because blockchains are kept on millions of nodes across the network.
+
+Chaining allows blockchains to easily check and see if any data was altered just by comparing the hash of the current header. If the hash is the same on every node, then the blockchain is the same. If the header hash is different in any way, then the different hash’s blockchain is updated to match the majority of blockchains. This is what makes blockchains fault tolerant and immutable.
+
+Blockchains are fault tolerant because if any one node loses track, it will be updated to match the majority of nodes running the current blockchain.
+
+Blockchains are immutable because the data on a block can never be changed or deleted.
+
+Contrary to a traditional database, every transaction on a blockchain is made public, and everyone can write onto a blockchain. This requires users to be anonymous to avoid identities being tied to a specific transaction.
+
+Anonymity is achieved through public key/private key cryptography. Your private key is for your eyes only. Your public key can be shared with the public. Your public key is the address you receive and send transactions from. To prove that your public key is associated with your private key, a digital signature is used. A digital signature uses math to show a relation to your public key from your private key, without revealing your private key.
+
+Anonymity poses a problem when it comes to trust. How can we be 100 percent certain that anonymous users are being honest when adding transactions to a ledger that once added, cannot be changed or deleted. The answer is to validate every transaction before adding them to the chain. This problem of validation is often referred to as the byzantine general’s problem, and the solution is found with consensus algorithms like Proof of Work and Proof of Stake. These consensus algorithms take advantage of the fact that the majority of users on a blockchain have a common interest to keep the blockchain honest. We will go further into some consensus methods in chapter 2.
+
+Not all blockchains use anonymity however. Private blockchains allow for the use of permissions to control who can read and write onto a blockchain. Private blockchains often require trust, but are much more efficient due to the lack of need for a consensus algorithm like Proof of Stake. A private blockchain would be useful when you want an extra layer of transparency and higher level of security than a traditional database might be able to offer. 
+
+# Chapter 2 - Governance and Consensus
+
+## Section 1 - Standard vs. Blockchain Governance
+
+### Video 31 - Governance Explained
+
+Governance is anything that allows you to maintain, update, or recover a network.
+And, why do you need to care about this?
+Well, we know in the real world things go wrong.
+We need to be able to recover from those issues or, for instance, we need to update our network or our lives. Right?
+So, we have governance in terms of governments in the real world and governance also comes in different flavors in the blockchain world.
+It comes in off-chain and on-chain, and my friend Dylan is gonna tell you all about that.
+That's where I come into play. So, we have some papers here that I'm going to explain and show you.
+First, we have a paper that's showing key terms. So, we have key terms and extra credit.
+So, key terms, first is going to be on-chain, off-chain, and Bitcoin Improvement Proposals (BIP). This is the terms.
+And extra credit is going to be liquid democracy, you can google this later, futarchy, which is that one,
+DAOs which is a Decentralized Autonomous Organization, which we'll touch on another video, and the last one is quadratic voting.
+All right, so key terms, let's jump into the analogy.
+So, we have ourselves. An individual here we'll start on this side and go this way.
+So an individual here, on the off-chain, this is what the "OFF" stands for, so we have off-chain, and what she's doing, she's submitting a proposal.
+And imagine this is all in a Bitcoin analogy.
+So, she submits the proposal and here's the pool of proposals.
+So, in this pool of proposals these individuals are voting on the proposals here.
+So, you see a check mark, a check mark, and an X.
+So, you have the majority says this is ok, and the minority says it's not.
+So, what we have is this proposal going through. So, this is the off-chain side and we're going to on-chain. Right?
+So, we voted, we proposed. Now, we're gonna move on.
+On-chain! So, "ON" is right here, right?
+So, we're going this way.
+On-chain. So, we have the proposal that's has been voted upon and proposed over here, right?
+So, we're moving over, and then this is the network. So, we're taking that proposal or embedding it on the chain of the network.
+So, going forward there's no human involvement. This proposal is executable and everything happens automatically without human interaction.
+So, an example of this in the Bitcoin world is the block time.
+So, a long, long time ago in a far-off world kind of like Star Wars, if you don't know what that means google it.
+So, you have an example here, right? So, we have block time and then a long, long time ago in Bitcoin, they set it at ten minutes.
+So, this block time automatically adjusts without human involvement. It's based off of what's happening within the network itself.
+So, that's off-chain, this is on-chain, we've talked about the key terms, we talked about the extra credit, we talked a little bit about what governance is in the beginning.
+We talked about why it's important in this world, in other worlds. And that's governance with us today.
+
+## Section 2 - Consensus
+
+### Video 32 - Proof of Work
+
+Hello! So, we're gonna talk to you about what Proof of Work is, or PoW.
+So, PoW is a consensus algorithm and what that means is it is created to bring trust in a trustless world.
+It was actually originally created to solve email spam.
+So, that's a top fact for you to go and have a little look at that on Google.
+And cryptographers have been trying to solve this problem for a long, long time, where there is untrusted parties within a network, or in a space in life,
+and you need to create some kind of trust in order to transact with them, or do something else with them as well.
+And with Proof of Work, we have been able to do that.
+First was Bitcoin, and now we have Proof of Work.
+So let's get to the analogy, as well terms.
+So, here we go. We have terms and we have the analogy, as well as process.
+So, the terms are hash, nonce, miners, target, and difficulty... yeah. So, we'll get into that.
+So here, we'll start with the analogy first.
+So, you have a lock. And the lock has a combination. So, you go through the combinations and you try as much as possible to find the right combination,
+but once you find the right combination, you realize that you can unlock the lock easily.
+So taking that combination process and that verification process of this being unlocked, we'll apply that to the Bitcoin mining world.
+So, let's go through the process. Here we have a miner. So I've mentioned miners over here. So, a miner is just basically a bunch of computers, computational chips trying to solve a mathematical problem.
+And here we're gonna go down into the analogy right. So, what is that mathematical problem?
+Well, here we go. In the mathematical problem there's three things that you want right: you want to take the nonce, you want to take the data, and you want to take the previous hash, and combine those together.
+So, here we have a previous block. So, that's the past block, and this is the present block.
+So, what you're gonna do is you're gonna take the previous hash from this block, you're gonna take the data from the current block,
+and then you're going to take a nonce that you create yourself and you're gonna do that over, and over, and over,
+and what you're going to change out of those three ingredients is the nonce here.
+And what you're trying to do is you're trying to create a new hash from the three ingredients to actually reach the target hash, right?
+So, the hash is basically a fingerprint, a digital fingerprint associated to these three items together, and what you want is, you want that fingerprint to be lower than the target hash that's been given from the network.
+So, I've mentioned difficulty, right? So, the difficulty within the Bitcoin network is going to change consistently, based off of the miners that are mining for that solution.
+So, if you can get the solution in less than 10 minutes or over 10 minutes, they're going to change the difficulty automatically, to make sure that that threshold isn't met on either end.
+Yeah? Does that make sense? So we have a new hash, and we have a target hash.
+So, here you can see that this new hash is higher, it's a bigger number than this target hash.
+So, the goal as a miner is for you to get a lower number than the target hash,
+and once you get that lower number, then you can go to the top of the mountain and say "Guys, listen! I did this! I did this!"
+You did it! Check it out! I did it! Done! So what's an example of this for PoW?
+Some examples of PoW are Bitcoin, Litecoin, and Dogecoin.
+
+### Video 33 - 

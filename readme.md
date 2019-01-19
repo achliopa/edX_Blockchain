@@ -543,3 +543,183 @@ Blockchain is a distributed, decentralized system that maintains a shared state.
 
 ## Section 13 - Identity and Anonymity on Blockchain
 
+### Lecture 48 - Identity
+
+* Identity in the blockchain is based on public key cryptography. A person’s address on the blockchain is their public key.
+* Transactions on the blockchain include their public key and are digitally signed with the sender’s private key:
+	* A digital signature verifies that someone in possession of the private key authorized the transaction.
+	* Digital signatures can be easily verified using the corresponding public key, which is included in the transaction.
+* Public key cryptography gives each person a pair of keys that work together:
+* **Private keys** : They can decrypt things that public keys encrypted. They can only be tied to an identity if the owner wishes.
+* **Public keys** : They can verify signatures made with private keys. They can only be tied to a private key if the owner wishes.
+
+
+### Lecture 49 -  Specific Identity Implementations
+
+Ethereum : A user’s identity is an address based on their public key.
+Hyperledger : Identity is managed by X.509 certificates.
+Corda : Identity is managed by X.509 certificates:
+	* Public: Certificates published on blockchain
+	* Confidential: Certificates only shared with parties involved in transaction.
+
+### Lecture 50 - Advanced Blockchain Anonymity Techniques
+
+* The following are only some of the mechanisms developed and implemented in various blockchains:
+	* Zero-Knowledge Proofs : A prover proves knowledge of a secret without revealing it.
+	* Stealth Addresses : Using one-time addresses for sending/receiving transactions for an account.
+	* Ring Signatures : Type of digital signatures that lets any member of the group sign, but no one can tell which one signed.
+	* CoinJoin : Transactions from several senders to several recipients are mixed together to hide who is paying whom.
+	* Confidential Transactions : Uses homomorphic encryption to allow transactions to be processed while encrypted. Proves transaction value is in a range of values to prove that overspending did not occur.
+
+**Zero-Knowledge Proofs** : Zero-knowledge proofs use cryptographic algorithms to allow a user to prove knowledge of a secret without revealing the secret. 
+**Stealth Addresses** : Stealth addresses involve using one-time addresses to perform transactions on a blockchain. A stealth address is just a one-time address that makes it impossible to link a transaction to a known account. This prevents the data mining attacks on privacy that we discussed earlier.
+**Ring Signatures** : We mentioned previously that transactions are digitally signed. With ring signatures, all that can be determined from a transaction is that a member of a group signed it, but not the particular member.
+**CoinJoin** : The ability to see who is performing transactions with whom is dangerous to user privacy and anonymity. Protocols like CoinJoin mix several transactions together so that it is difficult to pair senders with recipients.
+**Confidential Transactions** : Confidential transactions take advantage of homomorphic encryption, which makes it possible to perform mathematical operations on encrypted data. This means that the data contained in a transaction can be hidden from the public, while still allowing the network to verify that the transaction is valid.
+
+### Lecture 51 - Specific Anonymity Implementations
+
+* Ethereum : Ethereum currently does not have any advanced privacy options, but this is planned to change.
+* Hyperledger
+	* Channels: Subsections of the blockchain that make transactions visible only to members.
+	* Private Transactions: Hashes of private data are stored to publicly verify it on the blockchain.
+	* Zero-Knowledge Technology: Provers can demonstrate knowledge of a secret without revealing the secret itself.
+* Corda : Parties on the Corda Network can be represented in one of two ways:
+	* Party: A public key and name
+	* Anonymous Party: Only a public key.
+
+## Section 14 - Trust and Trustless
+
+### Lecture 52 - Trust in Blockchains
+
+* Just as there are benefits with blockchain technology, there are also some challenges. Blockchain is a culmination of technologies that have been blended to provide a trustless platform. Expect some challenges and use case justifications taking the old line of business apps to the blockchain.
+* Let's recap the features of a blockchain that establishes trust:
+	* Blockchain technology is about storing some kind of data (which are transactions in regards to the Bitcoin blockchain).
+	* Blockchain is essentially transferring trust from an intermediary to technology.
+	* Storing data in the blockchain is through cryptographic functions.
+	* Private key/public key.
+	* Collaboration through consensus.
+* All transaction data on a chained block is assumed to be trustworthy.
+* The users base this trust on the fact that:
+	* This data has not been tampered with
+	* The blockchain is immutable.
+* Blockchains minimize the amount of trust required from any single actor in the system. They do this by distributing trust among different actors in the blockchain as defined by the consensus protocols.
+* Blockchains have a shared ledger that gives us the absolute truth of the state of the system. It uses mathematics, economics, and game theory to incentivize all parties in the system to reach a “consensus” (i.e. coming to an agreement on a single state of the ledger).
+
+# Chapter 2 - Governance and Consensus
+
+## Section 1 - Standard vs. Blockchain Governance
+
+### Lecture 53 - Introduction to Governance
+
+* Humans tend to attract each other and build tribes, villages, town, cities, or empires. With that comes social norms among those who are living with or near each other. These norms have different ways of manifesting into existence, but the ones relevant to this conversation will be “rules”. It doesn’t matter if the governance is the real world or the digital world, there are shared underlying principles within both. They are:
+	* Rules
+	* Rulers
+	* Participants
+* Governance can be undertaken by a government, market, network, or social system (family, tribe, etc.).
+* For a governance process to work effectively, the above three principles will need to play nice with each other. For example, the rules should be aligned with the overall participants' goals, and the rulers should enforce positive and negative actions within this governance structure.
+* Now that we have a simple understanding of governance, let’s analyze how this is taking place in both the standard world and the blockchain world.
+
+### Lecture 54 - Standard Governance
+
+* Governance is a process that can apply to states, corporations, non-profits, non-governmental organizations, partnerships, business relationships, project teams, and any other grouping of humans with a purposeful activity.
+* To keep things simple, we are going to cover standard governance through a lens that most blockchain systems evolved from. They are:
+	* Representative Democracy
+	* Direct Democracy
+
+**Representative Democracy**
+
+* With representative democracy, you have a select few who are voted upon by the people; those people have the power to suggest new rules. These rules are then voted upon by the select few. There are many pros and cons to different governance systems. Let's examine the pros and cons:
+* Pros:
+	* It's efficient
+	* The decisions made are mostly balanced
+	* The people get to choose their representative
+	* It's slightly easier to address problems
+	* It encoursges participation
+* Cons:
+	* Misplaced trust
+	* Self-interest (e.g, once elected, then they are working in their own benefit)
+	* Encourage deceptive election practices
+	* Beenfits the majority (i.e. discounts the minority)
+	* Lack of accountability for elected officials
+
+**Direct Democracy**
+
+* With a strict direct democracy, it is exactly that, direct. Any and all decisions made within that group will be voted upon directly by the people, without an intermediary.
+* Two examples of semi-direct democracies would be Ancient Athens back in 500 B.C. and specific parts (the Swiss cantons of Appenzell Innerrhoden and Glarus) of current day Switzerland.
+* Pros:
+	* Votes actually count
+	* Total transparency
+	* Governmet accountability is promoted
+	* Promotes less segregation and more collaboration/discussion
+	* Government officials can be replaced quickly if their actions are deemed not in the best interests of the population
+	* People tend to have better control over their quality of life
+	* Voting becomes less of a priviledge and more a responsibility
+* Cons:
+	* It can be very difficult to make decisions
+	* Not everyone is willing or wanting to participate
+	* Could be more costly (educating voters & operating voting process)
+	* There is potential for extreme manipulation (one higher power influences or presumes other to vote in one direction)
+	* Humans are not always reasonable, meaning certain votes could be based on emotions
+	* Once a group is too big. this model tends to fall apart
+	* People can be selfish and that means the will not always vote for the greater good of everybody else
+	* The attention span of the average person today is insanely short and information overload can kick in quickly
+
+### Lecture 55 - How Does Blockchain Fit into Governance?
+
+* Each and every blockchain ecosystem that has or is being created will need some kind of governance mechanism in place. When participants (miners, developers, and users) in the network are interacting, ideally they are acting in a way that’s best for the overall group. Being able to build a governance structure in a decentralized (sometimes anonymous, as well) world has proven to be extremely difficult, but this is a problem that many DLT companies are in the midst of solving.
+
+* Most governance structures in the blockchain ecosystem are looking to achieve similar goals, such as:
+	* Protocol changes and tech upgrades
+	* Critical bug and vulnerability fixes
+	* Using pooled funds for R&D.
+* These goals can be achieved through many different methods of governance. Some of the popular ones being discussed at the moment are:
+	* Futarchy : Participants in a system decide its values and those with the most info stake their ideas by betting on the outcome
+	* Decentralized Autonomous Organization (DAO) : Allows for group governance through a combination of smart contracts and issuing tokens.
+	* Liquid Democracy : System where everyone can vote for themselves or delegate their votes
+	* Quadratic Voting : System of buying votes where each additional vote costs twice as much
+* After all of this is decided, it becomes time for implementation, which is choosing the right mix of “on-chain” and “off-chain” governance. Let's examine these topics.
+
+### Lecture 56 - On-Chain Governance
+
+* In this type of governance, rules for instituting changes are encoded into the blockchain protocol. This means that any decision being made is automatically being translated into code (e.g. decisions concerning block size). Developers propose changes through code updates and each node votes on whether to accept or reject the proposed change.
+* Pros:
+	* It is truly a form of decentralized governance
+	* Faster turnaround time for changes
+	* The possibility of a hard fork is reduced due to economic incentives
+* Cons:
+	* Depending on the voting mechanism, users with more stakes can manipulate votes
+	* Low voter turnout
+
+### Lecture 57 - Off-Chain Governance
+
+* Off-chain governance can be seen as decision-making that first takes place on a social level and is later actively encoded into the protocol by the developers. For instance, Bitcoin developers share their improvement proposals (BIPs) through a mailing list, whereas Ethereum collects improvement protocols (EIPs) on GitHub. 
+* Fred Ehrsam (Coinbase co-founder) argues that the Bitcoin governance system resembles the checks and balances system of the US government. Just like the Senate, developers submit pull requests BIPs to the community, the miners take the role of the Judiciary who decides whether or not proposals are adopted in practice. Lastly, the users are just like citizens in a nation or state and can revolt and switch protocols or sell their tokens.
+Pros:
+	* Off-chain model serve as an important check to balance the power when it comes to making changes to software
+	* Decisions are more thought out  and are compared to additional variables (e.g roadmap, funding, human resources, market trrends etc.)
+Cons:
+	* Limited ways to incentivize core development (issue in both Bitcoin and Ethereum)
+	* Node operators hace to update their client manually to allign with the new chain
+	* Slower than on-chain because of the human bottleneck
+
+## Section 2 - Consensus
+
+### Lecture 58 - Consensus
+
+* Many different consensus mechanisms are needed in a decentralized world where there are no middlemen and where trust has truly become decentralized with the trustless movement of value.
+* Consensus is a way to ensure the nodes on the network verify the transactions and agree with their order and existence on the ledger. In the case of applications like a cryptocurrency, this process is critical to prevent double spending or other invalid data being written to the underlying ledger, which is a database of all the transactions.
+* With consensus, there are different solutions that fit different situations. When deciding to use a specific consensus mechanism, you’re taking on an opportunity cost (e.g. security, speed, etc.). The main difference between consensus mechanisms is the way in which they delegate and reward the verification of transactions. It’s important to mention that most blockchain ecosystems have a hybrid of different consensus mechanisms. There is no need to choose one over the other.
+
+### Lecture 59 - Proof of Work
+
+* Miners in the Bitcoin network are solving hard math problems to verify transactions and secure the overall network.
+* Within PoW we have “Miners”, which are GPUs or ASICs chips running computational cycles to solve a math problem with the goal of reaching a set number previously provided to them. This set number is called a “target”, which is an SHA-256 hash with a long list of leading zeros and the “difficulty” (another term in the Bitcoin world) of this “target” adjusts every 2016 blocks (roughly 2 weeks), to ensure it takes roughly ten minutes for the miners to crack.
+* There are three major ingredients needed to find this “target”:
+	* A nonce (number only used once)
+	* The transactional data
+	* The previous blocks hash.
+* This is all then hashed (combined) over and over with the nonce changing each time until the hash created from these three ingredients is lower than the “target” provided.
+* Once the Miner has reached this “target”, they’re gifted with a transaction fee and mining reward (at the time this course was released, 12.5 bitcoins). The reward gets cut in half every 210,000 blocks (roughly 4 years).
+* The next step is for the miner to broadcast to all the other miners that they have achieved the set “target” and have confirmed the block. Once that has been completed, they’ll move onto the next block.
+* A good analogy is a lock and its combination. It takes a lot of work to figure out the combination, but once you do, it’s easy to verify.
