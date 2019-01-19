@@ -904,4 +904,187 @@ But the takeaway point to understand is that, it's this consensus, it is this id
 to all repeat the same work and then periodically come together and agree on whatever the majority select the right version of the truth to be.
 That gives blockchain that high level of trust and that makes it such a secure record store.
 
-### Video 27 - 
+### Video 27 - Fault Tolerance
+
+One of the things we've talked about extensively in this series is how inefficient and redundant blockchain is and that is by design.
+That's what gives us immutability.
+And another thing it gives us is an extreme level of fault tolerance.
+At its heart, blockchain runs on a peer-to-peer network architecture in which every node is considered equal to every other node.
+And unlike traditional client-server models, every node acts as both a client and a server.
+And so, we continue this redundancy down at the network level, where we're asking all these nodes to perform the same work as all these other nodes.
+Like any peer-to-peer system, we have an extremely high degree of fault tolerance.
+In fact, if we have two or more nodes online in a blockchain system, we still have a working blockchain.
+And when you think about that amazing fact given the scale of major public blockchains, you can see the inbuilt fault tolerance.
+Let's look at Bitcoin for an example.
+That's a blockchain that consists of over 30 thousand nodes coming to consensus on every block.
+As long as we have two or more of those nodes online and able to communicate, we still have a working solution.
+That gives us a tremendous margin for error, for nodes coming and going offline, for network transport issues,
+and it makes blockchain really, really a great platform to use in environments with less than ideal networks and power infrastructure,
+because we can have nodes come offline, go back online and when a node comes online after being offline for a while,
+all it has to do is sync up, and get all the data that it missed while it's been offline from all of its peers,
+and then it's right back online participating like all the rest.
+This is very different from the centralized systems that blockchain aims to replace.
+In a traditional client-server model, if that server is offline, those clients have no way of getting the data that they requested or performing the operations they'd like to perform.
+This is not the case in blockchain.
+And if we look back historically at other peer-to-peer solutions, solutions like Bittorrent or Napster, we've seen the tremendous difficulty that authorities have had taking some of these networks offline.
+That is due to the fault tolerance you get from a peer-to-peer architecture.
+In fact, we saw this recently during the Arab Spring, when the Egyptian government decided one night to shut down Internet access for the entire country.
+Well, within 24 hours Egypt was back online and connected to the Internet through a network-sharing mechanism known as mesh networking,
+which at its heart is just a peer-to-peer method for sharing Internet connectivity.
+So, we know that peer-to-peer has a long history of providing extremely high fault tolerance and reliability,
+and that's why we've chosen to build a platform like blockchain on top of it.
+So, if you're looking for a solution platform that offers you that kind of incredible fault tolerance,
+if you're looking to deploy a solution into areas with less than ideal infrastructure or under conditions where nodes may come online and go offline frequently,
+then blockchain may be a really good platform to look at.
+
+### Video 28 - Proof of Work vs. Proof of Stake
+
+So, we've talked a lot in this course about Proof of Work versus Proof of Stake.
+Proof of Work is the oldest and the original consensus protocol. It's coming up on its tenth anniversary; first one into production with Bitcoin back in 2009.
+And as a consensus protocol, it served us very, very well.
+There have been a number of hacks and exploits that have been committed against various smart contracts and solutions written on top of the blockchain.
+But for almost a 10-year history with over half a trillion dollar market cap, no one's been able to successfully exploit Proof of Work itself,
+which really shows the security and the reliability of the protocol.
+However, there are some shortcomings and criticisms to Proof of Work that are now leading us to look at alternative consensus mechanisms, like Proof of Stake.
+One of those is our transaction processing capability.
+On a good day, Proof of Work is capable of processing anywhere between 10 and 20 transactions per second worldwide.
+This may sound like a lot, but it still leaves us a wide gap to conventional processing powers,
+that something like Visa's payment processing network which can scale up to over 70,000 transactions per second.
+So, in order for blockchain to continue to be a successful solutions platform, we know that we're going to need to find other consensus mechanisms,
+which allow us to scale up that transaction processing speed into a range where we start to compete with conventional technology.
+There are also some other criticisms behind Proof of Work that are leading us to alternative methods, like Proof of Stake.
+One of those is the idea of centralization.
+As you know from this course, one of the key tenants of blockchain is the idea of decentralization,
+that no one central authority, intermediary or participant, should ever have too much power or control in a blockchain network.
+What we're seeing right now with Proof of Work is an arm's race,
+where folks are competing with very various specialized pieces of equipment, specialized hardware, specialized mining rigs, in order to mine most efficiently.
+And this can be done most efficiently in large data centers where electricity is cheap.
+So, right now, almost 80% of the processing power behind the Bitcoin network resides in six major data centers in mainland China.
+A lot of advocates and blockchain purists think that this is far too much centralization in one geopolitical region of the world.
+So, one way we aim to change that is through Proof of Stake,
+where we remove the work component of group consensus and we replace it with a very specialized form of gambling or wagering.
+The idea of being that if we no longer require specialized hardware in order to come to consensus, we can allow anybody with any kind of device to participate in consensus.
+That may be you at home with an old laptop or a friend with a smartphone, or a tablet, or an iPad, that sits on your nightstand most days and doesn't get used.
+This allows for a much wider and more decentralized range of devices and potentially a much larger network size to participate in consensus.
+So, speed and the idea of decentralization are big drivers behind the move to Proof of Stake.
+And we're gonna see how well that works out.
+We'll see Proof of Stake finally go live in Ethereum later this year (2018), certainly with more blockchains to follow if it becomes a successful consensus mechanism.
+So, when you hear the debate these days about Proof of Work versus Proof of Stake, and you're trying to understand what do they mean and why are we looking at transitioning from one to the other,
+understand that we're just trying to overcome some of those big limitations behind Proof of Work, the consensus mechanism that has served us so well to date.
+We're trying to find consensus mechanisms that most importantly allow us to scale up,
+to get our transaction processing power on par with conventional technology,
+and we're also trying to remove some of the centralized aspects that we've seen form around Proof ofWork.
+We talk about Proof of Work and Proof of Stake in much greater depth in other modules in this course.
+So, if you're curious about the difference between them, how they work and what the actual implementation differences are,
+be sure to check out those other modules.
+
+## Section 12 - Governance and Blockchain
+
+## Section 13 - Identity and Anonymity on Blockchain
+
+### Video 29 - Identity on the Blockchain
+
+In this section, we're going to discuss identity on the blockchain.
+Let's start by understanding why we even need to have an identity on the blockchain.
+Centralized systems can be coerced by other forms of authority to shut down their network.
+Let's take Napster for example.
+Napster had a decentralized network architecture, but they maintained the centralized authority.
+Therefore, the central authority could be attacked and, by taking out the central authority, could effectively control Napster.
+This is because Napster relied on that mix of centralized control over a decentralized network.
+This impacted identity because you need an identity to control.
+Torrents on the other hand, they do not operate in the same fashion.
+Torrents provide a decentralized network with decentralized authority.
+This allows the nodes to manage identity differently.
+It's also the reason why torrents are still being used today, in spite of the entertainment industry's best efforts to stop it.
+Torrents remove the central authority.
+So this begs the question "Why didn't point-to-point networks like torrents attain the same level of acclaim as blockchain?"
+Because there's no guarantee that the nodes would do the right thing.
+Nobody could guarantee that the nodes would cooperate with each other.
+This leads to an extremely important question.
+How do you incentivize the nodes on the network to follow the rules?
+In a torrent system, anyone can download and share a file, but there's not a real incentive to be a good actor on the network.
+What happens when people do something dishonorable on a torrent for instance, and stop seeding the files that ate up bandwidth or occupied space on their computers?
+Instead of music going to the network or other files, what if it were money going through a point-to-point network, through a bank network, let's say?
+Your transactions would never be processed reliably.
+You couldn't trust that the processing was not messed up, either deliberately or accidentally.
+Further, because of anonymity and the way that identity works in the blockchain, you wouldn't have a way to punish or reward the actors.
+Blockchain solved this problem.
+It perfectly incentivized how to create a decentralized self-contained network using crypto economics.
+This differed from earlier point-to-point networks because it offered economic incentives to the nodes that followed the rules.
+Nodes are given money for following the rules.
+This money is in the form of cryptocurrency.
+The nodes were punished for tampering with the system or with past transactions, or submitting a bad transaction.
+This is why all public blockchains can operate without an authority.
+It is also the reason why cryptocurrency is mandatory for a public blockchain, and not needed for a private blockchain.
+Because you need a way to incentivize the actors on the network.
+Consider how these rewards and these punishments work and how a system without a central authority can determine what is valid and what is invalid.
+On the blockchain, identity is important.
+You have to be able to prove that your assets actually belong to you.
+Different blockchains they use different systems for tracking identity and identity information,
+but most are based on the principles of public key cryptography.
+Before we get into the details of how identity works on the blockchain, we need to discuss the basics of public key cryptography.
+The security of a public key cryptography it's based on let's call them hard math problems.
+So, by that, I mean a hard math problem is one where it's easy for someone to calculate it, but it's hard for someone to reverse that calculation.
+Take multiplication, for example.
+All things considered, multiplication is easy.
+If you have a little bit of time, something to write with, you can pretty much multiply any two numbers and get the right answer.
+A computer can do can do that even more quickly.
+Factoring on the other hand, it's hard.
+The best way to factor a large number is to try every possible factor until you find the right one.
+Well, this approach works well if the number to be factored is small.
+It quickly becomes virtually impossible with a sufficiently large factor.
+Some public key cryptography algorithms are designed so that breaking the algorithm requires factoring very large, usually prime numbers.
+Another hard math problem used in public key cryptography is based on exponents and logarithms.
+Exponents are easy, since it's essentially multiplication, and logarithms are hard, since you're essentially factoring.
+Most public key algorithms that use exponents use a type called modular exponents.
+All this means is that when they're done calculating the exponent, they divide the result by a publicly-known value called the modulus, and they keep only the remainder.
+RSA is a commonly known public key cryptography algorithm.
+It's based on exponents and logarithms.
+RSA uses the power law of exponents.
+What this means is that, if you take a number, you raise that number to a power, and then raise the result to another power,
+that you'll get the same result as if you simply multiply the two exponents together and then raise the base to the result.
+An RSA user chooses two exponents so that any number raised to the product of the two exponents in a given modulus produces the original number.
+One of these is called the public key and that public key is distributed freely,
+while the other is the private key, which is intended to be kept secret.
+If someone wants to send a private message to the user, they convert it to an integer using a publicly-known method.
+They raise it to the power of the user's public exponent and they send the result to the user.
+The user raises the received value to their private exponent producing the original message.
+RSA is secure because an attacker must be able to calculate a logarithm to determine the secret message.
+Since this takes guessing every possible value until the correct one is found,
+RSA is designed to make the number of potential values so large that finding the right one is pretty close to impossible.
+Another public key algorithm uses different math behind the scenes, but the basics are effectively the same.
+A user creates a public key and the private key that can be used together for either encryption or signing, which we'll talk about later.
+The algorithms are designed so that an authorized user only has to do the, quote, "easy calculations",
+while an attacker has to perform the hard calculations,
+and the algorithm is designed to make attacking so that the hard algorithms are close to impossible.
+Public key cryptography is how identity is handled on the blockchain.
+A user's address on the blockchain it's their public key.
+This has several useful properties.
+Users do not need to reveal their identity on the blockchain, but they can positively identify themselves,
+since determining their private keys requires solving a quote, "hard problem".
+Anyone can send a user an encrypted message, since they have easy access to their public key.
+Users can verify the validity of their transactions using digital signatures.
+You can think of a digital signature as the opposite of an encrypted message.
+In RSA, anyone can send an encrypted message to a user by converting it to a number, raising it to their public exponent, and sending the result to them.
+The user's public and private keys are designed so that the users can retrieve the original message by raising the received message to their private exponent.
+RSA digital signatures involve the opposite process.
+A user writes a message and raises a condensed form of the message to the power of their private exponent to create a signature,
+then they publish that signature.
+Their public key and their message are both published together.
+Anyone can verify the signature using a simple three-step process,
+condense the attached message using the same method as the message writer, the message originator,
+raising that attached signature to the user's public key,
+then verifying that the results of the previous two steps are identical.
+Digital signatures work for the same reason that encryption works in RSA.
+An attacker needs to know the user's private key to perform either operation,
+and the algorithm is designed to make that process difficult or very close to impossible.
+This means that identity on the blockchain boils down to the possession of a user's private key.
+So, it is absolutely important that that private key be kept safe.
+In Ethereum, a user's identity is managed using a public key or address,
+and the user can use the corresponding private key to sign transactions and read encrypted messages that are sent to them.
+In Hyperledger (Fabric) and Corda, identity is encoded in x.509 certificates, which include the user's public key.
+In Corda, specifically, certificates can either be public, which means that they are published to the blockchain,
+or confidential, meaning that they are only shared with the parties that the owner performs transactions with.
+
+### Video 30 - 
+

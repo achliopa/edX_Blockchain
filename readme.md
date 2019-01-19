@@ -426,3 +426,120 @@
 
 * The blockchain is designed to be a shared, synchronized historical ledger, meaning that there needs to be a final decision at some point on what should and shouldn’t be included in the official record. Since blockchain is decentralized, there is no "higher authority" that can rubber-stamp and finalize the contents of a blockchain block.
 * The method that Satoshi Nakamoto, the creator of blockchain, invented to achieve consensus is based on **scarcity**. In one way or another, blockchain consensus algorithms boil down to some kind of vote where the number of votes that a user has is tied to the amount of a limited resource that is under the user’s control. Based on the economic Laws of Supply and Demand, collecting enough of an asset to have a controlling share will drive up the price of the asset enough to make achieving that level of control unfeasibly expensive.
+* Satoshi Nakamoto invented a consensus algorithm called Proof of Work for the use of Bitcoin. Since then, several other consensus algorithms have been invented to fit different use cases. These include Proof of Stake, Delegated Proof of Stake, Practical Byzantine Fault Tolerance, and Directed Acyclic Graphs. The most commonly used consensus algorithms are Proof of Work and Proof of Stake.
+
+### Lecture 35 - Proof of Work
+
+* **Computational Resources** : Proof of Work is based on the scarcity of computational resources
+* **Incentivizes** :  In Proof of Work, users in the blockchain network who want to create the next block (and win the associated reward) are called miners. To win the right to mine a block, miners race to find an acceptable solution to a “hard” cryptographic problem. As we discussed previously, “hard” mathematical problems can only be solved by random guessing. When a miner finds an acceptable solution, they create a block and broadcast it to the network, finalizing that block. Proof of Work exploits the scarcity of computational resources by choosing a problem that can only be solved by guessing. There is no limit on the number of guesses that a miner can make at once. Proof of Work, therefore, incentivizes miners to run as many mining machines as possible to maximize the probability that they are the first to find a solution to the problem. Since mining computers take money to purchase and money to run, the amount of control that a user can exert over the blockchain is limited by the amount of money they have available to invest in mining equipment.
+* **51% Security** : The security of the Proof of Work consensus is based on the assumption that no one controls more than half of the computational resources of a blockchain’s mining network. If this was the case, the miner has a high probability of finding an acceptable solution to the mining puzzle before anyone else for every block in the blockchain. This gives the miner complete control of the blockchain and breaks the decentralization of blockchain.
+
+### Lecture 36 - Proof of Stake:
+
+* **Scarce Commodity** : Proof of State is based on the scarcity of the given cryptocurrency
+* **Stake** : Users in a Proof of Stake blockchain can "stake" or promise not to use the tokens they own. This gives them the opportunity to be selected as the next user to create or "forge" a new block and earn the reward. A block forger is pseudo-randomly selected from all of the users who have staked some of their assets, and the selection process is biased based on the size of the stake. For example, imagine that a wheel is divided into sections where the size of a section is proportional to the size of a user’s stake. The next block creator would be chosen by spinning the wheel and seeing whose section comes out on top. In Proof of Stake, each user has a copy of the wheel and they are all synchronized so that each person can independently determine the selection and get the same result. This is why Proof of Stake uses a pseudo-random instead of a random selection process.
+* **Economic Infeasibility** : In Proof of Stake, an attacker needs to control enough of the staked currency to guarantee they will be selected to create every block. Since cryptocurrency is a limited asset, buying up enough of it to do this is expensive, making attacks on Proof of Stake systems economically infeasible.
+
+### Lecture 37 - Specific Consensus Implementations
+
+* **Ethereum** : Ethereum currently uses Proof of Work for consensus. And Casper is the planned migration of Ethereum from Proof of Work to Proof of Stake. Of the three blockchains studied, Ethereum is the only one that uses a standardized consensus mechanism. Ethereum was designed from the beginning to use Proof of Work for consensus, until a forced hard fork to the Proof of Stake implementation (codenamed Casper). This forced hard fork is baked into the Ethereum protocol and will be accomplished by slowly increasing the difficulty of the Proof of Work problem until the time taken to solve it increases to the point where Proof of Work becomes unusable. Proof of Stake does not require the same energy consumption as Proof of Work and is a more sustainable and scalable consensus mechanism.
+* **Hyperledger Fabric** : Hyperledger Fabric breaks out consensus into components, allowing users to pick a consensus algorithm for their particular use. Hyperledger Fabric deliberately avoided hard-coding a consensus mechanism into the protocol by defining an “orderer component” that performs all of the consensus-related operations. This allows users of Hyperledger Fabric to select a consensus algorithm that fits their use case without being forced to make large-scale code edits.
+* **Corda** : Each Corda network has a notary service made up of independent parties that approve blocks using any applicable consensus algorithms. Corda does not follow the standard blockchain model of transactions being bundled into blocks and then being finalized by the network as a whole. Instead, a Corda network contains one or more notaries consisting of several independent parties. Transactions in Corda are finalized by a notary with a multiparty digital signature using an algorithm like [Raft](https://raft.github.io/).
+
+### Lecture 38 - Fault Tolerance in the Blockchain
+
+Blockchain is a distributed, decentralized system that maintains a shared state. While consensus algorithms are designed to make it possible for the network to agree on the state, there is the possibility that agreement does not occur. Fault tolerance is an important aspect of blockchain technology.
+
+### Lecture 39 - The Byzantine Generals' Problem
+
+* The Byzantine Generals' Problem (discussed in the previous video):
+	* Several generals needing to agree on a coordinated plan of attack.
+	* One or more generals may be traitors.
+	*All generals will abide by the majority decision, but may try to influence it.
+* Blockchains are designed to have Byzantine Fault Tolerance:
+	* All nodes are untrusted.
+	* Nodes must come to a consensus on the official state of the blockchain.
+* The Byzantine Generals' Problem is a scenario designed to demonstrate the difficulty of multiple parties coming to an agreement when communication can only be accomplished on a one-to-one basis and is untrusted. In the story, several Byzantine Generals are besieging a city with their separate armies. If they all attack together or all retreat together, they will be ok, but if some attack while others retreat, they will be destroyed.
+* The generals can only communicate by messengers, who could be intercepted and forced to carry fake messages, and one or more generals may be a traitor. The goal is to find a way to achieve a consensus on strategy despite the possibility of traitors and false messages. Presumably, all generals will abide by what they believe is the majority consensus. The Byzantine Generals' Problem is solvable as long as two-thirds of the generals are honest.
+* Blockchain is designed to be Byzantine Fault Tolerant, meaning that the network will come to a consensus on the official state of the blockchain, despite the fact that some members may misbehave. The solution to the Byzantine Generals' Problem is inefficient, so the blockchain needs some way of being confident of consensus without going through a full solution.
+
+### Lecture 40 - Proof of Work vs. Proof of Stake
+
+**Proof of Work** provides a game-theoretical distributed consensus algorithm:
+
+* Proof of Work incentivizes mining nodes on the network to reach for the thermodynamic limit of computational cycles. This incentivizes decentralization because heat from mining nodes dissipates better in two separate places rather than one centralized location. Note, this decentralization is solely physical and a network distribution.
+* Proof of Work has empirically proven that game-theory can be weaved into a protocol because it successfully applies incentives at every possible action within the network.
+* Proof of Work only works because it is optimization-free and approximation-free.
+	* Optimization-free means there is no possible way to circumvent the hashing of the mining protocol necessary to secure a block.
+	* Approximation-free means there is no possible way to almost have a block. The process is binary; there are blocks and not blocks.
+
+**Proof of Stake** provides an experimental internally game-theoretical consensus algorithm:
+
+* It relies on nodes already having cryptocurrency to stake. It rewards nodes with the most money staked, and not the most computational power.
+* It requires that each validating node be identifiable. This is because the staked coins must be held accountable for any malicious acts. Proof of Work does not require identification.
+* In Proof of Stake,you are competing with a much larger group of nodes. There is no transactional friction involved in staking coins, unlike in Proof of Work, which requires buying mining hardware, hooking up internet, providing cooling systems, etc.
+
+## Section 12 - Governance and Blockchain
+
+### Lecture 41 - What Is Blockchain Governance?
+
+* All organizations and software development projects need a way to finalize each decision along the roadmap. Most organizations are centralized and have a set leadership team. Several strategies for governing the decentralized blockchain have been developed.
+* Effective blockchain governance includes:
+	* Incentives
+	* Methods of coordination.
+* Before getting into the details of how governance works on the blockchain, it’s important to have a clear definition of what blockchain governance is. Every blockchain is an evolving system that needs to change to meet the needs of its users. If a blockchain isn’t relevant and useful, then it won’t survive.
+* To evolve, the blockchain needs to make changes and needs a way to make final decisions on what these changes should be. Most organizations have a leadership team or a CEO who is the final authority for their organization. However, blockchain is designed to be decentralized, and not be under the control of any person or group. This means that blockchain needs another way to make decisions regarding the blockchain’s roadmap.
+* For blockchain governance to be effective, it needs to include both incentives and methods for members to coordinate. Without incentives, members won’t participate in governance and the blockchain will become less aligned with user needs over time. Without a method for members to coordinate, it will be impossible for a blockchain network to come to an agreement on future changes.
+
+### Lecture 42 - Blockchain Governance Strategies
+
+* Several different blockchain governance strategies have been proposed and implemented for different blockchains. Here, we will review some blockchain governance strategies sorted from the fewest to the most members directly involved in the decision:  
+	* Benevolent Dictator for Life"
+	* Core Development Team
+	* Open Governance
+	* On-Chain Governance.
+
+**Benevolent Dictator for Life** : The original creator or lead developer of a cryptocurrency has the final say on all decisions. 
+	* The simplest blockchain governance strategy is nicknamed "Benevolent Dictator for Life". In this strategy, the creator of the blockchain is the final authority on all decisions regarding the blockchain. A good example of this type of leadership is Facebook, where Mark Zuckerberg has the final say on the future roadmap of the Facebook platform.
+
+**Core Development Team** : A team of the most active developers decides what functionality should or shouldn’t be included.
+	* The next step up places control of the blockchain roadmap in the hands of a Core Development Team. This is a strategy commonly used in open source programming projects, where users are able to offer or request features, but developers have the final say on what is or is not included in the official release.
+
+**Open Governance** : The team making governance decisions for the blockchain is chosen by the users of the blockchain.
+	* Some blockchains use the Open Governance method of handling governance of the blockchain. In this system, the team that makes the final technical decisions for a system is selected by the system’s users.
+
+**On-Chain Governance** : The rules for how the blockchain operates are stored on-chain in smart contracts with built-in capability and procedures for modifications.
+	* A blockchain-specific governance strategy is On-Chain Governance. In this form of blockchain governance, the rules describing how the blockchain should operate are stored on the blockchain itself. These regulations typically are implemented as smart contracts on the blockchain with built-in methods for users to modify the rules based upon their needs and the needs of the blockchain.
+
+### Lecture 43 - Who Really Governs the Blockchain?
+
+* Blockchain governance comes down to the users.
+* Major changes to a blockchain require a hard fork. A hard fork is a change to the blockchain protocol that makes it incompatible with old clients.
+	* For a hard fork to be successful, users need to agree to follow it.
+	* Users can refuse to follow a hard fork, creating a divergent blockchain. The DAO Hard Fork on Ethereum created Ethereum Classic.
+* Despite the official story of who governs the blockchain, in the end, the users are the ones who really make the final decisions of what will or will not be included in the blockchain. With the huge number of potential options, users can abandon a blockchain that makes changes that they disagree with.
+* Any major change to a blockchain requires a "hard fork". All this means is that the blockchain protocol has changes that are not backward compatible, so blockchain clients that do not make the switch will not be able to operate on the main blockchain. For a hard fork to be successful, users of the blockchain need to make the decision to update their clients to incorporate the new changes.
+* If not all users decide to make the switch after a hard fork, a divergent blockchain can be created. Since the blockchain is a distributed network, the decision to implement a hard fork doesn’t cause the old version of the blockchain to become non-functional. Users who choose not the follow the fork can decide to maintain the old blockchain, fragmenting the blockchain network.
+
+### Lecture 44 - DAO Hard Fork on Ethereum Created Ethereum Classic
+
+* One famous example of this type of fragmentation is the DAO hack on the Ethereum network. The DAO was an Ethereum smart contract that completed a record-breaking crowdfunding campaign on the Ethereum network, with all of this value stored within the DAO smart contract. A flaw in the smart contract’s code allowed an attacker to create another version of the smart contract under their control and siphon off a portion of the DAO contract’s funds, worth roughly 72 million dollars at the time. After much debate, the Ethereum network decided to implement a hard fork that allowed investors of the DAO to reclaim their stolen Ether.
+* This was a very contentious decision because the historical ledger in the blockchain is supposed to be immutable and all transactions are final. Smart contracts are supposed to be their own final authority, so any action that could be performed with a smart contract, including exploiting a programming flaw to drain value from it, is considered fair game. The Ethereum network’s decision to reverse the DAO hack went against the principles of blockchain’s immutability and the supposed self-regulation of smart contracts.
+* Some of the Ethereum network refused to follow the DAO hard fork, resulting in a divergent blockchain where the DAO hack was successful. This created the Ethereum Classic cryptocurrency, which shares the same history as Ethereum up to the DAO hack, but is completely independent after that point. Despite the "official" decision to reverse the DAO hack, users made the final call of whether or not they would abide by that decision.
+
+### Lecture 45 - Governance in Ethereum
+
+* We’ve been discussing the decisions made regarding the Ethereum blockchain, but haven’t discussed who made those decisions yet. Ethereum uses the “Benevolent Dictator for Life” mode of blockchain governance. While user input and input from the development team is welcome for Ethereum, Vitalik Buterin is the final authority on decisions regarding the Ethereum roadmap.
+
+### Lecture 46 - Governance in Hyperledger Frameworks
+
+* Hyperledger frameworks, on the other hand, use an Open Governance model to make technical decisions regarding the Hyperledger environment. The Hyperledger Technical Steering Committee (TSC) is the final authority for technical decisions in Hyperledger.
+* Each year, the Hyperledger Technical Steering Committee is selected from the Hyperledger environment’s active contributors and maintainers.
+* Contributors and maintainers can submit themselves as potential candidates for the eleven slots, and the slots are filled based on voting by the same group of contributors and maintainers. This model is designed to allow those with an active role in the Hyperledger development community to have a say in how that community is governed.
+
+### Lecture 47 - Governance in Corda
+
+* Corda also uses an Open Governance model to make technical decisions regarding the future of the blockchain. The Corda Network Governing Body will be selected to represent the interests of all users in the Corda network
+
+## Section 13 - Identity and Anonymity on Blockchain
+
