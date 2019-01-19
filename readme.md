@@ -231,3 +231,130 @@
 * The blockchain is publicly visible and immutable, meaning that it has very high transparency. Its append-only structure and decentralized storage sacrifice storage efficiency for trustworthiness of the stored data.
 
 ## Section 6 - Immutability
+
+### Lecture 20 - Immutability in the Blockchain
+
+* Blockchain is designed to be an authoritative ledger of the history of the network
+* This history may include financial transactions and business agreements where modifications to the ledger may have wide-reaching business impacts. Blockchain is based on an untrusted network, so trust that the blockchain has not been modified needs to arise from the structure of the blockchain itself, rather than from trust in the organization storing a certain copy.
+* The blockchain needs to be immutable. If someone can change the blockchain after the fact, then it is no longer a trusted historical ledger. The blockchain is designed so that immutability is cumulative; each piece is linked to every other piece, creating a cohesive whole that is more difficult for an attacker to modify.
+	* At the bottom level, transactions are digitally signed by their creators. An attacker can’t forge a transaction unless they steal a private key.
+	* A block structure is predefined. Attackers can’t modify it to suit their purposes.
+	* The chain part of the blockchain is achieved using hash functions. Each block includes the hash of the previous block, creating a clear link between each block in the blockchain.
+	* Each block is digitally signed by its creator. The creator is selected through the blockchain’s consensus protocol, making it difficult for an attacker to be a legitimate creator.
+* All four of these features help to make the blockchain resistant against changes occurring after the fact.
+
+### Lecture 21 - Why Is the Blockchain Immutable?
+
+* Each transaction cannot be forged or modified because it is mathematically infeasible to forge a digital signature. The structure of blocks is publicly defined, and invalid blocks will be publicly rejected.
+* Each block “locks in” the value of previous blocks by including their hash. Attackers cannot find another block that will produce the same hash.
+* A block cannot be forged or modified, because it is digitally signed by the creator. The creator of a block is either publicly known (Proof of Stake) or difficult to become (Proof of Work), making masquerading as the real creator difficult or impossible.
+* Now, let’s take a moment to discuss how each of the features mentioned contribute to the immutability of the blockchain.
+* At the bottom level, each transaction is digitally signed. This means two things about transactions:
+	* Existing transactions can’t be changed after the fact, because the signature will no longer match.
+	* Fake transactions can’t be created since an attacker can’t create a valid digital signature for a transaction between other parties.
+* Both of these contribute to the immutability of the blockchain since they limit the range of transactions that an attacker has to work with if he wants to create a fake but valid blockchain.
+* Next, the block structure is publicly defined in the protocol. This limits the types of modifications that an attacker can make to a block when trying to modify the blockchain.
+* Third, each block contains the hash of the previous block. This is what ties the blocks of the chain together. Remember from earlier that one of the properties of a hash function is that it is extremely difficult to find two inputs to a hash function that create the same output. Since a block contains the hash of the previous block, it’s difficult to find a different version of the ledger’s history that matches the most recent block, as that would require finding two different versions of the previous block that have the same hash.
+* Finally, each block is digitally signed by its creator. Since the creator of a block is selected via a consensus algorithm, it’s difficult for an attacker to become the legitimate creator of a given block. If an attacker is not the legitimate creator of a block, it’s impossible for them to create a digital signature that others would accept.
+
+### Lecture 22 - Specific Immutability Mechanisms
+
+* In Ethereum and Hyperledger, the immutability mechanism is the one that we’ve described previously. Each transaction and block is digitally signed and are linked using cryptographic hashes.
+* Corda, on the other hand, relies on its notary service for immutability. Each Corda network has one or more notary services that verify transactions. Each transaction is considered separately and, if approved, is signed by the notary service. Transactions signed by a notary are finalized and cannot be modified after the fact.
+
+### Lecture 23 - Hashing and Chaining
+
+* It is important to understand the value of locking in the previous block by including its hash in the next block.
+	* Creating a ledger of transactions with blocks that refer to previous blocks is a much better idea than numbering the blocks sequentially.
+	* In a book with pages, 1, 2, 3, etc., it would be easy to tear out page 25 and replace it with another page.
+	* The integrity of the book has been manipulated and altered. However, there is nothing about the new page number that ties it (chains it) to the content of the previous page.
+	* Instead, in a blockchain, blocks are referenced by their hash and each block explicitly specifies which block (hash) it is building on.
+
+* [Lab on Blocks](https://blockchaintrainingalliance.com/pages/lab-blocks)
+
+## Section 7 - Smart Contracts
+
+### Lecture 24 - Smart Contracts
+
+* Smart Contracts
+	* Can also be known as chaincode – program rules and decision points into blockchain transactions and processes.
+	* Automate transactions and ensure they are all following the same rules.
+	* Stored on the blockchain.
+	* Address limitation of the Bitcoin protocol.
+* Smart Contracts Provide
+	* Autonomy: Smart Contracts can be developed by anyone, no need for intermediaries such as lawyers, brokers or auditions
+	* Efficiency: Removing process intermediaries often results in significant process effort gains
+	* Backup: A Blockchain and Smart Contract deployed to it can provide a pernanent record, allowing for autditing, insight, and traceability even if the creator is no longer in business
+	* Accuracy: Replacing human intermediaries with executable code ensures the rpocess will allways be performed the same
+	* Cost Savings: Replacing intermediaries often provides significant cost reduction
+
+## Section 8 - Blockchain Security
+
+* Blockchain is commonly called the future of computing. It takes a very different approach to data storage and processing and requires a very different perspective for security. 
+
+### Lecture 25 - Blockchain Security vs. Standard Cyber Security: TheNEvironemnt
+
+* One of the primary differences between cybersecurity in a traditional computing environment and on the blockchain is the environment itself and what it is and isn't designed to do.
+
+* The traditional computing environment is a company network fully or, at least mostly, under the control of the company's computer security staff. While many organizations are making the shift to cloud-based environments, they still have a high degree of control over the security and configuration of their rented systems. Traditional networks are highly centralized, and the focus of cybersecurity on these systems is primarily perimeter-focused. All systems and authorized users on the network are trusted or semi-trusted, so the focus is on preventing attackers from entering from outside the network.
+
+* Blockchain is designed to be a decentralized, distributed system running on untrusted hardware. While security in traditional environments is designed to provide security by putting all data in one place and building walls around it, security in blockchain is based on ensuring that data is protected from modification by copying data to as many locations as possible to make modification of all copies infeasible. Traditional infrastructure focuses on confidentiality and integrity, while blockchain is designed to provide integrity and availability.
+
+### Lecture 26 - Blockchain Security vs. Standard Cyber Security: Security
+
+* Both traditional computing environments and blockchain have security considerations associated with them. In many cases, the same attack is possible against both paradigms, but the details of how to implement it vary. 
+* Here, we discuss how a few different attacks can be launched against traditional computing environments and blockchain:
+	* Denial-of-service
+	* Endpoint security
+	* Intentional misuse
+	* Code vulnerabilities
+	* Data protection.
+
+**Denial-of-Service (DoS)**
+
+* A denial-of-service (DoS) attack is when an attacker makes it impossible for a system to serve its users as designed. This can be accomplished by exploiting a flaw in the system, but, more commonly, is accomplished by performing legitimate actions at a rate higher than the target can handle.  
+* To be effective, denial-of-service attacks typically focus on a system’s weakest link or bottleneck. In traditional environments, denial-of-service attacks target a company's web server to prevent customers from accessing the company's services. This can be accomplished by making more connection requests than the server is capable of supporting. In blockchain, a denial-of-service attack involves submitting more transactions to the blockchain than it can handle.
+* Since many blockchains have fixed-size blocks created at a fixed rate and are stored in a distributed fashion, they have a maximum capacity that a determined attacker can exceed, rendering the blockchain unusable.
+
+**Eddpoint Security**
+
+* Traditional infrastructure and blockchain environments also differ with regard to endpoint security. In traditional cyber, endpoints are under the control of the enterprise and have some level of heterogeneity. In blockchain, endpoints are the nodes and may be completely homogeneous.
+* Heterogeneity can be dangerous because an attacker has more options for finding a vulnerability to exploit, while homogeneity means that a flaw in one system is a flaw in all of the systems.
+
+**Code Vulnerabilities**
+
+* Another way that traditional cyber and blockchain differ is in the level of trust in the code used in a company's applications. In traditional cyber, the company writes most of the code, and vulnerabilities can arise only from code that the company controls.  
+* In blockchain, anyone can write a smart contract, and a flaw in the smart contract or the underlying platform code can have wide-reaching consequences. The only hack to date against the Bitcoin network was enabled by an integer overflow vulnerability in the Bitcoin protocol.
+* When exploited, an attacker was able to assign himself more Bitcoin than was ever intended to be created. If the Bitcoin network didn't “break the rules” by modifying the historical ledger through a hard fork, Bitcoin would have become worthless. Anyone who wants to use Bitcoin has to accept the risks of hacks like this, they can't modify the code before including it in their application.
+
+** Intentional Misuse**
+
+* Both traditional and blockchain environments are vulnerable to attacks based on intentional misuse of the system. In traditional cyber, insider attacks or intentional misuse of the system by clients are possible. In fact, a denial-of-service attack is a specific type of intentional misuse.
+* In blockchain, systems using Proof of Work incentivize miners to do something a lot, but not too much. The main weakness of Proof of Work is that a blockchain becomes insecure if more than half of the mining network's processing power is controlled by a single group.  
+* Proof of Work incentivizes miners to control as much processing power as possible to win rewards, but doesn't want them to become too successful.
+
+**Data Protection**
+
+* Finally, traditional infrastructure and blockchain differ in their goals regarding data protection. In traditional cyber, data is siloed, and access is strictly controlled by the owners, placing responsibility for confidentiality, integrity, and availability in their hands.
+* In blockchain, data is distributed, and the blockchain is relied upon to provide integrity and availability.
+
+### Lecture 27 - Security: Public vs. Private Blockchains
+
+* Let's discuss the differences between a public and a private blockchain:
+* As the blockchain continues to evolve, the terminology has become confusing. Both public and private blockchains share many similarities:
+	* Both are decentralized peer-to-peer networks, each maintaining a shared append-only ledger of digitally-signed transactions.
+	* Both maintain transaction replicas in-sync through a protocol referred to as consensus.
+	* Both provide certain guarantees on the immutability of the ledger.
+* More importantly, the main difference between a public and private blockchain is related to who is allowed to participate in the network, execute the consensus protocol, and maintain the shared ledger.  
+* A public blockchain network is completely open and anyone can join and participate in the network.
+* A private blockchain network requires an invitation, and must be validated by either the network starter or by a set of rules. Private blockchains are usually set up as permissioned networks, placing restrictions on who is allowed to participate in the network, and only in certain transactions.
+
+* [Lab Exercise](https://blockchaintrainingalliance.com/pages/lab-distributed)
+
+## Section 9 - Public and Permissioned Blockchains
+
+### Lecture 28 - Understanding the Difference
+
+* [Public Blockchain vs Private Blockchain for the Enterprise Webinar](https://blockchaintrainingalliance.com/blogs/news/ethereum-vs-hyperledger)
+* A public blockchain is really a permissionless blockchain. Anyone can effectively join the blockchain, meaning that they can read, write, or participate with a public blockchain. Public chains are decentralized, no one entity has control over the network, and they are secure in that the data can't be changed once validated on the blockchain.  
+* A private blockchain is really a permissioned blockchain. Permissioned networks place restrictions on who is allowed to participate in the network and in what transactions.

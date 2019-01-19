@@ -604,4 +604,196 @@ And blockchain, both public and private, can be a great solution for doing that.
 
 ## Section 6 - Immutability
 
-### Video 18 - 
+### Video 18 - Immutability
+
+So, one of the big benefits of blockchain is what's known as immutability.
+The idea that once a record gets committed to the blockchain or to the ledger, it's there permanently.
+In blockchain, it's a little bit different than a database, and we'll talk about this in another module, in a lot more depth,
+but in a traditional database we're used to being able to edit records and delete records, and that's not the case in a blockchain.
+In a blockchain, there are only two possible operations: we can create a new record, and we can go back and we can read existing records.
+And this contributes to this idea of immutability - once data is written to the blockchain it can't be edited, it can't be deleted.
+All you can do is add another record to the blockchain indicating that something about that data has changed.
+This immutability is what makes blockchain such a secure solution, and it's what makes it a trustless solution.
+Meaning, I don't have to trust anybody that I'm interacting with and trading with, as long as we both trust in the blockchain and the data on the blockchain.
+Then, we can transact back and forth seamlessly.
+The way immutability works is blockchain is, by design, a very, very inefficient solution.
+We are asking a large number of nodes, all the nodes on a network, to perform exactly the same work as every other node.
+So, essentially, we are duplicating work over and over and over again.
+The reason we do this, is because the only way to potentially change data on a blockchain,
+is by changing the record on that blockchain for 51% or more of the nodes, or the miners, or the participants trying to come to consensus on the blockchain.
+And when you get to very, very large-scale networks, Ethereum with its 16,000 plus nodes, Bitcoin with over 30,000 nodes, this becomes a very, very, very tall order.
+Trying to hack or change a record on over 15,000 of those Bitcoin nodes would be quite a bit of work.
+So, it's not impossible to change the record on a blockchain, but it is impossible from a practical standpoint.
+Now, one thing that should be noted when we talk about immutability is: all that blockchain gives us is an accurate recording of what was posted.
+It is still up to whoever is posting that information on the blockchain to make sure it's accurate and true.
+In other words, blockchain doesn't do anything to validate that the information on it is correct.
+All it validates is that that information hasn't been changed since it was originally written.
+Another way to think about that is, I could post a record on blockchain that says: "The sky is orange".
+That doesn't make the sky orange.
+We all know the sky is blue. All that does is that means I can't ever come back later and claim I didn't say that or I said it was blue, and someone changed the record.
+That immutability that blockchain gives us is that that data was captured as it was originally written and hasn't been changed.
+Another part of this immutability is cryptographic hashing, and the way that we chain all these blocks together.
+If you haven't watched the module on Proof of Work, I would suggest you go watch that now, to see a really in-depth overview, a hands-on demo of how blocks are actually linked together in such a way.
+And, if I ever went back and tried to change any information or prior transaction on the blockchain, I would break that chaining in a very
+obvious way that anyone would immediately spot if they came and querried that data off the blockchain.
+So, when you hear about immutability, just understand that all we're talking about is the virtual impossibility of anyone ever being able to come along and change any data on the blockchain.
+And also, along with that, understand that we only have two possible operations on blockchain: we can only read data and we can only add new data.
+There's no concept of an edit or delete, and this is what we talk about when we talk about immutability on the blockchain.
+
+### Video 19 - [Hashing and Chaining with Proof of Work](https://anders.com/blockchain)
+
+In this video, we're going to talk about Proof of Work consensus, and how Proof of Work consensus is used to create an immutable chain of block data on the blockchain.
+Let's take a small example. Let's say we have some block data and, in the interest of simplicity, we will keep this very, very short.
+But understand that in real life a block will most likely contain many more than just three transactions.
+But on this block, we have a full block consisting of three transactions.
+When it's time to validate a full block, all nodes on the network will start to guess a nonce value.
+What we're looking for is a nonce value such that when we take our input transaction data and we combine it with a nonce value, we get a hash output that matches the difficulty.
+In this case, the difficulty is a hash output that begins with four leading zeros.
+Every node on the network will guess a different nonce randomly until they happen to find one that matches the difficulty.
+So, our node may start off by guessing "123", and we see that that does not produce a hash output that matches the difficulty of four leading zeros.
+Let's try again. Let's try "973321". Once again, that does not give us a hash output that matches the desired difficulty.
+[So], rather than guess over and over and over, let's go ahead and ask a computer to do our work for us.
+The computer is now guessing different nonce values randomly until it happens to guess "22294", which you see produces a hash that begins with four leading zeros.
+Because this hash is the output of input to a hash function consisting not only of the transaction data, but also of the nonce, changing either one will result in a new hash output which does not match the difficulty.
+If I change "22294" to "22295", you'll see I get a hash output which no longer meets the difficulty criteria.
+However, if I change any of my transaction data, I'm also altering the input to the hash function, and thus generating an output which is completely different from the desired outcome.
+In this way, nodes or miners on a network can validate they have the same transaction data.
+If we all start randomly guessing nonce values for this set of data and my node guesses "22294" first,
+all it has to do is simply share this nonce value with every other node on the network.
+Each node can then try this value "22294" on their copy of the transaction data.
+If any of the data has been altered or changed in any way, no matter how insignificant, or the node in question simply did not record the data correctly, this nonce value will not work for them.
+For example, if we change "4.2 bitcoin" to "4.9 bitcoin", you'll see that the proposed nonce does not work.
+In this way, all nodes can come to consensus or agreement on what the right set of transaction data should be.
+When a node thinks it's guessed the right nonce, it simply shares that value with the rest of the network.
+If the majority of the network, 51% or more, agree with this nonce, because they have the same transaction data on their copy of the block,
+then the miner who guessed this number first, will be rewarded and the network will come to consensus or agree that this is the correct version of the block data.
+Any nodes which have different data for the current block will then discard the copy of the current block they have and replace it with a copy that the rest of the network has agreed upon.
+This method is used to create blocks of data chained together.
+So let's say, that we have some transaction data here on the blockchain.
+We're gonna go ahead and mine our first block.
+Now, you'll notice what we've added in this demo is the hash of the previous block, which is something we store in the header of every block on the blockchain.
+Because this is the first block, I simply get a previous hash value of zero.
+Combining zero with the current transaction data on the block and the proposed nonce gives me a hash that meets the output difficulty.
+When it's time to validate the second block, the process repeats itself.
+I simply take the hash of the previous block stored in the header of the current block, combine it with the transaction data in the current block, and try to guess the correct nonce.
+In this case, it's "12314"
+As discussed in our video on cryptographic hashing, changing any of the input data, no matter how slight, will result in an entirely different hash.
+So, if I try and change "2.3" to "2.9", I no longer get an output which matches the current difficulty.
+This new output is also reflected in the header of the next subsequent block.
+If I have a series of blocks that have all been mined and linked together, then you can see that going and changing data on any block will break every subsequent block after it.
+So, if I try to alter this record "David pays Charlie 2.3 bitcoin" and I want to change it to "5.3 bitcoin", I change the hash output of the current block.
+This is reflected in the current block and also in the next block.
+Now, the nonce proposed for the next block does not work when combined with that block's transaction data and with the hash of the previous block.
+This means that if I want to alter data on the blockchain, not only do I need to remind the block that I changed the data on, I also need to remind every subsequent block in the blockchain.
+This is no trivial task when you consider that major blockchain such as Bitcoin and Ethereum contain millions of blocks.
+And this process must be repeated on tens of thousands of nodes worldwide in a very short amount of time.
+This ability to link together blocks in an immutable fashion and to cause attackers to have to undertake so much work, repeated so many times is what gives blockchain its security and immutability.
+I hope you've learned a little bit more about Proof of Work consensus and how blocks on the blockchain are linked together through watching this video.
+
+## Section 7 - Smart Contracts
+
+### Video 20 - Smart Contracts
+
+When we make a transaction on the blockchain, understand that there are only three types of transactions we can make.
+It's what I refer to as the onion model of blockchain.
+And we're gonna start off with a very outer layer of that onion.
+The thing that most people are familiar with when they get into blockchain.
+The thing we do all the time when we trade cryptocurrency back and forth.
+That is two or more parties coming together and using the blockchain to record an announcement of the exchange of monetary value.
+So, we might use blockchain to record the fact that I paid you three Bitcoin for your used car or I paid you twelve blockchain for your vacation home.
+This is the model that many of us start off with in blockchain and again, it's the one that's most familiar and gets talked about the most right now.
+But if we peel away that outer layer, and we take away the idea of a monetary transaction or exchange,
+well, then we're left with two or more parties using blockchain to record an important announcement.
+And we see many valid use cases around this. Let's say, that I go to the doctor for my annual physical.
+My doctor checks me out and he says: "Hey Kris, I want to put you on a new prescription for XYZ".
+Well, maybe we're keeping our medical information on the blockchain, and so my doctor and I both agree that's a pretty good thing to add to my medical record.
+In this case, we still need two or more parties, because it's very important that I, as a patient, don't have the ability to go and update my own medical record without a licensed medical professional involved.
+And it's also equally important that my doctor is not able to update my medical record without my consent or permission.
+And so, that's two or more parties coming together, recording an important announcement or important data point,
+but nowhere in that example has money or anything of monetary value exchanged hands.
+Now, if we peel away the very last layer, you can take away this idea of having to have two or more parties.
+And what we're left with is just a single party announcing an important or significant event.
+And this is the simplest type of blockchain transaction, and also the most powerful.
+So, if we think about blockchain, perhaps for managing a supply chain scenario,
+we might have a grower of organic produce announce or commit a record to the blockchain that says they've planted a crop.
+And we might have an organic pesticide company come and treat that organic produce.
+We still have a single organization or single entity making the announcement of something they did, and this is really the heart of blockchain.
+When you understand that it becomes really easy to understand where smart contracts fit in.
+And smart contracts are just computer code. They're codified logic that we can use to respond to any kind of event that gets captured on the blockchain.
+So, in that organic produce example, if I want to notify someone when that fresh produce has been treated with organic pesticide, so I can create traceability for the end consumer,
+well, I might have a smart contract that manages that that defines the rules and the steps that get taken when that particular type of event occurs.
+And so this is all smart contracts are.
+There's oftentimes a misconception when people hear the word contract that they think of a legally binding agreement between two or more parties.
+It's not necessarily the case. Smart contracts don't have to be legally binding and they don't have to involve multiple parties.
+In fact, if you come from a programming or development background you can think of a smart contract easily enough as a "class".
+If you're not a programmer or don't come from a developing background, you can just think of a smart contract as a set of rules that get executed every time a certain type of event happens.
+And this is where the real power of blockchain comes in that not only do we have a permanent, unchangeable record of all the different events that have occurred,
+we can also write computer code, very, very non-subjective computer code, that defines exactly how that process is going to be managed and what steps are going to be taken when that event occurs.
+This allows us to ensure process consistency.
+It allows us to ensure that processes that are normally fulfilled by intermediaries or middlemen can now be satisfied on their own without the need for human intervention.
+And this leads to much more lean and efficient organizations in way of organizing human effort.
+So, when you hear smart contract just think about computer code that you write to respond to certain types of significant events.
+If you've ever worked with workflow or business process automation or management tools, you can think of smart contract is just being another workflow tool, albeit one that has the power to work with money.
+So, don't get too intimidated when you hear smart contracts, and don't get too caught up in the language.
+While they sometimes may be legally binding, they're not necessarily legally binding in the same way a true contract is.
+They're just a way for us to bake our own logic into block chain solutions to ensure that consistency of execution.
+
+## Section 8 - Blockchain Security
+
+### Video 21 - Introduction to Blockchain Security vs. Standard Cyber Security
+
+In this section, we're gonna talk a bit about how traditional cybersecurity is different than security concerns on the blockchain.
+In traditional cybersecurity that we're all used to, we're very perimeter-focused meaning that we put trusted data and assets behind a very, very strict perimeter.
+We assume that anybody we let inside that perimeter is trusted, either partially or fully, to see that data and access those resources.
+And the brunt of our focus goes into making sure that we keep the right people from getting beyond that perimeter,
+that we only let authorized users through, and then we prevent any attackers or strangers from breaching that perimeter and accessing the data and resources we store behind it.
+This is very different from blockchain, which runs on a massively decentralized peer-to-peer global network.
+Just by its very definition, you can see that there is no perimeter on blockchain, and so our security has to come from somewhere else.
+Our security on blockchain comes from the incredible amount of repetition.
+The fact that we ask every node to keep the same copy of the ledger and periodically to reach consensus, majority consensus, on what the proper data in that ledger should be.
+This makes the amount of work that an attacker would have to do practically impossible, if they wanted to change, hack, or alter the ledger.
+Another big difference between traditional cybersecurity and security on the blockchain is with conventional applications and conventional technology.
+We either develop all our own code or application parameters in-house or we rely on a single, third-party trusted provider who creates that line of business system for us.
+All the code, generally, comes from one place, and if we don't write it ourselves, all we have to have is trust and faith in the third-party organization providing it to us.
+In blockchain, things are a little bit different, because oftentimes in blockchain solutions we're writing smart contracts which call code from other smart contracts, which we may or may not write ourselves.
+And which may come from a variety of different authors.
+So whereas in the traditional cybersecurity space, we really only need to rely on our own due diligence to write secure code or the due diligence of a third-party application provider.
+In blockchain, we have to expend a lot more time and energy, making sure that the code and the contracts we're calling is safe and secure.
+In other words, we want to make sure that we're not inheriting any security vulnerabilities from other smart contracts that have been written by unknown and potentially untrusted parties.
+And the final big difference between conventional cybersecurity and blockchain is that in conventional line of business systems all of our applications either run directly on trusted hardware that we own
+as an organization or run on hardware with a high degree of trust provided by a third-party such as Microsoft Azure or Amazon Web Services.
+In the blockchain world, all of our code runs on untrusted resources, untrusted hardware that can be owned by anyone, anywhere in the world.
+This means that we must ensure that all the trust in a blockchain solution comes from the protocol and the code layer itself,
+because it's a much more massively distributed network, and we don't have direct control or access into the hardware that supports it.
+So, there are a lot of differences between conventional cybersecurity and security in the blockchain space that you're going to want to understand before you deploy your own blockchain solutions.
+
+## Section 9 - Public and Permissioned Blockchains
+
+### Video 22 - Public (Permissionless) Blockchains
+
+When people get into blockchain, there's a natural discussion about what type of blockchain, because blockchain comes in many different types and flavors.
+And normally, we hear about public versus private blockchains.
+One factor that often gets left out is also the idea of an open versus closed blockchain.
+And it's important to consider both parameters, so you know where on a possible solutions quadrant your idea falls.
+When we talk about public and private, what we're really talking about is who is able to write data onto that blockchain or onto that immutable ledger.
+The open versus closed brings in to consideration who's able to read that data.
+And so, we can talk about solutions which are public and open, public and closed, private and open, private and  closed.
+When we talk about public blockchains, what most folks are really talking about is a public open blockchain.
+It's a blockchain where anybody can come write data to the blockchain, anybody else can come read that data.
+So, public blockchain platforms like Bitcoin, Ethereum, Litecoin tend to get talked about a lot right now,
+and these are what we also refer to as permissionless blockchain platforms meaning that they really strive to, by design, increase and protect the user's anonymity.
+And, if we don't know who a user is, if we don't have a way of identifying individuals, and we don't have any way of creating permission or access rules around that user,
+and it's what we get, is the system where anybody can commit data to that blockchain and anybody can come along and read data to that blockchain.
+So, there's a perception that public blockchain platforms like Ethereum can't be used to build permission scenarios or to control access to data.
+The truth is they can, they just don't give you the built-in tools that a private or permission blockchain platform will.
+So, you can always use these open public platforms to build a permission solution,
+but just understand that it's upon you, your architects, and your developers to create that permissioning model,
+and that all starts with some kind of identity management system.
+So, when you think of public blockchains, you think about blockchain platforms like Ethereum, understand, by default, by the very nature and design, they're designed to protect anonymity.
+And, if we don't know who a user is, then we really have no way of creating permissions, role-based access and controlling what data they can read or write.
+In a lot of situations, this is desirable, this is why we see cryptocurrencies based on public blockchain platforms, because having that anonymity is important.
+And, if a user has a currency, something of value, they should be able to exchange it and spend it, and do what they want with it, just like anybody else.
+We don't want to treat any class of users differently than any others in those scenarios.
+So, that's a public blockchain, and that's a very different animal from the private permission blockchain.
+
+### Video 23 - 
