@@ -723,3 +723,162 @@ Cons:
 * Once the Miner has reached this “target”, they’re gifted with a transaction fee and mining reward (at the time this course was released, 12.5 bitcoins). The reward gets cut in half every 210,000 blocks (roughly 4 years).
 * The next step is for the miner to broadcast to all the other miners that they have achieved the set “target” and have confirmed the block. Once that has been completed, they’ll move onto the next block.
 * A good analogy is a lock and its combination. It takes a lot of work to figure out the combination, but once you do, it’s easy to verify.
+* Pros:
+	* Reliable (battle hardened through the years)
+	* Extremely secure (Avoided many attacks)
+	* With that comes trust in the trustlessness this consensus brings
+* Cons:
+	* Energy consumption (all these supercomputers running through math problems)
+	* Vulnerability (there could be a 51% attack through majority computing power)
+	* Halving reward lowers the overall incentives of miners to mine, centralization of hashing power
+	* The rich get richer (e.g those whose can afford massive amounts of mining equipment use that in their favor - economies of scale)
+
+### Lecture 60 - Proof of Stake
+
+* With Proof of Stake (PoS) we have “Validators” – “Forging”, instead of "Miners" – "Mining". There are no computational cycles running through massive amounts of math problems trying to solve a problem like PoW. With PoS, we have validators sending a special type of transaction across the network, which gets locked into a deposit (otherwise known as validator pool) and that’s called “staking”.
+* Once this validator has thrown his hat into the proverbial arena, then an algorithm pseudo-randomly selects a validator during each time slot (for example, every period of 10 seconds might be a time slot), and assigns that validator the right to create a single block. This block must point to some previous block (normally the block at the end of the previously longest chain), and over time, most blocks converge into a single constantly growing chain.
+* The next step is for the validator to validate a grouping of transactions. Once that’s completed, they receive their staked funds back, plus the transaction fees (sometimes rewards when coin supply is being inflated from time-to-time) for that block.
+* If the validator decides to act in a bad way (i.e. bad actor) and validate fraudulent transactions, they lose their stake that’s being held at the moment and are booted from the validator pool going forward (losing rights to forge). This is a built-in incentive mechanism to ensure they are forging valid transactions and not fraudulent ones.
+* Pros:
+	* Speed
+	* Efficiency (less energy consumption)
+	* Less hardware(does not need a supercomputer)
+	* Less centralization due to forger being chosen at pseudorandom
+* Cons:
+	* Vulnerabilty (investing in the destruction fo the network)
+	* The rich get richer (stake based consensus)
+
+## Section 3 - Governance with Autonomy
+
+### Lecture 61 - Decentralized Autonomous Organization (DAO)
+
+* Decentralized Autonomous Organization (DAO) is a complex stack of smart contracts.
+* It’s important to understand that, at the moment, there is no such thing as a completely autonomous DAO. There are specific parts that are autonomous and others that are not so autonomous.
+* In simple terms, a DAO is an organization that runs on a stack of computer programs (called smart contracts in the blockchain world) that are all interconnected to maintain a set of pre-programmed rules that have been previously voted upon by a community.
+* When thinking about regular corporations stripped all the way down to their bare bones, they are basically different groups following rules, responsibilities, and duties given from those sitting at the top of the organization. The bigger they are, the more complex these pieces become. At the moment, a DAO's goal is to automate this complex system piece by piece.
+* Within each DAO, there is a kind of pooling process for humans to contribute new rules into the system. These rules are then presented to the community and voted upon, based on the DAOs previously created rules. These new rule commitments will need majority agreement (may be different for each DAO) from the community to make this rule real. If this new computer-coded rule is accepted by the community, then it will be placed into the stack of other computer coded rules to improve the overall autonomous organization.
+
+## Section 4 - Governance for Enterprise
+
+### Lecture 61 - Governance for Enterprise
+
+* We’re focusing on governance in the consortium space, not governance within an enterprise company. So what is a "consortium"? A consortium is just a grouping of institutions (possibly individuals) getting together to achieve a mutual goal.
+* This goal can be setting some standard for their industry (Department of Justice), selling product (Airbus), sharing resources (Universities), etc. In a consortium, the only real obligation you have to others who are taking part would be providing resources for specific tasks and sticking to the rules laid out prior to you joining. Within blockchain, there are many different industries creating their own consortiums, such as financial services, life science and health care, energy, media and telcos, and the public sector.
+* Governance becomes much easier when it’s in a controlled environment, with each member agreeing upon set rules prior to jumping in with everyone else. Governance structures vary by industry and profit vs. non-profit, so there will be no set governance model everyone uses, but there are two we’ve come across in the blockchain space. 
+	* One is including the formation of smaller subgroups to work on specific issues.
+	* The second is providing several levels of potential engagement, ranging from participation in monthly calls to active technology development.
+* The point we would like to get across here is that a consortium governance model is currently more efficient than most decentralized blockchains.
+* Almost all consortiums up to this point have been permissioned and not decentralized permissionless blockchains, which is an opportunity cost most companies make when joining. At a high level, a permissioned blockchain is just that, a chain in which others must have permission to operate on. So, all the nodes operating on a permissioned chain have been verified by the central institution that is the authority of the network and the transactions that are confirmed don’t necessarily have to go through all the nodes.
+* These consortium blockchains have historically taken two approaches:
+	* **Business-focused consortia** : They aim to build and operate blockchain-based business platforms to solve a specific business problem (e.g. Digital Trade Chain – focused on cross-border payments). 
+	* **Technology-focused consortia** : They seek to develop reusable blockchain platforms based on technical standards (e.g. Hyperledger) .
+* There are some consortiums that do a hybrid of both business and technology, such as R3. Examples: Hyperledger, R3, Ripple, Digital Asset Holdings, Corda, B3i, EWF, etc. 
+* Below are some of the pros and cons to consortium blockchains:
+* Pros:
+	* Lower Energy Consumption
+	* Better chance of adoption in the short-term from set use-cases
+	* Speed
+* Cons:
+	* Centralized Trust
+	* Authority
+	* Cencorship to decisions made
+
+# Chapter 3 - Blockchain Problem Solving
+
+## Section 1 - Immutability
+
+* Immutability is when something is unable to be changed.
+
+### Lecture 62 - Traditional Database (Transaction) Immutability
+
+* The very nature of centrally-operated databases can’t be completely immutable, but that’s the case for blockchain as well. A centrally-run database can embed things into it with features that mention immutability (unchangeable). But if there is a central authority, they have all the ability in the world to override that feature.
+* Another point to keep in mind is that immutability has been around for many years, just like the majority of the tech used via blockchain; it is the combination of these that makes it unique.
+
+### Lecture 63 - Blockchain Immutability Concept
+
+* Let's review the aspects of the public blockchain that improve the chances of it being immutable.
+* There are many different variables, but the main one is consensus. In a blockchain, it refers to the logs of transactions which are created by consensus among the chain’s participants. The basic notion is that once a blockchain transaction has received a sufficient level of validation and posted on the chain, it can almost never be replaced or reversed or edited.
+* If all the nodes within the network (Bitcoin specifically) are working to solve a really hard math problem by running many computers simultaneously, the chances of anyone overriding that are slim to zero.
+* But, if someone wanted to undermine the immutability of the Bitcoin blockchain, here’s how they would do it:
+	* First, they would install more mining capacity than the rest of the network put together, creating a so-called “51% attack.”
+	* Second, instead of openly participating in the mining process, they would mine their own “secret branch", containing whichever transactions they approve and censoring the rest.
+	* Finally, when the desired amount of time has passed, they would anonymously broadcast their secret branch to the network.
+* Since the attacker has more mining power than the rest of the network, their branch will contain more Proof of Work than the public one. Every Bitcoin node will therefore switch over since the rules of Bitcoin state that the more difficult branch wins. Any previously confirmed transactions not in the secret branch will be reversed and the Bitcoin they spent could be sent elsewhere. The computing power required to achieve this is enormous and probably only theoretical, but it’s important to consider.
+* One other less technical and malicious example would be from the Ethereum hard fork that directly happened after the DAO hack. In this example, the majority of the Ethereum nodes in the network decided to update the software preventing those hackers from withdrawing the cryptocurrency “earned” (stolen). This update could not be enforced, since every Ethereum user controls their own computer. Nonetheless, it was publicly supported by Vitalik Buterin, Ethereum’s founder, as well as many other community leaders. As a result, most users complied, and the blockchain with the new rules kept the name "Ethereum". A minority disagreed with the change and continued the blockchain according to its original rules, earning the title "Ethereum Classic".
+
+## Section 2 - Transparency
+
+**Transparency** : Anything that is see through, where there is very little fog or obstruction in the way. Just like immutability, transparency comes on a spectrum. Certain things are more transparent than others. In the context of business/technology, this can be seen as a way of operating that is easy for others to see what actions are being performed. For example, open source projects where all the source code is available for the masses.
+
+### Lecture 64 - Traditional CRUD Explanation
+
+* Before we jump into how blockchain technology can be seen as transparent in certain aspects, let’s review the traditional CRUD method used by most databases.
+* In a traditional database, a client can perform four functions on data: Create, Read, Update, Delete. In a traditional database, there is usually an administrator, the authority giver who allows certain known participants in the database to do more than read/create; it allows them to update (change) and/or delete.
+* Due to the fact that the administrator is controlling who has access and who doesn’t, it’s easier to track these changes and prevent actors from tampering. In the public blockchain world, this isn’t necessarily the case.
+
+### Lecture 65 - Blockchain Append-Only
+
+* Within the public blockchain world, every full node on the network is its own administrator, where it can Create (e.g. add) and Read; this is also known as Read/Write access (e.g. append-only). These nodes only add more data over time in the form of blocks, but all previous data is permanently stored and cannot be altered.
+	* Read: query (e.g. search) and retrieve data from the blockchain
+	* Write: add more data onto the blockchain.
+* For example, if the blockchain has recorded that my Bitcoin wallet has 1 million BTC, that figure is permanently stored in the blockchain. When I spend 200,000 BTC, that transaction is recorded onto the blockchain, bringing my balance to 800,000 BTC. However, since the blockchain can only be appended, my pre-transaction balance of 1 million BTC also remains on the blockchain permanently, for those who care to look. This is why the blockchain is often referred to as an immutable and distributed ledger. 
+
+## Section 3 - Autonomy
+
+**Autonomy** : Independence or freedom, the ability to make your own decisions without being controlled by anyone else. This sense of freedom can be at the macro level of a country or at the micro level of a person. As children and adults, we all want a little autonomy in our lives, careers, or relationships, but it’s just a matter of how much autonomy one truly wants and can handle.
+
+### Lecture 66 - Autonomy: Human Process-Driven Complexity
+
+* The blockchain world is looking to solve all of this complexity with autonomy from intermediaries via automated smart contracts.
+* In the traditional world of doing any kind of transaction with another party, there tends to be a lot of administrative paperwork, with third parties intervening every step of the way. Some of this is needed, but most of it becomes wasted time and effort which could be spent elsewhere. Depending on how complex a transaction is between two parties, designated specialists (contract drafters, signatories, regulators of the contract execution, authorities to help with disputes, etc.) can make the process more efficient. 
+* This complexity can be seen within many areas of life. Take a moment to dissect the backend of certain services or products you use and this concept will become exposed very quickly.
+
+### Lecture 67 - Autonomy with Smart Contracts
+
+* Autonomy in the blockchain world can be seen from many different angles. We are going to focus solely on smart contracts in this section, due to the amount of autonomy it gives everyone involved. The concept of smart contracts has been around for a long time and was first proposed by Nick Szabo, who coined the term in 1994. The most simplified explanation is:
+
+*"IF THEN ELSE" statement, which means IF X happens, THEN do Y, ELSE do Z.*
+
+* Take this concept and apply it to two or more parties, all interacting on a mutually agreed upon contract that executes based on their actions (or non-actions). An example of a smart contract could be, "if this happens before the end of the year, then you pay me, else I pay you".
+* These "smart" contracts aren’t very smart, at least for now. That’s due to the simple explanation above because these contracts are "if, then, else" statements, which can vary in complexity based on how they’re stacked.
+* At the present moment, they can't make decisions without human intervention, AI, which is a highly debated topic at the moment by many neuroscientists/philosophers.
+* Anyone is able to create their own smart contracts without a central authority giving the right to do so. These contracts are executed without too much human intervention, and they’re stored on blockchain technology which provides a sense of permanence. These are three of the main attributes that can bring more autonomy to exchanging information between parties. Setting up a pre-agreed upon contract that’s coded into a blockchain and executes automatically when certain actions are taken is one step in the direction of not only improving our autonomy as individuals, companies, but shifting wasted resources (middle men/women) toward more impactful work.  
+
+## Section 4 - Multi-Party Transactions
+
+### Learning 68 - Ordering Between Parties: Traditional Multi-Party Sync vs. Blockchain Multi-Party Sync
+
+* In our current world of transactions, there’s always a third party to assist with connecting the sender and receiver. This has always been the most efficient way to move something from Point A to Point B. But with a third party making the connection comes the need to trust that they’ll get whatever is being sent in an efficient, economical, and effective way. This trust is open to human and process error. But we’ve discovered through experimentation that certain use cases could be automated via smart contracts.
+* One example is cross-border payments. Sending money from one country (border) to another country (different border). The major issue with how this is traditionally done today (e.g. correspondent banking) is that certain transactions end up stopping off at 7–10 different checkpoint banks. This constant stopping is making the money movement more expensive (each bank takes a fee), slower, and less reliable (sometimes it might never make it). This type of transaction is heavily reliant upon third parties to facilitate the movement of information (money, in this case).
+
+* Blockchain technology has been shown to provide many benefits, but one of the most prominent and immediate benefits is removing middle men (third parties) from a variety of processes. There is a long list of examples for middle men currently being removed, such as:
+	* Energy distributors
+	* Payment networks (Visa and Mastercard)
+	* Content distributors (YouTube, Facebook, Medium, etc.)
+	* Central exchanges (NASDAQ, London Stock Exchange, New York Stock Exchange, etc.)
+	* Cloud database providers (AWS, Azure, etc.).
+* How is the blockchain world removing this middle man? The answer is all around trust. Within the public blockchain world, where everyone is theoretically anonymous, there needs to be trust so we’re able to exchange valuable things without the concern of bad actors. Trust is built into the consensus mechanism that we’ve mentioned multiple times throughout this course. This incentivizes all the participants to help secure and validate good actions throughout the network. With that built-in "trustless" trust, we’re able to remove those middle men that provide no additional value, plus it could potentially increase the efficiency based on which public blockchain is being used.
+
+## Section 5 - Double Spend
+
+### Lecture 69 - How Blockchain Solves The Double Spend Problem
+
+* Back in the early 1990’s, developers, cryptographers, and different groups of people were trying to solve the double-spend problem as it related to digital cash, previously known also as electronic cash. Double spending within Bitcoin is the act of using the same bitcoins (digital money files) more than once.
+* If I buy an apple for $1, I cannot spend that same $1 to buy an orange. If I could, money would be worthless since everyone would have unlimited amounts and the scarcity that gives the currency value would disappear. The network protects against double-spending by verifying each recorded transaction within the blockchain utilizing a Proof of Work (PoW) mechanism (explained in the previous section).
+* Bitcoin was the first decentralized protocol to solve this problem and now more protocols are following, such as: Proof of Stake (PoS), Delegated Proof of Stake (DPoS), Directed Acyclic Graphs (DAG) structures, Proof of Authority (PoA), etc.
+
+### Lecture 70 - Digital Currency: Difficulties Prior to Blockchain
+
+* Today, when someone mentions digital currency, usually Bitcoin or crypto is the first thing that comes to mind, but digital currency had a long history before Bitcoin popularized it. This history goes all the way back to 1983, when David Chaum introduced the idea of digital cash in a research paper. Then, in 1992, he founded DigiCash, an electronic cash company, which eventually went bankrupt in 1998 due to adoption (buyout by another financial institution).
+* There were many other attempts to create digital cash over the years, but many failed due to a variety of reasons, such as:
+	* Adoption
+	* Security
+	* Fraud
+* Other attempts include:
+	* CyberCash in 1994 (failed after the Y2K bug of 2000)
+	* E-gold in 1996 (sunk by continuous money laundering, hacking, and extortion)
+	* Liberty Reserve in 2006 (shut down in 2013 due to this becoming a great hangout spot for cybercriminals).
+
+# Chapter 4 - Blockchain Use Cases
+
+## Section 1 - Blockchain Use Cases

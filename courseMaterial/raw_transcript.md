@@ -978,8 +978,6 @@ We talk about Proof of Work and Proof of Stake in much greater depth in other mo
 So, if you're curious about the difference between them, how they work and what the actual implementation differences are,
 be sure to check out those other modules.
 
-## Section 12 - Governance and Blockchain
-
 ## Section 13 - Identity and Anonymity on Blockchain
 
 ### Video 29 - Identity on the Blockchain
@@ -1259,4 +1257,234 @@ and once you get that lower number, then you can go to the top of the mountain a
 You did it! Check it out! I did it! Done! So what's an example of this for PoW?
 Some examples of PoW are Bitcoin, Litecoin, and Dogecoin.
 
-### Video 33 - 
+### Video 33 - Proof of Stake
+
+So, Proof of Stake is basically a lottery in a blockchain network where you need to have coins and then stake them in order to be in with the chance to go ahead and validate data.
+Why do we need to be concerned about that?
+Well, it's a bit more efficient, supposedly, and also more scalable.
+So, where we have Proof of Stake, it's a little bit faster than Proof of Work.
+Anyways, so today we're going to use an analogy of a bucket to explain what Proof of Stake is.
+And then also, we're gonna talk about the terms and examples.
+So, let's start with terms.
+Terms. First, we have a validator, we have forging, we have stake, and we also have a pool.
+So, when you think of Bitcoin, you think of miners mining.
+And, when you think of Proof of Stake, or you think of Ethereum, think validators, forging. Right?
+Validators. Forging.
+So, we got the terms. We got the analogy.
+So, let's go to the analogy, right? So here we have a bucket, right?
+So, we have a blue bucket here. And in this bucket, we're gonna have... this is going to be labeled as our pool.
+So the term here, pool, that's our validator pool.
+So then, we have names we're putting in the bucket. And then those names can be seen as stake.
+So stake is some sort of value you're putting in this bucket and that's giving you a better probability of being chosen to actually validate the transactions.
+So in this pool, I've written pseudo-random.
+So all these names or stake in this pool are gonna be chosen as pseudo-random.
+And once they're chosen, then you, a validator, are given the opportunity to actually forge a block.
+So what that means is, they're gonna give you the data of the transactions, and they're gonna give you the information, and then you're gonna basically put it into a block.
+Once you put that into the block, you're validating the transactions.
+And if you're a bad actor what happens is, and this is kind of a mechanism to prevent bad actors, is if you put in... if you validate an invalid transactions then you lose the money that you put into the pool.
+Easy as that.
+So, you lose the money and you're also labeled as incredible.
+So, with that being said that's the analogy of Proof of Stake, right?
+So we have stake, we have a pool, we have pseudo-random, we have validators, forging, etc.
+So now examples, who's doing this.
+So we have Straits, not sure how to pronounce that, we have Peercoin, we have NEO, and we have Ethereum, and I put "kind of", because it's partially Proof of Stake.
+
+## Section 3 - Governance with Autonomy
+
+### Video 34 - Governance With Autonomy: Driverless Cars
+
+Let's discuss governance with autonomy.
+Let's jump 20 to 25 years into the future and see where we've gotten with AI and autonomous drive.
+Driverless cars have now evolved to the point where a company can own a fleet of autonomous vehicles all driving in a variety of directions, moving items as well as people.
+But it's more than just that. Each car is pre-programmed with a set of guiding principles.
+For example, don't hurt humans, reach X percentage of profits within the month, maintain a set percentage of holistic health, etc.
+Consider the following scenario: A vehicle arrives to pick up a passenger for transport within a set time frame to take them to their scheduled meeting.
+The passenger is running late and therefore decides to take advantage of the option to pay an extra fee for an expedited route.
+Conceivable solutions to provide this options could include designating a lane on the highway for users paying the premium
+or sending micropayments to other vehicles in exchange for adjusting their travels to create a clear path for the expedited vehicle.
+Once the passenger has been delivered to the appropriate destination, the vehicle recognizes the need for maintenance after running an internal diagnostic.
+After repairs are completed, the vehicle heads off to a charging station and then moves on to the next customer.
+This can eventually be applied to blockchain governance.
+More specifically, decentralized autonomous organizations.
+This is a concept that quickly manifested itself after the Bitcoin white paper spread and people began to run through thought exercises.
+
+### Video 35 - Decentralized Autonomous Organization (DAO)
+
+We're gonna speak to you about what DAOs are.
+Decentralized Autonomous Organizations.
+So, DAOs. What are they?
+In the centralized world, we have entities like this.
+So, you'll have a board potentially in a company, then you might have a CEO, then you might have another layer which is a vice-president, then it goes down to managers, and then down to employees.
+And... And then, they have poor interns like me. Oh, dear...
+So, within that structure, you have a hierarchy, right?
+And effectively what this has, it's centralized.
+So, you always have power driven from the top potentially or in other aspects.
+And in a DAO, that is distributed.
+So, let's... To explain the DAO, let's just say it backwards.
+It's an organization that's autonomous as well as decentralized. Done.
+Or... I can explain more.
+So, imagine we have an onion here, right?
+So, in the very center we have smart contracts stacked up on top of each other.
+And those smart contracts, they are kind of, you know, stacked as I mentioned.
+And each one of those smart contracts are attached. So, think of it as a massive line of instructions for something to do, something else, and it's a really complex stack, right?
+So, from that stack we have here, and then on the outer circle we have oracles mentioned here.
+So those oracles are basically devices and things that interact with the outside world.
+So, I'm reaching out, grabbing some outside world information that could potentially change such as the weather, such as the president, such as a sports game, such as whatever that changes...
+I pull that information back in to the inner circle where the smart contracts are stacked, and then I incorporate that data into what those smart contracts say, just in case the execution has to change, right?
+And on the outer circle, our people, here, or the real world, so that's where the information is getting pulled.
+So that, in kind of a nutshell, that's what a DAO is.
+So, Elliott, why does is matter?
+Why do we care about Decentralized Autonomous Organizations?
+Well, they're decentralized, so you have a lack of centralization through one party.
+And then you also have less corruption, because we all know that corruption is quite prevalent in the centralized world.
+And then, you have errors, right? So, within the errors you have to make sure that you deal with these in a fair or appropriate way, and DAOs do that.
+Then, you also have efficiency, because they use smart contract technology. They enable you to autonomously make decisions as well as have the efficiency behind that.
+So, that's why.
+All right. Now, we're gonna talk about the problems with DAOs, because listen, they're not all that great, kind of great, not all that great.
+So, problems we'll start with bugs. So, with any type of code or any type of software program, there's going to be bugs built-in, because we humans, code programs.
+So we humans are faulty.
+So there's gonna be bugs with them and that's something we need to work on and reduce.
+The next is governance. So, with governance, basically, there are issues with on-chain governance and there are also issues with off-chain governance, because we all know that governance is a big problem.
+Not within DAOs, but within the whole sphere of decentralized technology as well as outside and in the meat world.
+And, with that being said, think of the flash crash. So, you have this autonomous organization and it's governing itself, right?
+So, these flash crash algorithms, they flash crash quickly.
+So, that kind of fallen backup, that could happen with the DAO, and has happened in the past.
+The DAO.
+And, another thing is system design or end points, to define even more.
+And system design goes back to bugs, somewhat.
+So, you're designing a system. And with that, there could be weaknesses for hackers to get into.
+And, with any weakness, especially within the decentralized technology world, it's the endpoints, right?
+So, it's the oracle that I explained over yonder.
+So, these oracles that are reaching out to the world they could be a weakness, because someone could feed corrupt data into that oracle and feed that bad data into the smart contracts which everything falls apart.
+Also, it's all the connections within the DAO. So, it's the smart contract connecting to the oracle, the oracle connecting to whatever centralized data source it's pulling from.
+So those little connections and gateways and endpoints are weaknesses that hackers get into.
+So, these are problems and these are things that we need to focus on.
+
+## Chapter Summary
+
+Many different consensus mechanisms are needed in a decentralized world where there are no middlemen and where trust has truly become decentralized with the trustless movement of value.
+
+Consensus is a way to ensure the nodes on the network verify the transactions and agree with their order and existence on the ledger.
+
+The most prominent consensus method is Proof of Work. Proof of Work is a process that has miners find a nonce or a number that is combined with the other data in the header. The nonce must change the header hash to be smaller than a specific number defined by the blockchain’s difficulty. A big issue with the Proof of Work consensus process is that it requires a lot of time and electricity to complete. The incentive for mining is often cryptocurrency.
+
+Proof of Stake is the second most prominent consensus method. Proof of Stake has nodes put up a stake to be chosen as the next block creator. When a block is chosen, the creator will receive the transaction fees associated with that block. If a block winner attempts to add an invalid block, they lose their stake.
+
+Proof of Stake solves many problems that Proof of Work has. One of these problems is the electricity requirement that is associated with miners finding a nonce.
+
+There are many other consensus algorithms, including Proof of Capacity, and Proof of Burn.
+
+Because blockchains are distributed, governance is usually not determined by a single point of authority. It is determined by the users. If the users like a change initiated, they have the option of using that change within their blockchain.
+
+Consortium blockchains can determine who has governance in a blockchain. They can control who can write onto the blockchain and who has access to what data. Consortium blockchains have lower energy costs, and higher speed, but at the cost of requiring trust among users.
+
+# Chapter 3 - Blockchain Problem Solving
+
+## Section 1 - Immutability
+
+### Video 36 - Immutability
+
+Well, for instance, you might have Jane who has a passport, right?
+And her passport number is set in stone or potentially set in a blockchain.
+She's recorded that passport number on the blockchain and we know that blockchains are cryptographically secure because of the hashing mechanisms that are in place.
+And what they need to do is send those transactions or the records off to other participants within the network and that's where you have a distributed ledger of Jane's passport number.
+However, then you have evil Fred. We don't like evil Fred. Where evil Fred might create another chain and there's something called the Nakamoto consensus algorithm.
+And, what that means is that the longest chain of records and data is known to be the true or real chain.
+So, he might want to go and change Jane's passport number in block 2, say.
+And he creates four blocks.
+He then transports that and beams it up to the other participants in the network and they accept it as the true record.
+And that means that Jane doesn't have a passport anymore.
+However, it doesn't usually happen and it's quite hard to do a 51% attack, also known as a Sybil attack.
+So what you have, is an immutable trail with Jane's passport number in the blockchain and then distributed out to other participants in the network.
+So, key terms.
+Governance of the immutability. So, is blockchain network actually immutable?
+That all comes down to how good the governance structure is.
+We know that blockchains are cryptographically secure.
+So, that also ties in with how the data is hashed and linked to each other.
+We spoke about CRUD: Create, Read, Update, and Delete.
+And then we also spoke about 51% attacks or Sybil attacks.
+
+## Section 3 - Autonomy
+
+### Video 37 - Smart Contracts
+
+Smart contracts are a set of rules that live on a blockchain.
+So, I'm gonna simplify that a little bit. With the smart contract... It's basically a dumb contract built by a human.
+And they may become smart in the future, but we'll start with dumb for now.
+And what it is, it's "IF", "THEN", "ELSE" statement.
+So "IF" this happens "THEN" do this, "ELSE" do this.
+And Ethereum is actually one of the first decentralized networks to build in this turing completeness.
+And what that basically means is you have the "IF, THEN, ELSE" statement and it loops through itself until it achieves the official goal.
+And what is looping, is that it loops and then it kind of changes the variable that goes into the "IF" place.
+So, "IF" change, "IF" change, "IF" change, etc., looping through.
+So with that, smart contracts aren't the smartest, but they're quite simple.
+And my friend Elliott here, is going to explain some analogies to help you understand that.
+Analogy one: a vending machine.
+So, you might have a vending machine that is spitting out Bitcola, right?
+And the person wants to go ahead and purchase that Bitcola.
+They put their money into the vending machine and then the vending machine has a smart contract built into it that links to Bitcola's oracle,
+which tells basically the company, Bitcola, how much stock is in the vending machine and whether or not to replenish it.
+It needs that internal token to speak to each other and that's how a vending machine might be smart.
+Or... You might have a car, where you're speeding, and effectively you might have a smart contract with your insurance company and they communicate between your car and the insurance company.
+And if you are found to be speeding, not me, then you automatically get fined and the smart contract automatically pays the insurer or pays the government.
+Number two. A little bit more interesting is farmer insurance in the developing world.
+So, they might have a farmer that has a crop of potentially rice or other food.
+And what happens is they have a smart contract between the insurance company and themselves.
+And if, for instance, you have a catastrophe, the insurance company potentially can send out a drone or maybe as a person to check the field,
+and they can establish automatically how much or what the proportion of the field is actually affected by the catastrophe, and automatically pay the farmer directly through a smart contract.
+So with that, you have some key terms.
+So, we spoke about the autonomy of the rules within a smart contract, we talked about the internal token that is required in order for the smart contract to speak to the oracles and other participants within the network.
+Then you have oracles which make sure that the smart contract basically gives its smarts, because we know it's not quite smart.
+And also we spoke about turing completeness. So, this is the "IF" this, "THEN" that statements.
+And it allows the code to loop back on itself until it finds the right answer.
+
+## Section 4 - Multi-Party Transactions
+
+### Video 38 - Double Spend
+
+We're talking about double spend. What is that?
+So, double spend is basically when you take the same coin or token or some sort of value and spend it twice.
+And we don't like that at all.
+So, what happens when you double spend?
+Double spend is where you might have a dollar or a Bitcoin or any other coin or currency.
+And you want to spend that more than once.
+So, you go ahead, and you might duplicate it.
+We all know what happens with duplicated or fake money.
+So, how does that actually work in a blockchain world?
+Within a blockchain world, you'll have a wallet and that will hold all of your coins, tokens, and basically your currency.
+That is also recorded on the blockchain, and effectively, all of the network understands and knows that you only have a hundred and ten coins or however many you do.
+And that's why, we have a distributed ledger.
+A ledger of all of the coins in existence and where they might be in terms of the addresses.
+So that brings about a monetary policy.
+We know what happens when things go wrong with monetary policy.
+So, within that space, you have your wallets, you have the blockchain which records all of the transactions and all of the coins, and how they've been spent and when.
+And that is then distributed, like we said.
+So, within that, we have key terms, right?
+So first of all, we have consensus, and all of the distributed ledger records are effectively kept in consensus
+or, if you try to double spend that coin, the other participants within the network will effectively say no, that's not true, and overwrite your transaction or whatever you try to double spend.
+Then, you also have created trust in a trustless world, and by that, you have a monetary policy.
+So, a monetary policy to maintain how many coins are in existence, where they might be, and when they've been spent.
+And then, you also have a linked ledger.
+So, that's the distribution ledger that we spoke about as well.
+And all of that brings about traceability.
+So, we know exactly where coins are.
+And we know when they've been spent and how many have been spent.
+
+## Chapter SUmmary
+
+Blockchain is an immutable ledger. Once a block has been added to the chain, the data in the block is permanent and cannot be altered or deleted.
+
+This append-only ledger needs a way to verify valid transactions and delete invalid transactions before a block is added to the chain. 
+
+Transactions cannot be validated and added chronologically, because that would allow for a double spend attack. Double spending occurs when an address rapidly initiates two transactions. One of these transactions could be invalid, but, because they are initiated at the same time, both transactions could be approved. To solve this, transactions are put into a pool of unverified transactions, then nodes add these unverified transactions to a block.
+
+When a block is full, consensus occurs, which is a process that selects the owner of a new block to be added to the chain. When consensus is achieved, nodes then validate each transaction in the selected block by referencing transactions associated with an address. 
+
+Transactions can also be added in the form of smart contracts. Smart contracts are business logic in the form of self-executing code that lives on the blockchain.
+
+# Chapter 4 - Blockchain Use Cases
+
+## Section 1 - Blockchain Use Cases
+
+### Video 39 -
+
