@@ -882,3 +882,62 @@ Cons:
 # Chapter 4 - Blockchain Use Cases
 
 ## Section 1 - Blockchain Use Cases
+
+### Lecture 71 - Introduction to Use Cases
+
+* We are already seeing blockchain disrupt many industries, including: healthcare, automotive, identity, government, real estate and insurance.
+* In this chapter, we will hear from those who are leading these projects. Companies including IBM, Luxoft, and counties such as Cook County, Illinois (USA), are using blockchain to solve problems, save money, and change the way data is stored and exchanged.
+
+### Lecture 72 - Blockchain Decision Chart
+
+* A private blockchain might be a solution IF:
+	* A traditional database does not meet our requirements
+	* Our database required share write access
+	* If all our participants trust each other or share a common goal
+	* If our database is likely to be compromised or attacked
+	* If the data should be private
+* A public blockchain might be a solution IF:
+	* A traditional database does not meet our requirements
+	* Our database required share write access
+	* If all our participants DO NOT trust each other or share a common goal
+	* If a third party is NOT wanted or required
+	* If we DO NOT need to control who has access to the blockchain (If we DO private blockchain)
+* In all other case we don't need a blockchain
+
+## Section 2 - Healthcare
+
+## Section 3 - Voting
+
+### Lecture 73 - How Blockchain Can Benefit Voting?
+
+* Blockchain can be utilized in many different fields as a solution to the problems that a standard database might have. One such problem can be seen in voting. Recently, it was revealed that a major U.S. voting machine manufacturer had installed remote access software on some systems. This software allowed for the alteration of votes when counting the total.
+* Instances like this create a lack of trust in America's voting system, as seen in a recent poll: "Exclusive poll: Majority expects foreign meddling in midterms". This poll suggests that only about a quarter of Americans feel confident that their vote is being counted. Blockchain would solve this issue by providing a distributed ledger that would ensure your vote is counted since the ledger you own is the same as the one counting the total.
+
+## Section 4 - Identity Management  
+
+## Section 5 - Land Records and Government
+
+## Section 6 - Blockchain with Supply Chain
+
+### Lecture 74 - Farm to Table
+
+* Farms are complicated ecosystems with many moving parts, careful timing, and seasonal financing structures. However, after the food leaves a farm, it becomes part of a wide-reaching supply chain with a lot of parties. Buyers, sellers, distributors, and grocery chains all want to know where the food is along its journey. You also probably want to know where your food has been before you serve it on your dinner table.
+* The trend toward blockchain agriculture promises to make each step of growing and distributing food simpler. It will offer all parties involved a single source of truth for the agriculture supply chain. In this article, we will cover four key ways that blockchain is changing agriculture.
+* Walmart and IBM dive deeper in their use case as we will review on the next page.
+
+## Section 7 - Internet of Things (IoT)  
+
+### Lecture 75 - Internet of Things Explained
+
+* Imagine you are sitting on your couch watching your favorite reality show or sports team on your smart TV. During a commercial break, an ad for Papa John’s latest culinary creation catches your attention as your stomach reminds you at the same time that you haven’t had dinner yet. So with a click of the remote, you select the items that you’d like to try and an order is queued in your mobile app that will communicate the details of your order, apply a coupon deal, and share your delivery address. However, a quick internal scan by your smart refrigerator reveals there are still some leftovers from the last time you ate out. Alexa alerts you before your order goes through and gives you an opportunity to cancel it. You decide to follow through with the order anyways, because after all, that old pizza doesn’t have stuffed crust inside of the already-stuffed crust.
+* Within a half hour, you receive a notification on your TV that the delivery driver is three minutes away and your front door lights automatically turn on in anticipation. In a matter of minutes, the doorbell rings and your show pauses. As you approach the door to greet the delivery driver, it unlocks. After you enjoy your dinner and finish your show, your biometric wristband coordinates with your phone’s health app to analyze your dietary and exercise trends over the past week. Within seconds, a step count goal for tomorrow is set and several healthy options for your next meal are suggested in accordance with the contents of your fridge. This scenario is not far from being a reality, and smart homes with this degree of connectivity are only the beginning of the new technology paradigm in our immediate future.
+* The potential applications for IoT devices are practically endless, and they encompass industrial and enterprise-level applications in addition to consumer applications. From companies to cities to countries, the opportunity to leverage IoT technology and the data it generates is massive. Businesses can enable dynamic supply chains responsive to consumer demand, cities can minimize energy consumption and traffic congestion, and countries can operate on highly efficient transportation grids and national security networks. However, there are two significant concerns currently inhibiting Internet of Things adoption, security and scalability.
+* In terms of security, IoT devices and the networks they are plugged into can be susceptible to cyberattacks, putting private or personal data at risk. Many IoT devices are designed to operate on low power networks, utilizing only the essential components for connecting while excluding the computing power necessary to run custom cybersecurity protocols. That being said, a breach in a single device could compromise an entire network, rendering vast amounts of confidential information vulnerable to attack. Additionally, the majority of IoT networks operate on centralized cloud solutions, both for storage and processing purposes. This type of centralized architecture leaves a network exposed to cyber threats and also limits a network’s ability to share and process information. As the global IoT network expands to billions of new devices over the next few years, the sheer amount of data generated will overwhelm our current IT infrastructure, restricting much of the value IoT networks create.
+* In recent years, another revolutionary type of technology has emerged that could very well be the solution for alleviating the primary pain points facing IoT technology, that technology is blockchain. Blockchain is a challenging topic to assign an all-encompassing definition to due to the extensive nature of the concepts and implementations that fall underneath its umbrella. As a matter of fact, the term “blockchain” today is not unlike the term "internet" in the late 1990’s and early 2000’s, in that it comprises a plethora of ideas, components, and applications all headed in unique directions. However, blockchain can be generally defined as a decentralized network where participants are granted certain rights to exchange, examine, and manage information or value securely with other members of the network. In addition to these rights, each node is responsible for working with all of the other nodes to confirm and keep an undisputed archive of all information made available throughout the network, which is also distributed amongst all the members.
+* Blockchain could help address many of the security concerns faced by IoT networks. Cryptographically encoded communication channels would permit devices to speak and exchange data with one another securely, and Byzantine Fault Tolerant algorithms would identify threatening devices and prevent them from incapacitating the rest of the network. Permissions could also be granted to each IoT device, determining which nodes would be able to submit data, communicate with other nodes, and view the ledger within the network. So things that might be more susceptible to attack can be assigned write-only permissions, and the rest of the network would monitor these devices and verify that the data they are contributing is valid. Additionally, processing power is allotted to each participant in the network rather than being owned entirely by a central authority, improving latency and facilitating scalability within the network. By allocating resources and responsibilities democratically among network participants, an IoT network powered by blockchain could operate on a highly-efficient and scalable model. Dynamic interactions between devices could optimize end value and enable real-time, data-based decision making. Together, these two technology megatrends are very well suited to complement one another and their union will usher us into a new era of connectivity and utility.
+
+Let’s review the smart home scenario from earlier and see a few examples of how an IoT network built on a blockchain framework could interoperate and harmonize. To begin, every smart device from your TV to your wristband would be able to connect and communicate securely within the blockchain network, ensuring absolute privacy of your personal data. This way your fridge can talk to your phone which talks to your smart lights and so on in a safe and efficient fashion. A blockchain network could also support payments, allowing an app on your phone to automatically pay for your pizza or other goods and services with digital currencies designed for highly efficient and inexpensive value transfer over the internet. Additionally, tasks like re-ordering household essentials or scheduling routine home maintenance could be automated by leveraging the data made available by assorted devices. The technical term for self-executing transactions like these is a "smart contract", which is a piece of code built on top of the distributed ledger (or data) layer programmed to execute a specific task once certain data inputs are met. For example, you could create a smart contract that re-orders coffee beans when it’s been 30 days since you bought your last bag or your annual AC inspection could be automatically scheduled with a preferred technician in accordance with your calendar’s availability. This opportunity for automation also sets blockchain apart as a superior solution to alternative IoT network structures, like edge computing within cloud-based systems. The smart contract layer built on top of the data and communication layers unlocks an unbelievable amount of potential for an IoT network, especially those with industrial or commercial focus.
+
+Luxoft plans to implement blockchain to keep the IoT secure.
+
+## Section 8 - Energy

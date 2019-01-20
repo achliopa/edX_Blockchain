@@ -1486,5 +1486,624 @@ Transactions can also be added in the form of smart contracts. Smart contracts a
 
 ## Section 1 - Blockchain Use Cases
 
-### Video 39 -
+### Video 39 - Blockchain Is Like Hot Sauce
 
+One important thing to keep in mind as you're evaluating blockchain, is it's like hot sauce.
+And I want to give credit where credit is due for this analogy.
+This was inspired by a friend of mine, Samson Williams, a thought leader in the blockchain space.
+But Samson loves to talk about blockchain being a lot like hot sauce.
+Hot sauce is surprising because you can put it on a number of things and it really tastes good.
+But there are some things hot sauce just doesn't belong on.
+You'd never put hot sauce on an ice cream.
+Understand that blockchain is like hot sauce - there are a lot of areas you can add a little splash of blockchain to, and end up making a much better and more compelling solution.
+But there are some areas that you can't add blockchain to without making things a lot  worse.
+And just like hot sauce, there is a big misconception that blockchain is an all-or-nothing proposition,
+that if we're going to architect and develop a solution on blockchain,
+we either have to build something that exists entirely on blockchain, or we need to build something that exists entirely on conventional technology.
+The truth is that like hot sauce, blockchain is really best when it's combined with something.
+If you were hungry and poured yourself a big bowl of hot sauce, not only would you be unsatisfied and unhappy, but you wouldn't want to repeat the process again.
+That's the same way with blockchain.
+If you are looking at building a solution completely and entirely on the blockchain,
+without exploring some of the amazing potential that you get by combining blockchain with conventional technology, then you probably got a bad recipe.
+So, when you're thinking about blockchain, and how to add it to your personal and professional life, understand that it's not a meal all by itself.
+It's just a little splash of hot sauce you put on something that already works pretty well.
+
+### Video 40 - Campaign Finance
+
+One area getting a lot of attention in blockchain right now, is campaign finance and campaign donations.
+There are some really interesting and compelling use cases, ways that we might be able to use blockchain to do new and innovative things around campaign finance that just aren't practical or feasible today.
+Let's say that I'm running for office and you want to support my campaign.
+Well, today, you might write me a thousand dollar check and I get all 1,000 of those dollars right away to use for my campaign.
+Maybe, we want to use blockchain to empower voters to keep their politicians more accountable to the promises they make on the campaign trail.
+Consider the following scenario.
+Let's say, that instead of donating a thousand dollars to my campaign, you write a smart contract on the blockchain to manage campaign donations.
+You give that smart contract a thousand dollars instead.
+That smart contract has been programmed with the terms and conditions under which it is able to release those funds to my campaign.
+I might get two hundred and fifty dollars of that thousand initially to use for my election.
+If I get elected, the remaining $750 can stay in the smart contract.
+Otherwise it gets refunded to you.
+Let's say, I do get elected. Perhaps, I don't get the second 250 of that thousand dollars until a year in office, if I fulfilled three or more of my campaign trail promises.
+And then, we might say as a final step, I get the remaining five hundred dollars to use for my reelection, only if I fulfilled 80% or more of my campaign promises during my first four-year term in office.
+This would put a lot of power back in the hands of voters and would keep politicians accountable for the promises they make, long after election day.
+While things like this certainly are possible with conventional technology, they're not very practical or feasible.
+Blockchain and smart contracts puts this power back in the hand of voters and has the potential to radically reform campaign finance and campaign donations.
+
+### Video 41 -  Unintended Use Cases
+
+One of the coolest things about blockchain is some of the unintended consequences a good blockchain solution might have.
+Let's look at an example.
+Right now, there is a lot of attention being given to how blockchain might be used, in general, for supply chain relationships and, specifically, in the food supply chain.
+Let's pretend that you have a very young child and your child has a serious pesticide allergy.
+So, of course, when you go to the grocery store, you make sure that you only buy the produce in the produce section that has the USDA organic label.
+It's just a little sticker that goes on the produce.
+So, you buy your produce and you stand in the checkout line, and you feel pretty good that the produce you're buying actually is organic and has been treated with all-natural pesticides, and won't make your young child sick.
+But sometimes you wonder, standing in line, how do I really know? How do I really know that someone didn't just print up a bunch of these stickers in their basement and apply them at the last minute?
+The blockchain can go a long way to solving that problem and providing much greater insight.
+Let's say, you're standing in the grocery store one day, and instead of the easily forged stickers, you're able to pull out your phone and scan a QR code.
+When you scan that QR code, instantly on your phone the entire lifecycle of that piece of produce pops up.
+You can see the date that it was planted on the orchard.
+You can see after it was planted that an organic pesticide company came along and treated it with an all-natural pesticide.
+You can even verify that the pesticide is natural by seeing the ingredient list in that pesticide.
+And finally, you may see who actually delivered that produce to the store.
+Let's say that there's a new green electric trucking company out there - Ed's Electric Trucking.
+Ed has seen all the fancy new Tesla semis. He thinks they're great and he is committed to providing a transportation and logistics company which is also environmentally friendly.
+Now, in today's world, you don't have a way of knowing about someone like Ed and his electric trucking company.
+There just aren't good ways for folks in the B2B space to communicate their business value directly to consumers.
+This is an interesting potential byproduct of using blockchain and smart contracts as a business solution.
+Not only would I, as a consumer, have greater insight into the origin of that produce and feel much better standing in the checkout line, but maybe what Ed's doing resonates with me personally.
+Maybe I'm a very green-conscious consumer.
+I didn't know there was such an organization as Ed's.
+And I have to buy a few more things while I'm at the store, besides produce. I have to buy some deodorant, some shaving cream, and some laundry detergent.
+So, when I buy that deodorant, shaving cream, laundry detergent, I only buy the ones that were delivered by Ed's Electric Trucking.
+This gives Ed and other B2B players a new and exciting way to establish brand and gain mindshare with the consumer that they currently don't have.
+Certainly, it was not the original problem we went to solve with blockchain, but many times, when we apply blockchain to a real-world problem, we find out there are a lot of unexpected benefits just like this.
+So, look for blockchain not just to transform the areas that we're aware it might make a difference in, but also to provide some new exciting and unintended benefits.
+
+### Video 42 - Law Enforcement
+
+Another area ripe for disruption from blockchain and smart contract technology is law enforcement.
+And this is a very interesting and potentially life-changing area.
+We've seen a number of unfortunate tragedies here in the United States, because individuals who shouldn't be allowed to own a certain class of weapon are able to.
+The primary reason this happens is because various law enforcement agencies at the federal, state, city, and local level just don't have a good shared infrastructure
+they can use to communicate back and forth and share pertinent information.
+An individual may have been barred by the military for an indiscretion in their past from owning a certain type of weapon.
+Unfortunately, and we've seen real-life examples of this, that individual is still able to obtain that class of weapon,
+simply because that information has never been communicated to the state or local law enforcement or to local arms dealers.
+This has resulted in a number of unfortunate tragedies which could be prevented in the future through the smart and judicious use of smart contracts and blockchain.
+Not only is this an area right for disruption, but it's an area where using technology such as blockchain may ultimately result in saving human life.
+
+### Video 43 - Music Industry
+
+Another area getting a lot of attention with blockchain and the potential use of smart contracts is the music industry.
+Not only does blockchain and the effective use of smart contracts allow us to remove a lot of the intermediaries, recording studios and distribution houses,
+allowing consumers to purchase music directly from their favorite artists,
+it also allows the artists insight in how consumers are using, sharing and spreading their music.
+Let's say that your favorite new artist comes off with an album.
+You and all your friends rush out the first day to buy a copy of that album.
+But, while your friends simply go home and listen to it over and over, you tell everyone who hasn't bought the album how great it is and, as a result of your efforts, 10 additional albums are sold.
+Now, if I'm that artist, presently I don't have insight into that kind of data, but it would be great if I did,
+because maybe I'd want to make sure when I came to town to play a concert, you had free tickets front row center, just as a way of saying "Thank you" for all your hard work and support.
+Not only does this allow musicians and other artists to treat different fans differently, depending on how committed they are to that artist's work,
+it also makes the experience of consuming that, of being the fan, so much more engaging, dynamic and interactive.
+In short, it creates a better situation for both the artist and the consumer, and makes the entire process more efficient by removing many of the intermediaries that often time get in the way,
+and abstract this data from being seen by the artist.
+So, if you're looking for an area that might be radically transformed by blockchain in the coming years, look no further than the music industry.
+And in creative content production, in general, I think we're gonna see a lot of change there.
+
+## Section 2 - Healthcare
+
+### Video 44 - MedChain Use Case
+
+Hi, my name is Steve Wishstar. I'm the CTO at MedChain.
+The use case that I'm going to talk to you today is kind of... can be regarded as the poster child of how to use blockchain technology.
+You know, along with identity, voting rights, supply chain management, healthcare.
+The healthcare field is kind of regarded as a prime example of why someone would not want to want their medical records changed or tampered with.
+And MedChain is actually tackling that use case.
+So, our mission is actually to use blockchain technology to establish a better, more secure, and transparent framework
+for storing electronic medical records that vastly improves the quality for the patients, while reducing healthcare costs.
+So MedChain gives patients control of their own health information and the ability to delegate that access to providers like doctors and hospitals using the blockchain and a distributed storage system.
+The MedChain network itself is an extensible, layered architecture and protocol system that is governed and secured by multiple blockchaines and utilizes a multi-crypto-token currency framework.
+And this network is built upon Hyperledger Fabric and permissioned blockchain.
+The MedChain solution itself is... We kind of refer to as a common data-layer that allows existing EMR, electronic medical record companies,
+to extend their software that already exists within a globally compliant framework that facilitates secure storage privacy and transparency.
+Our first objective is to basically reorient the current architecture, so patients have control over their medical records.
+I mean currently, as a patient today, you can tell your doctors what to do with your medical records, but you actually can't do it yourself.
+You can't go out there and do it yourself. It's inconvenient.
+And so basically, we typically have to call up the doctor, pay like a reasonable fee to have them make copies of your medical records and then fax them over to your other doctor for a second opinion.
+So... And then plus, it's on their timeline. It's not on yours. You can't dictate when that gets done, so it's pretty inconvenient.
+So, why would we want to streamline this process?
+Healthcare itself is becoming more individualistic and holistic.
+So, people are choosing what doctors they want to see as a result of being told what doctors that they have to see within their network.
+But we want to transfer our test results over to those new doctors, so we can get that second opinion.
+And it's not just one doctor anymore.
+We need the ability to incorporate all different modalities of our healthcare together, whether that's like a report from the emergency room,
+your yearly doctor's visits, and your blood work, to your chiropractor, or even your dentist.
+There's no need to basically repeat all these procedures or to leave the next provider guessing as to what was done or why it was [done], why you're on those medications in the first place.
+Similarly, the population is becoming even more mobile.
+So we have like second homes in different states, our companies are relocating all the time, big adventurers seeking opportunities where we go out for a long time.
+Ultimately, our state and national boundaries are becoming blurred.
+By this physical migration and medical records at this... in its current state cannot penetrate those state and national boundaries.
+And lastly, portable medical records that you are in control of and yet that you can take with you, will be required for telemedicine.
+You don't want to just talk to the doctors that are in your city, and you actually want the best doctors that are available.
+So, you want those experts to have your up-to-date medical records.
+And soon you'll be able to do that with just a few taps on your phone, you'll be able to authorize whatever doctor you want to see your current medical records.
+And, of course, telemedicine has all the abilities to transform healthcare for people who are not living in privileged areas.
+Many regions of the world don't even know what a medical record is.
+But if some doctor sees a patient via telemedicine, there's no reason why the next doctor has to reask the same questions and start from scratch.
+A global ledger would enable a broad list of people to offer medical support and have a unified patient-centric approach.
+So, why would you use blockchain?
+The current approach to healthcare medical records is to store them all in big, proprietary databases that individual companies own.
+To be sure, I mean like storing medical records is a big security risk and that's why they kind of went this way.
+But storing them all in one place is an archaic method of security.
+Blockchain itself obviously has been over... has been turning industries on their head as far as rethinking overall approaches.
+You know, blockchain is a distributed global database and common data layer that anybody with the right credentials can access and pull data from and build applications upon.
+Blockchain also creates that system of trust that can enforce how medical records are transferred.
+In that way, that's much quicker and safer than a verbal agreement by doctor saying, "Yes I'll fax it right over".
+It can be done instantaneously.
+Lastly, blockchain's inherent way for the public to verify each and every transaction is important.
+This gives control of your own medical records and you can tell who sees them and who has access to them.
+So, on a practical level, how is MedChain going to see and be used by the public.
+Well, MedChain is going to be launched in a couple of... multiple phases here.
+The first phase is to establish that common data layer, that all existing and future software providers can plug into.
+That common data layer, we call the Secure Medical Record Chain.
+Subsequent phases will release complementary blockchain networks that can build upon the features on top of MedChain.
+For instance, if a patient gives permission, their medical records can be made anonymous and used for research purposes
+to see if maybe your reactions to a medication or procedure are within the norms of what patients are experiencing elsewhere.
+So, we call this Phase II of the discovery.
+Phase II of MedChain which is called the discovery chain that will use off-chain artificial intelligence and machine learning to pore over the millions of records that could span lifetimes.
+This simply can't be done with data, if it's locked up in a proprietary database as it is now.
+People will interact with MedChain in several different ways.
+The Patient dApp, or distributed app, is available free to patients all over the nation and all of the world.
+And that's the application where patients can see their medical records, list out everyone who has ever seen them or touch them, and give new providers access, or take away access from old providers.
+In future phases, you'll actually be able to schedule doctor's visits, manage insurance bills, and see what that medical artificial intelligence thinks about how you can improve your own health.
+The Service Provider dApp, on the other hand, that's the interface for the actual service providers whether that be doctors or hospitals or laboratories.
+And this is, you know, where they add files to a patient's medical record.
+MedChain is developing a UI that doctors will use to upload files and fill in data fields.
+But it'll also be an API for existing software providers to talk directly with the blockchain and storage, and to save new patient data.
+This UI gives the provider access to all medical records that have ever been performed for a patient no matter who ordered them.
+And at the same time, obviously, it allows the doctor to track their own specific procedures that they prescribed.
+And if you remember that AI and data analytics of the Phase II, anonymous medical records, the Service Provider dApp will actually give the doctors access to all that data
+about what similar patients are experiencing and that could assist the doctors with making decisions about your own health.
+The implementation kind of looks like this, once a doctor receives a new file to add to a patient's medical record, the nodes on the blockchain, the peers, will securely handle all the encryption and file transfers,
+handle the utility tokens that are needed, provide storage, generate storage invoices, automatically query the storage market and get the current storage pricing,
+reassemble the files and deliver the final products all while complying with the current laws.
+Then, as regulations change and get updated, the MedChain blockchain will also evolve to ensure that data is always stored and transferred in a correct and legal compliant manner.
+From a Hyperledger Fabric point of view, let's look at it on a graphical level.
+Here, in Phase I, you can see multiple blockchains within the MedChain network.
+We have a permission and identity chain, a chain that stores metadata about a file, and then a chain that actually stores the storage locations of each of the files after it has been encrypted and fragmented.
+And you can see that each of these chains has their associated smart contracts or chain code and ledgers that hold the on-chain data.
+You can also see the various players in the network.
+The patients, the providers, again, whether they're doctors, hospitals, laboratories, pharmacists, and then the storage providers
+and those can be, whether they're existing hospitals already storing data for their patients or in the cloud by third-party providers.
+But the data flow kind of goes like this.
+The patients give each of their doctors permission to add data to their medical record, the doctors' offices verify the identity of the patient, obviously when they come in for their exam.
+The patients generate...
+The providers, excuse me, generate new doctor notes or files, such as an x-ray or blood work, and then the provider nodes then encrypt the files, fragment them and store each fragment across the network of storage nodes.
+And basically, that's the fully functional Phase I, EMR distributed storage solution.
+But on top of that, we can add in Phase II.
+And here, the network can be extended in any number of ways actually, but the first one that we're going to do, is anonymous medical records.
+So the patients can give their permission to have their... to have researchers use their data, and the data is made completely anonymous by removing all of the personally identifiable information.
+And all the new anonymous data is then stored across the storage network in new files.
+And then finally, what is MedChain's timeframe for implementing our network.
+Currently, the MedChain's DevNet is being developed.
+We're doing network configuration, chain code development and the UI development already.
+Our BetaNet should be actually ready for next year, second quarter of next year in 2019.
+And that's obviously where we'll be able to take on some beta clients.
+And then finally, the MainNet, the main network looking to distribute second quarter of 2020, and this is obviously where we can take on the world.
+So, in conclusion, I hope this was a good overview of the use case for the healthcare industry.
+The MedChain network will store all of your medical records and give you the ability to give those records to whatever doctor you want to instantly and securely.
+So thank you from all of us at MedChain.
+
+### Video 45 - Blockchain to Prevent Counterfeit Drugs
+
+When it comes to getting medication from the manufacturer to the physicians and patients, Africa is facing a severe problem with counterfeit drugs.
+For costs associated with the use of counterfeit medicines, individuals, families, and health systems are staggering.
+Every year more than 122,000 African children under the age of five lose their lives as a result of counterfeit antimalarials alone.
+What if we could track, trace, and authenticate the drugs at each stage of their journey from the pharma company all the way to the patient?
+That's exactly what researchers at the IBM Lab in Haifa, Israel are doing.
+We're using blockchain technology to introduce traceability and trackability into the supply chain.
+Using blockchain, we can make sure there's a verifiable provenance of what is delivered, by whom, to whom, when, and where.
+Within the pharma supply chain, we're setting up a trusted network that allows the different parties to store information,
+knowing that only authorized members can see it, and the information can't be altered once it's been entered.
+Specifically for pharmaceutical orders, we can verify that the authentic drugs are handed over to an authorized party at each transfer point,
+ensure compliance with the proper conditions for transportation and asset transfer,
+and we can also make sure that a joint verified ledger of all transactions is available at all times.
+This means provenance of each and every drug in the supply chain.
+Any party in the network can see the status of where the drugs are and who has them.
+This solution from IBM research includes the mobile interface and the permission blockchain backend that gives each certified and authorized party in the network
+a way to initiate action, finish their transaction, track its progress and verify that it was done correctly.
+Let's look at an example of how this would work.
+This is Dr. Msia. She needs tuberculosis vaccines for her patients.
+Dr. Msia already checked the prices at the local pharmacies and decided to order from ABC Pharma.
+She knows that if she arranges delivery from the pharmacy using blockchain, she'll have more confidence that the drugs are authentic and also get a better price.
+At ABC Pharma in Kenya, Imani received an order from Dr. Msia in Koru asking for three BCG ampoules.
+The order is registered in the blockchain.
+Imani prepares the delivery for Dr. Msia in Koru and scans the QR codes and serial numbers of the vaccines for the blockchain.
+The order is ready to go and the next step involves selecting the delivery carrier.
+From the list of possible carriers available in the blockchain system, Imani selects Solomon who has a good reputation score and is not overloaded with orders today.
+Solomon is motivated to supply a high quality service, because his reputation score is calculated based on the ratings he receives.
+This reputation score helps him get more business from other hospitals and clinics.
+He heads to ABC Pharma where he meets Imani.
+When he arrives, Solomon authenticates to the blockchain system.
+Imani initializes the delivery transfer.
+And then Solomon checks the serial numbers of the vaccines and accepts the delivery.
+All this is recorded and the transaction is appended to the blockchain ledger after verifying that both Imani and Solomon are physically at the ABC Pharma premises.
+Solomon heads out. The BCG vaccines are stored in a refrigerated box equipped with temperature sensors.
+The sensors sent a reading every 60 seconds and any alarms are saved in the blockchain.
+Solomon arrives in Koru and heads to Dr. Msia's clinic.
+Dr. Msia greets Solomon and they both examine the delivery.
+Dr. Msia received an SMS earlier with the tracking code. Together they authenticate using the blockchain.
+Dr. Msia verifies the tracking code number of the delivery and scans in and verifies the vaccines using a QR code scanner.
+She also verifies via blockchain that there were no alerts regarding the temperature during transport.
+Dr. Msia accepts the delivery.
+Solomon accepts the delivery transfer.
+And the transfer is appended to the blockchain, which now shows the vaccines at the Koru location.
+Solomon's reputation score and number of open deliveries are updated.
+And Dr. Msia can continue keeping her patients healthy.
+Back at ABC Pharma, Imani examines the status of today's blockchain transactions.
+Happily, all went well with the transfer to Dr. Msia.
+This innovative blockchain solution from IBM research offers new benefits.
+It reduces the loss from counterfeit drugs, offers shorter lead times of cycles from pharma to patient, and introduces a non-repudiation process with provenance and trackability for fast resolution of any conflicts.
+
+## Section 3 - Voting
+
+### Video 46 - Luxoft
+
+Luxoft is bringing voting into the digital realm with its blockchain-powered e-Vote solution for the city of Zug.
+How does it work?
+Easily, every citizen can go to the City of Zug e-voting portal, login with their digital ID previously obtained from the City of Zug, and get a set of unique digital keys generated.
+Then, using their keys they can access the open polls and vote, and, when voting is over, see and verify the accuracy of the results.
+Due to its blockchain nature, e-vote makes voting instantaneous, anonymous, immutable, transparent, auditable by the general public,
+and decentralized due to no centralized body owning the data and controlling the results.
+The City of Zug can now create polls, notify digital ID holders about the upcoming voting and process the results in minutes saving operational costs and time.
+Democracy is going digital with Luxoft.
+Find out more at digital.luxoft.com.
+
+### Video 47 - Luxoft Voting Application
+
+A little background on the voting app.
+So about three years ago, we wrote a voting application for a non-banking financial institution, like savings and loans.
+It was a group out of the United Arab Emirates that had come to us and they wanted to have corporate board voting platform.
+And so their requirements like, you know...
+It was really important to be able to have share-weighted votings, so a shareholder could distribute their shares and votes for multiple candidates or multiple initiatives.
+They had requirements for how the initiatives were supposed to get proposed such that during a period of time a member could change their votes if they change their mind while the poll was still open.
+The member could also see and verify that their votes were cast properly in the end.
+But there was no way for the corporate board to see who voted for what or, more importantly, the requirement that they couldn't correlate to say people who voted for this candidate also voted for this initiative.
+And so the team that I work with is...
+They're experts in cryptography and they really took this on as a project.
+Even though this was a small PoC, we built a really robust voting platform.
+And it encrypted each vote individually such that it could be tallied in the end, but there was no way to correlate it back to who cast the vote.
+We demonstrated it to them, they thought it was really great.
+There were some barriers to adoption, mostly around authentication and an identity.
+And so basically, the project just went nowhere.
+So, we got the idea that this was some pretty cool technology that we had developed, and the only way to really make it go somewhere was to make it transparent.
+And so we decided that we would open-source it, and that we would donate it to... initially, we were going to donate it to the Crypto Valley Association,
+later we decided that the City of Zug was willing to take it and use it for their local elections.
+And Zug, Switzerland is...
+Switzerland is a true democracy. They do the one man, one vote for every topic.
+There's no representative making decisions on your behalf for his constituents.
+This is like, if there's an initiative that goes up, everybody votes.
+So, they have a real need for an optimized and a better voting platform.
+And it was natural for us to say: "Hey, we've got this thing, let's give it to you, let's set it up, let's get it running,
+and then use it as a platform to not just host elections, but also to foster growth and innovation around voting.
+So that we could learn the approach that we used, see if there's a better approach, get other people looking at the code and have them shoot holes in it, if it has flaws.
+And so, we've now given it to Zug.
+Zug has used it for some surveys primarily, they haven't used in a proper election, but the results have been good.
+Everybody... They've had a good turnout of voters.
+They are embracive of the technology, which is sort of an unusual thing with voting.
+The next steps then for Luxoft and for what we want to do with it is, we'd like to start a foundation around it.
+And we've already sort of cast the net out on social media about... that we built this thing, we gave it away for free, it's open source, come look at it.
+And also, if you have a voting app that does something similar, if it's innovation around voting technology, let's build a foundation
+that we can use as a collection point for these types of innovation, and in ways to help accelerate getting them embraced.
+I had a call last week with a small team that was started from Kaspersky Lab, that have done basically the same thing that we've done.
+They used a little derivation of the technology, but essentially we built the same thing.
+Theirs was built on Ethereum, ours was built on Hyperledger Fabric, and so we're going to be moving forward with them open sourcing their voting app as well through the same foundation once we get things set up.
+Great, great. And how do you see the future laying out for that? How far off are they from using that in...
+So, I think the biggest thing, the biggest barrier to adoption, or the one thing that is a barrier to adoption, is embracing digital identity.
+And blockchain brings some features of digital identity that we've never had before, but the challenges is an adoption.
+So, one of the things that the City of Zug, Switzerland had that nobody else had is, they've already started issuing a digital identity using the uPort platform that is based on Ethereum.
+And so they have a hundred or so people in the city that have already shown up at the city office, showed them the driver's license and their address credentials
+and been issued a digital identity on their device that enables them to use this voting platform.
+And so, as we move forward, the big adoption challenge is getting a population of people that are embracive of the technology, and that have digital credentials that can be used to login to the platform and cast votes.
+Are you guys doing any kind of pushback in any way from the adoption?
+Yeah, I think as in everywhere the Swiss population is divided, and they're a little different there than they are in America in that they're not so emotion-driven.
+So, you hear arguments for digital voting, you hear arguments against digital voting, and, you know, they deal very much in facts there.
+And so I haven't heard that this is a danger or a risk or any of the fear tactics.
+I've heard some accessibility issues, not everybody is equally digitally enabled, and that it can exclude individuals that way.
+And they are obviously talking about validating credentials.
+How do we really prove that individuals are who they are when they cast their vote?
+And I think a lot of that is being sorted out as the technology matures and gets proven out.
+I think the big barrier there always is is adoption of digital identities and hopefully we'll see some movement in that in the next couple of years.
+Awesome. And not to hold you to the fire later on, but how far off do you see that first election taking place? I mean, how far into the future?
+So, it's interesting. I think that rather than how far off... I think that we're close, we could do it now.
+So, it's going to take some time to get a population that goes down and gets some digital credentials, but the platform is built.
+We've got it set up and running.
+I think it's more about "where".
+So, I had conversations while I was at the Crypto Valley Conference with a woman from Malaysia.
+And I know the Malaysian population is very conducive to technology adoption.
+She said [that] most people in her population have at least three cell phones, and so when you have a technology-enabled population
+with a forward-thinking government, you've got a recipe for embracing digital voting.
+And so I don't know if Zug will be the... They were the first, but I don't know if they'll be the leader.
+I think that they're gonna spend a lot of time sorting out the pros and cons, and the do's and don'ts of digital voting over the next couple of years.
+I think it's more likely that they'll have elections in some developing country and around digital voting, and hopefully they'll be able to leverage some of the work that's being done in Zug
+and some of the work that might be done by the foundation around digital governments that can help accelerate it.
+
+## Section 4 - Identity Management  
+
+### Video 48 - LifeID - Self-Sovereign Identity
+
+Welcome everyone, I'm Alex Ortiz, Chief Blockchain Evangelist for the LifeID platform.
+And I'm here to talk to you about an exciting blockchain use case - self-sovereign identity.
+Let's begin by discussing some of the problems of the modern world.
+Today, there are three major problems with how we transact online: users have low privacy, fraud prevention efforts cost businesses a lot of money, and password-based authentication leads to frequent data breaches.
+A self-sovereign identity platform gives developers a new architecture and new tools to solve these problems.
+So, what is a self-sovereign identity?
+A self-sovereign identity is an identity made up of data that the user has control over.
+Examples of identity data today include: your name, address, date of birth, government identification number, place of employment and many other attributes.
+A lot of that data currently originates and lives in centralized databases.
+When you need to prove some aspect of your identity today, three things happen: you pass the required information onto others,
+you provide some form of proof, and then the recipient checks, usually a centralized database, to see if the information matches.
+Now, as we've all seen, identity information in centralized databases reduces user privacy and increases fraud when that data is breached and reused to impersonate users.
+Protecting that data and protecting against fraud is also costly to businesses.
+Blockchain technology, when combined with cryptography and with self-sovereign identity platforms, will help you solve these problems or remove them altogether.
+With self-sovereign identity technologies like LifeIDs, users won't pass along their identity data like they do today, businesses won't need to store identity data like they do today.
+Instead of passing on a date of birth, a user will be able to pass along a claim that they are over a certain age.
+Instead of passing on an address, a user will be able to provide a claim that they are a resident of a certain country or state.
+Instead of passing along a government-issued identification number, a user will be able to pass along a claim that they have a valid ID, and so on.
+In other words, instead of sending private information, users will soon be able to send claims that certain information is true.
+The claims will be signed by the issuing party using cryptography, the signature will serve as evidence that it is a true and valid claim, and for this reason, they are called verifiable claims.
+And user will then be able to choose to show that verifiable claim to a verifying party who will then be able to check that the signature is valid,
+that the claim is still valid, and that the claim belongs to the user and to nobody else.
+These verifiable claims will stay with the user on their mobile or other device, not stored in centralized databases like identity data is today.
+This technology will lead to fewer privacy violations, less identity theft, and fewer data breaches.
+But it will be up to developers to build identity applications utilizing self-sovereign identity platforms like LifeIDs.
+So now, let's talk about the role of the underlying blockchains.
+A self-sovereign identity system is built on top of a blockchain.
+The blockchain plays two major roles.
+One, the blockchain serves as a cryptographically secured network for verifying signatures on verifiable claims.
+And, in our model too, the blockchain will act as a decentralized payment processor for identity transactions.
+As a wonderful bonus, self-sovereign identity platforms will work worldwide.
+Now, let's talk about some example use cases that are already happening - medical licensing.
+Some medical licensing boards have begun to issue medical education certificates and graduate medical examination credential to doctors.
+The doctor is able to share their certificate with a hospital and the hospital can verify that the certificates are valid,
+speeding up how quickly a newly licensed doctor can begin working and ensuring the medical credentials cannot be tampered with.
+The second use case is academic credentials.
+Several universities, including MIT, the Massachusetts Institute of Technology, have begun to offer their students the option of obtaining proof of graduation as a verifiable claim.
+And the third use case is being able to prove that your business is in active standing and that you are able to do business in a certain place.
+So now, let's discuss where you can learn more.
+We're part of an ecosystem of companies and organizations that believe in the future of self-sovereign identity.
+You can find out more about this technology by seeing what the World Wide Web Consortium, W3C, Credentials Community Group is doing with its decentralized identifier specification.
+And what the Verifiable Claims Working Group is doing with the verifiable claims data model.
+You can also learn about other components like the Universal Resolver at the Decentralized Identity Foundation.
+Finally, you can read more about the LifeID platform by reading the white paper at lifeid.io.
+And you can conduct online research on what other self-sovereign identity networks are doing, including Sovrin, Blockstack, uPort and others.
+Thank you for your time and I hope you help us change the world by building on a LifeID platform.
+
+### Video 49 - LifeID
+
+LifeID is a secure blockchain-based decentralized identity solution for your life, both online and in the real world.
+LifeID's mission is to provide every person with a lifelong self-sovereign digital identity.
+This digital identity will allow anyone to securely and easily manage any online and real world transaction that requires identity authentication.
+A self-sovereign digital identity will put the owner in complete control, without relying on the oversight or control of a social network, company or government.
+LifeID gives users the convenience of Facebook or Google as an identity provider,
+but without the concerns of privacy violations, having your personal data sold as a product ,or being denied access on a bureaucratic whim.
+With LifeID, you decide who gets to access your private identity data.
+Using a biometric secured phone app, LifeID gives you the convenience and control to easily run your daily life.
+You can log in to any site without usernames or passwords, enter any building and participate in any identity-based transaction with perfect ease and confidence.
+LifeID is able to offer unparalleled security and convenience through the power of blockchain and cryptography.
+The beauty of LifeID's decentralized permissionless identity solution means it can exist on top of any smart contract-based blockchain, expanding the potential reach across the globe.
+LifeID is the new standard for identity that exists everywhere.
+LifeID is your identity with convenience and control, for life.
+Stay tuned for more information and be sure to follow us on Twitter at lifeid_io.
+
+## Section 5 - Land Records and Government  
+
+### Video 50 - Cook County, IL, Recorders Office
+
+Hi, good afternoon! My name is John Mirkovic, Deputy Recorder of Deeds at the Cook County Recorder of Deeds office in Chicago, Illinois.
+I want to thank you for watching this course and your interest in blockchain technology,
+and also thank our Recorder of Deeds, Karen Yarbrough, for allowing me and this office to experiment with this new type of technology.
+So, there's a few reasons why blockchain is interesting for land records, and that's sort of how Cook County came to this project.
+About two years ago, we were the first county-level office, and perhaps the first government office in America, to endorse the technology behind Bitcoin, which is a blockchain, decentralized database.
+And we saw right away the transformative power that such a database could have on government and real estate transactions as a whole.
+So, I want to first talk about briefly why real estate makes a lot of sense for blockchain,
+and one of the main reasons is that a real estate transaction in the United States requires multiple parties, sometimes up to 20 or 30 different entities, to agree on a single set of data,
+and that's what a blockchain does; is it allows people to reach consensus on facts in a quicker manner.
+And currently, right now, the way it's done is very paper-intensive, and it takes a lot of time, and it's expensive to get everyone on the same page.
+So, a blockchain-based land record, where everyone knew who the owner of a property was just by looking at the record, would be a game-changer for real estate in the United States.
+Another reason that blockchain makes sense for land records is that land records in the United States are already kept as paper blockchains -
+that's a good way to think about it: each parcel has a time stamp to reverse a chronologically ordered and legally immutable chain of events that happened on that parcel.
+So, the fit between blockchain and the way records are currently kept in paper is very congruent,
+so it makes it very easy for land records professionals to sort of get the metaphor on why this would work.
+Another reason that land records, or even government land records, could benefit from blockchain is that in the United States, our land records,
+in many states and counties, are not required by law to be kept up-to-date.
+So, the public record is there, but it doesn't have sort of the gold standard power that it should have to allow people to be able to transact real estate quicker.
+So, one of the things blockchain can do is finally get us to where anyone can go on the Internet and see who owns a property at any given time.
+And another reason that blockchain makes sense for land records is fraud.
+In Cook County, we have... it's fairly common where people will attempt to steal other people's homes on paper.
+That's because our current paper-based system doesn't require or even allow any verification of the data that's used in a deed or conveyance.
+So, a fraudster can forge a piece of paper and steal someone's home on paper easier than they could steal their neighbor's Wi-Fi.
+That's one of the things that really attracted us to blockchain,
+was at least protecting the conveyance of a property behind a public/private key pair.
+And sort of... one of the big reasons for taxpayers, the fifth reason, is that all of this would save people money in the process...
+perhaps up to a thousand dollars per transaction when you start to remove the need to have intermediaries in a transaction,
+whose sole purpose is to provide some co-verification or insurance policy against a government record.
+So, those are the benefits that blockchain can provide for real estate.
+As I said, Cook County released a final report about a year ago, at the end of May 2017, on our findings,
+and we found some very promising path forward for blockchain.
+We first need to to make the public record mandatory, but once that happens, we'll be able to start to get towards a better system,
+where we can agree on a set of facts quicker, make real estate more liquid, make it easier to transact real estate without having to take multiple days off of work.
+So, that's really the power of blockchain for real estate, especially if you look at an end-to-end transactional environment,
+one where the transaction goes from real estate agent to recorder and the same data that's used in the transaction becomes the public record,
+and that really is an important feature of blockchain for government, to be able to use the exact same data in the public record as was used in the transaction,
+as opposed to now, where government employees accept emailed copies of documents, and then data enter that into another record,
+and, as you know, with data entry, there can be room for errors.
+So, blockchain is all about getting us to a set of facts we can agree on a hundred percent accurate public record, and really an end to paper-based recording fraud.
+And that will allow America to get its very good land record system to the next level.
+Blockchain, as a concept for government, can be very transformative for public administration in the United States,
+because it allows us to take this Internet that we've built up over the last thirty years, and really make it a transactional internet finally.
+So, we're at a point in in technology where we've connected everyone together on the internet,
+but we have no mechanism to know whether the person we are interacting with via email or social media is even truly the person that we think they are.
+It really limits our ability to conduct commerce on the Internet, which is something that we've been promised a long time.
+The blockchain for government and for the Internet is a part of a larger concept called Web 3.0,
+which is really about cybersecurity... it's based around a topic called decentralized identity, DID,
+in which, for government, it's sort of helpful to imagine a decentralized identity as the center hub of a wheel and spoke kind of idea on how blockchain can transform government.
+So, by reimagining how we identify ourselves, getting our personally identifiable information off of centralized outdated servers and mainframes that can easily be compromised by hackers and foreign agents,
+we get the idea down to the person level, where we're each controlling our own personally identifiable information on encrypted devices.
+Once we spread out that attack vector, we would have distributed the identity and made it harder for hackers to find it.
+Now, we plug in people into the spokes of the blockchain system, which is a... you can imagine one of the spokes being a Land Records Registry,
+or another one being a just a multi-asset registry that could be used to register vehicles and trade them between people.
+Now that you have this system set up, where everyone's identified in this new way, and we can use public/private asymmetrical key pairs to sign off on transactions,
+and other things like webcams, and fingerprint scanners add extra security,
+and once you have that identity in place, in the center, now you can do things like transact vehicles between two parties, change the name on a title by using a phone app remotely,
+so you can now sell a used car on your lunch break, as opposed to having to take the entire day off of work,
+fill out hundreds of dollars worth of paperwork and go to different DMVs and Secretary of State's office to register those.
+And, as you can imagine, in Illinois not everyone goes and immediately registers the new car.
+So, sometimes people get parking tickets and speeding tickets after they've sold a vehicle.
+So, that's one way to imagine how blockchain can have a great impact on taxpayers, especially those who are lower income and cannot afford to take a day off of work.
+That's just one of the benefits of blockchain.
+Some other bigger ones are just a way to permanently store digital data, as opposed to having to build warehouses to store paper records.
+Blockchain allows us to be on a path towards permanent storage of data, and which is cheaper and easier to maintain,
+and requires less facilities and it gives us towards paperless workflows, an end to entering data and re-entering data constantly, and the types of errors that come with that.
+And as you can imagine, if you plug this identity model into a county level hospital system,
+now you've got a permanent decentralized encrypted way to store medical records that people...
+the burden of recreating them isn't on the patient every time they visit an office, or the burden to reprove who they are every time they visit a new office is not on the sick or elderly taxpayers,
+So that the benefits for government are quite profound,
+and what it really does is, it gets the government away from being just simply a customer of technology,
+and blockchain now is in such a nascent state that it really empowers government employees who are interested in in long term outlooks to be a part of  this next revolution of government administration.
+You know, be an innovator and help design how these systems work as opposed to waiting 10 years for the private sector to figure it out and then sell it back to us at ten times the price.
+That's really the sort of innovation that blockchain brings to government... an entirely new way of organizing the internet and how we interact with it as citizens.
+And we have a lot of models in Europe to look to for e-government, as kind of the gold standard that we're looking for, like Estonia or Dubai,
+and we can finally get government services down to something that can be securely administered remotely.
+That's what government and blockchain has in store for us.
+It's hard to get up to speed on blockchain unless you're willing to spend a week down what I call the rabbit hole.
+So, you know it, you have to go into the technical stuff a bit to understand how it works and why it works.
+So, there's some good websites out there that explain  from a more layman's perspective what really is the technological revolution here,
+It's now... the good news is, now it's more important to understand what you can do with it as opposed to how exactly it works, and being able to explain.
+So, it's... maybe two years ago it was a little more intimidating to get into it because there were a lot of people policing the language and definitions of what blockchain is,
+and they sort of made it an intimidating environment for people to explore,
+But now, two years later, blockchain, the definition has morphed into simply a new way of design thinking to engineer workflows, hardware and software.
+So, there's a lot of ... it's still new out there...
+So, you haven't missed the boat and there's time you have to spend a little bit of time down the rabbit hole...
+there's some good reports out there from the Illinois Blockchain Initiative, that really summarize what really the best use cases are for government.
+So, you need to be able to explain why a decentralized database is better than a centralized database.
+Once you're able to do that, then that's really the biggest hurdle.
+Once you're able to explain that, then everything else falls into place.
+The land records are extremely important for our economy, but also, I think about the county clerks out there who generally, in most jurisdictions,
+maintain our most important vital records... so, our birth records, our voting records, our marriage, divorce and death records...
+There's... I think about, in Illinois, how people have to apply for their right to vote...
+So, basically, they have to fill out an application to tell the government that they are 18, and then someone has to verify that.
+So, one of the easiest things to think about is that if your birth event is registered on a blockchain, on a smart contract,
+and you have the same database in place, the day you turn 18, you should be able to walk into a polling place and vote, and not have to apply to exercise your constitutional right.
+So, being able to keep these birth and death records and make them easily available...
+college transcripts, you know... being able to plug them into like LinkedIn, for example, and having them sort of co-verified by LinkedIn and your educational institution is sort of removing a lot of these bureaucratic hurdles.
+And blockchain is really about allowing people to do business with each other more easily.
+So, anywhere where there's an application that needs to be filled out, and somebody needs to verify something that someone should already know,
+that's where we should be looking for blockchain to sort of revolutionize the way we deliver government services.
+I can imagine there being more sort of field agents out there in government who they just sort of roam around,
+and, if you need them almost like a notary, they're there, you can meet with one of these people in a coffee shop, prove who you are, get set up on this new government application,
+and then really, you can start to access these services without having to visit an office.
+So, you can start imagine government having a smaller physical footprint, needing to maintain less buildings,
+and  really being able to permanently store data and know what's going on and be able to make more things happen remotely.
+
+### Video 51 - Maersk
+
+Global trade functions much as it has since the introduction of the shipping container in 1956.
+Manual, paper-based processes are still common and information about the status of goods is locked away in organizational silos.
+Today, 90% of goods in global trade are carried by the shipping industry with the supply chain slowed by the complexity and sheer volume of point-to-point communication
+across a loosely coupled web of land transportation providers, freight forwarders, customs brokers, governments, ports, and ocean carriers.
+IBM and Maersk are addressing this problem with a distributed permission platform accessible by the supply chain ecosystem designed to exchange event data and handle document workflows.
+Maersk and IBM are employing blockchain technology to create a global tamperproof system for digitizing trade workflow and tracking shipments end-to-end,
+eliminating frictions including costly point-to-point communications.
+The collaboration will launch with the potential ability to track millions of container journeys per year and integrate with customs authorities on selected trade lanes.
+In a recent test by Maersk, shipping a single container of flowers from Kenya to the port of Rotterdam resulted in a stack of nearly 200 communications.
+Using this example, we will examine how blockchain has been implemented to create trust and security in the digitized document workflow and improve the efficiency of global supply chains.
+Here we can see each distinct entity involved in the transaction: the growers, export authorities, ports, customs, and importers.
+Shipping from the port of Mombasa requires signatures from three different agencies approving the export and six documents that describe the origin, chemical treatments, quality of the produce, and customs duties.
+Firstly, using a PC or mobile device the Kenyan farm submits a packing list that becomes visible to all participants.
+This action initiates a smart contract that enforces an export approval workflow between the three agencies.
+As each agency signs, the status is updated for all to see.
+Simultaneously, information about the inspection of the flowers, the sealing of the refrigerated container, the pickup by the trucker,
+and the approval from customs is communicated to the port of Mombasa allowing them to prepare for the container.
+All actions relating to the documents and the physical goods are captured and shared: which documents were submitted, when and by whom,
+where the flowers are, and who is in possession of them, and the next steps in their journey.
+Flowers are perishable, so it's crucial that there are no delays or missed steps .
+Blockchain provides secure data exchange and a tamperproof repository for these documents and shipping events.
+This system could significantly reduce delays and fraud saving billions of dollars annually.
+And, according to the WTO, reducing barriers within the international supply chain could increase worldwide GDP by almost 5% and total trade volume by 15%.
+
+### Video 53 - Walmart
+
+I purchased a pack of mangos, I came into my staff meeting, I put them on the table, and I said: "Your traceback exercise starts right now".
+And we timed how long it took them to get the information for each point in the food system all the way back to the farm.
+And I'm not gonna give you the results.
+After the pilot, but it's gonna be good.
+When a customer shops in our stores, we know they expect great prices, we know they expect fast, clean, and friendly service,
+but an unspoken expectation is that they expect the products that they buy in our stores to be safe.
+You know, when there's a food event or a food scare what you want to do is you want to be fast, but you want to be right.
+That food product is guilty until proven innocent.
+We at Walmart, will actually pull all the product until we know what is the implicated product and can put then the safe product back out.
+And so imagine, if we could pinpoint with certainty, within minutes not days, that it was the implicated product.
+Walmart and IBM are working to make that a reality.
+If you think about the food system, it's pretty complex.
+It involves farmers, processors, distributors, and the way traceability is done today, each segment of the food system does it their own way.
+Most actually do it on paper or on systems that don't speak to each other, and so you can never have a full view of what's happening in the food system.
+What we hope to do with blockchain is bring all food safety system stakeholders and collaborate so that we do it one best way, we can do it very quickly, and efficiently.
+Blockchain is a digital ledger that allows different segments of the food system to capture information about the product, what they've done to it, where that product has been.
+If we're linking that data with other data points, the Internet of Things, all that information will yield to insights that will allow us to have a safer, more affordable and sustainable food system.
+But we don't believe traceability is the goal. We believe that transparency is the ultimate goal.
+Blockchain will give us the ability to not only track where food came from, but how it was produced, was it produced safely, was it produced responsibly,
+is it sustainably grown, how many dates of shelf life are left on that product.
+The food system is a shared responsibility and for blockchain, and traceability, and transparency to work we need a lot of people working together.
+So we're excited to be working with IBM on this blockchain initiative, but it's not just Walmart and IBM,
+we actually have some of our suppliers participating in this pilot, we've got some universities also participating in the pilot.
+And so, we'll make sure that all stakeholders work together for a safer and better food system.
+
+### Video 54 - Luxoft IoT Explained
+
+We've got a client that we're working with. They're a European company and they manage IoT devices in smart cities.
+And we've built application for them to increase the security around their firmware and configuration updates.
+And so, we built this on a Hyperledger Fabric.
+It basically allows administrator to use his credentials to push some IoT firmware out.
+So say, you've got a new firmware update for a class of cameras that you've got throughout the city, you write the binary for that firmware to the blockchain,
+and that triggers a notification that goes up to the cameras of their appropriate type letting them know that they need to come pull the updates.
+You know, because it's a distributed system, it easily manages the load of pushing those configuration updates that the devices can all go to different nodes to download the updates, the binaries,
+and the updates are immutable, so they're protected against hacking once they're written out.
+And, there's another layer of security that's used to connect the devices and transfer the data through encryption that gives another level of protection for the way that the update gets out onto the devices.
+And so, it was kind of a cool use case in that it doesn't run into some of the challenges that you typically run into with scale and the volume and those sorts of things.
+It was a way of using blockchain in a kind of a clever, intelligent way to manage IoT devices, well within the range of the current capabilities of Hyperledger Fabric.
+Great, great. And so, where are you guys at with that process? Did you guys actually... Was your use case a proof of concept or did you guys apply this?
+We did a proof of concept for them, they loved it. Then we did a pilot rollout and the pilot rollout involved us building a lot of operational utilities around the system.
+So, the actual smart contract that manages the firmware updates and allows the devices to connect, that was all pretty straightforward and most of that was developed in the PoC.
+The next step for production rollout was [to decide] how do we monitor these devices, how do we get insight to what's running on what devices,
+how do we view the audit trail of the logs of when devices got updated and check the health of everything.
+So, we spent a lot of time building the operational wrappers around the system.
+The company has taken that into a pilot project right now and they basically asked us to hold off right now, because we were being so fast that they're having trouble keeping up with onboarding devices.
+And rather than continue to work on our backlog and evolve the product, they wanted to get caught up and get a little bit more time to use it before they give us feedback of changes that they want to make.
+But essentially, the project is in pilot and seem to be working wonderfully.
+Okay, I'm gonna ask you to look in your crystal ball a little bit and again I'm not going to hold you to fire later on, but what does the future look like with IoT and blockchain and even AI and blockchain?
+Well, IoT and blockchain...
+So, I think that IoT and blockchain... blockchain is primarily going to be used for identity around IoT devices and the same thing with artificial intelligence.
+So, blockchain technology doesn't shine when it comes to massive volumes the data being poured into it.
+And so from from an IoT standpoint, blockchain doesn't really... it's not a huge data collection mechanism.
+It's more of a state management mechanism, so if I want to know what the state of the devices on my network is
+and I want to have a reliable audit trail of what's happened and those sorts of things, blockchain is a good technology.
+So, I think that it's going to be relatively limited, for relatively limited use in an IoT, more around identity and reputation, but IoT is a really broad spectrum.
+I know that in... I was just recently [participating in] an automotive symposium and one can say that cars are IoT, and stoplights are IoT,
+and you listen to some of the scenarios that they're talking about doing that are really interesting in that they're going to use artificial intelligence and IOT
+in combination with automated driving or to negotiate intersections by cars broadcasting their intent.
+So, your self-driving car is going to broadcast the intent that I admitted, I could either turn left or go straight at the next intersection, and this hive mentality of all of the cars around you are gonna collectively look at that intent
+along with what's going on and determine the best way to negotiate the next intersection.
+And in that system, really the only place blockchain came in was that they needed a way to make sure that you didn't have nefarious devices coming on, posing to be cars that caused mayhem at intersections.
+And so, blockchain was primarily used for the identity of the cars and for the reputation of the cars.
+And so, basically, an autonomous vehicle will establish an identity and over a period of time build a reputation determining whether or not when it says I could go straight or I could turn left...
+Can it be trusted? Is it actually going to do what it predicts it's going to do or is this something that we need to kind of watch out for.
+And they talk about the incentive model in all of this.
+And, of course, blockchain plays into the incentive models in that autonomous vehicles negotiating traffic might trade tokens or coins to have someone allow them to pass.
+You may feel relaxed today and you don't feel like you're in a hurry to get home from work and so you may take a more relaxed throughout and actually accrue tokens by letting people pass you.
+And so, there's this mechanism of digital economy around negotiating and traffic, and all of these things sort of fit in the broader IoT scale.
+I don't know where it's gonna go, but I think that the core technology that blockchain is gonna bring in just about any technology stack, is going to be around identity, reliable identity, and reputation.
+
+### Video 55 - The Digital Energy of the Future
+
+### Video 56 - 
