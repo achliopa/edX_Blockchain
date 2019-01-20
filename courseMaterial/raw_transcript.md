@@ -2106,4 +2106,73 @@ I don't know where it's gonna go, but I think that the core technology that bloc
 
 ### Video 55 - The Digital Energy of the Future
 
-### Video 56 - 
+Now, are you seeing interest in it not only from the publicly traded enterprises, but also some of the state-run organizations in that part of the world?
+Digital took about eight years to become the priority of the C-level or maybe not even the priority, let's say just to get on their radar, it took digital that long.
+We're seeing CEOs come out and want to talk about blockchain and want to understand it.
+That is the impact. And in my entire career in this industry, I've never seen the highest C-level executives want to know about this, want to understand this.
+This never happened with digital, with IoT, with AI.
+It was not there, but it's there with blockchain, and it's there with blockchain from when the hype really started kind of mid of this year.
+And I think it's the hottest topic in this industry at the moment.
+So, let's drive that a little further then. Is the public sector, where some of these enterprises may be classified...
+Are they moving just as fast as the private organizations are to adopt this or at least to understand it better?
+I think on the understanding yes, the adoption is still a little bit away, but we are seeing a lot of interest on proof of concepts.
+Organizations wanting to try it out and really see what it can do.
+I would agree, I think a lot of the research I've seen is that there's been a lot of PoCs, which is fine, because this is certainly a POC starting point,
+and those are quickly evolving into, once they see the immediate benefits, into the longer-term project which has been great.
+And I wonder, Morgan, do you see the, let's say, the slower speed of the adoption of just outsourcing in general, in the industry?
+Do you see that being overruled, because blockchain is a need, and a must, and a have right away moving more quickly to adopt even a PoC?
+I certainly do. I mean, I think the one thing is, you know, recently Venezuela, for example, created the Petro which is a cryptocurrency which obviously is based on blockchain technology.
+And that's tied to oil prices. So this has gone at the state, national level.
+And so yes, it's... We're seeing that it is, because it's new, it is because it's hot topic.
+And there are reports out there in the world that like 10% of a global GDP is gonna be based on DLT blockchain technology.
+So yes, I think it's just getting to understand it, is really why the organizations are there.
+And, the thing about blockchain is, from an industry perspective, there's not a lot of people in this industry that truly understand what blockchain can do for them.
+At the same time, blockchain is so nascent as a technology that even your traditional technology majors, let's call them that, the Microsofts, the Apples, the IBMs,
+not necessarily the best players at driving this technology forward either, because blockchain is happening or has been occurring, you guys rightly know very well,
+it's occurring within the organizations that adopt multiple platforms, they're not platform dependent.
+And I think that's also what's disruptive, I can't necessarily just go to my traditional consultants who are going to come in and say: "Well, we know about blockchain", because they don't.
+So, do they know about the industry, and do they know specifically about blockchain?
+And that's a very hard thing to do, because if you get stuck on the platform or a specific platform on blockchain within your organization you can be really, really at a disadvantage.
+There are so many platforms out there for public chains, private chains, if you want to do your own tokens, specific tokens that you want to release into the market
+and all of this creates a new world and a new world with new skills.
+So Dmitry, I think Morgan gave us a solid overview of the blockchain initiatives taking place in the industry.
+I think that was a good macro, sort of bird's-eye view of what's happening.
+
+### Video 56 - Future of Blockchain?
+
+What is the future of blockchain?
+That is a big question.
+And unlike everything we have already talked about in this course, this is nothing factual, but just my own opinion.
+I think blockchain is a really, really exciting place right now.
+Blockchain tends to get talked about in the context of a lot of other exciting emerging technologies, things like IoT and smart devices, self-driving cars and autonomous devices, AI, virtual and augmented reality.
+The truth is, in my opinion, I see blockchain as an enabling layer for many of these other technological revolutions.
+Everybody is excited about the idea of smart devices.
+Wouldn't it be great if I had a smart refrigerator that automatically reordered more ketchup as it started to get low?
+Everyone gets a little nervous when it comes time to actually talk about implementing something like this, because how do we protect it?
+How do we ensure that the data the system uses is immutable and secure?
+Blockchain provides that.
+So, I think that we are going to see a lot of growth in emerging technologies as blockchain continues to emerge, because it's going to make more and more things possible.
+And if we talk long term, and again, only my opinion, I think blockchain becomes the enabling layer for a multi-planetary human economy.
+You might have seen earlier this year, February 2018, SpaceX put up Falcon Heavy.
+Because SpaceX and Elon Musk are committed to getting us to Mars.
+And I truly believe in the next 20 to 50 years we are going to see a human colony on Mars.
+Now, one interesting thing about Mars is that it's really really far away.
+At the closest Earth gets to Mars, it's a 26 minute roundtrip at light speed, and there's two weeks out of every March and year, where Earth and Mars can't communicate because the Sun is right in the middle.
+Well, think about this: if you run a small pizza shop on Mars, you close out your register for the day,
+and you need to deposit funds into your bank account, and that is a bank on Wall Street, New York City, and under the best case scenario, that's a 26-minute roundtrip,
+you can see how centralized models of the Internet aren't going to scale.
+So, if you ask me, I really believe technologies like blockchain and supporting technologies like IPFS
+are the enabling technologies to allow humans to continue to trade and interact and conduct commerce with each other when we become a multi-planetary society.
+And that's why I think there's a ton of potential in blockchain and it's something really exciting, and hopefully, you're all inspired to stay up-to-date with.
+
+## Chapter Summary
+
+Blockchain is already being used in many industries.
+
+We looked organizations taking advantage of blockchain:
+
+Luxoft is using blockchain for a decentralized voting application that ensures every vote is counted. They are also using blockchain to make the Internet of Things more secure than it has ever been, to change how automotive ownership works, etc.
+IBM is using blockchain in supply chain to do things like preventing counterfeit drugs in Africa, or to allow consumers to feel more confident when selecting produce. These are just a few applications IBM has used blockchain for.
+LifeID is using blockchain for a universal account associated with your identity.
+Cook County, Illinois (USA), is using blockchain to keep land records more secure than ever before.
+MedChain is using blockchain to change the way that medical records are kept, making it more secure and universal than it has ever been before.
